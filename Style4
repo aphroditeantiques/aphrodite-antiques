@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aphrodite Antiques</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="https://i.ibb.co/THdSsqM/key-gold.png" alt="Golden Key Logo">
+      <h1>Aphrodite Antiques</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Explore Treasures</h2>
+      <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
+      <a href="shop.html" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Our Collections</h2>
+    <div class="grid">
+      <a href="Porcelain" class="category-card">
+        <img src="https://i.ibb.co/yp7yZk5/porcelain.jpg" alt="Porcelain">
+        <span>Porcelain</span>
+      </a>
+      <a href="Silverware" class="category-card">
+        <img src="https://i.ibb.co/mCwX2rx/silverware.jpg" alt="Silverware">
+        <span>Silverware</span>
+      </a>
+      <a href="Wooden" class="category-card">
+        <img src="https://i.ibb.co/6NQX8js/wooden.jpg" alt="Wooden">
+        <span>Wooden Items</span>
+      </a>
+      <a href="Crystal" class="category-card">
+        <img src="https://i.ibb.co/qBNw7Xh/crystal.jpg" alt="Crystal">
+        <span>Crystal</span>
+      </a>
+      <a href="Jewelry" class="category-card">
+        <img src="https://i.ibb.co/GJ4sWTh/jewelry.jpg" alt="Jewelry">
+        <span>Jewelry</span>
+      </a>
+      <a href="Potteries" class="category-card">
+        <img src="https://i.ibb.co/NFpnkPb/pottery.jpg" alt="Pottery">
+        <span>Potteries</span>
+      </a>
+      <a href="Rarities" class="category-card">
+        <img src="https://i.ibb.co/TmTjRby/rarities.jpg" alt="Rarities">
+        <span>Rarities</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aphrodite Antiques | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
