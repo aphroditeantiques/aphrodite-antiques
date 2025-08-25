@@ -53,24 +53,23 @@
     }
 
 .hero {
-  background: url('antique-banner.png') no-repeat center center;
+  background: url('https://i.ibb.co/4C89327C/antique-hero.jpg') no-repeat center center;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertical centering */
-  align-items: center;    /* horizontal centering */
-  min-height: 80vh;       /* takes up 80% of screen height */
+  padding: 8rem 2rem;
   text-align: center;
   color: #fff;
 }
-}
-}
+
+.hero h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 3rem;
+  margin: 0;
 }
 
 .hero h2 {
   font-family: 'Brush Script MT', cursive;
-  font-size: 3rem;
-  color: #fdf6e3; /* light beige, matches theme */
+  font-size: 2.5rem;
+  color: #fdf6e3;
   margin-top: 1rem;
 }
 
@@ -81,54 +80,26 @@
   display: block;
   color: #fdf6e3;
 }
-    }
 
-    .menu {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
-    }
+/* Explore Button */
+.explore-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  background: #d2b48c;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
 
-    .menu-item {
-      background: #3b2f2f;
-      color: #fdf6e3;
-      padding: 1rem;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-
-    .menu-item:hover {
-      transform: scale(1.05);
-    }
-
-    .menu-item img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 0.5rem;
-      filter: brightness(70%);
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #4b3621;
-      color: #fdf6e3;
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-          <section class="hero">
-  <h1>Aphrodite Antiques</h1>
-  <h2>Discover Treasures</h2>
-</section>
+.explore-btn:hover {
+  background: #b8976b;
+  transform: scale(1.05);
+}
       </header>
 
       <section class="intro">
