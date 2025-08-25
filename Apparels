@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintage Apparel - Aphrodite Antiques</title>
+  <style>
+    body { font-family: 'Georgia', serif; background: #fdfaf6; margin:0; color:#3a2e2e; }
+    header { background:#3a2e2e; color:white; padding:30px; text-align:center; }
+    header h1 { margin:0; }
+    .products { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; padding:30px; }
+    .product { background:white; border-radius:10px; padding:15px; box-shadow:0 4px 8px rgba(0,0,0,0.1); text-align:center; }
+    footer { text-align:center; background:#3a2e2e; color:white; padding:20px; margin-top:30px; }
+    a.back { display:block; margin:20px; text-decoration:none; color:#3a2e2e; font-weight:bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vintage Apparel</h1>
+  <p>Classic clothing with timeless charm.</p>
+</header>
+
+<a href="index.html" class="back">← Back to Home</a>
+
+<section class="products">
+  <!-- Apparel products will go here -->
+</section>
+
+<footer>© 2025 Aphrodite Antiques & Vintage</footer>
+
+</body>
+</html>
