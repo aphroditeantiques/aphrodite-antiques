@@ -6,151 +6,117 @@
   <title>Aphrodite Antiques & Vintage</title>
   <style>
     body {
-      font-family: 'Brush Script MT', cursive;
       margin: 0;
-      padding: 0;
-      background-color: #fdfdfb;
-      color: #333;
+      font-family: 'Georgia', serif;
+      background-color: #fdfaf6;
+      color: #3a2e2e;
       text-align: center;
     }
 
     header {
-      background: url('https://via.placeholder.com/1200x400?text=Hero+Image') no-repeat center center;
-      background-size: cover;
-      padding: 100px 20px;
+      background: url('antique-banner.png') no-repeat center center/cover;
+      padding: 80px 20px;
       color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
 
     header h1 {
-      font-size: 3em;
+      font-size: 2.8em;
       margin: 0;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
 
     header p {
-      font-size: 1.5em;
+      font-size: 1.2em;
       margin-top: 10px;
     }
 
     .categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       padding: 40px 20px;
     }
 
     .category {
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      overflow: hidden;
       background: white;
+      border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease;
+      padding: 15px;
+      transition: transform 0.3s ease;
     }
 
     .category:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
     }
 
     .category img {
       width: 100%;
       height: 150px;
       object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
 
-    .category h2 {
-      margin: 10px 0;
-      font-size: 1.4em;
-      color: #444;
+    .category h3 {
+      font-size: 1.3em;
+      margin: 0;
+      font-style: italic;
     }
 
     footer {
-      background: #eee;
-      padding: 20px;
       margin-top: 40px;
-      font-size: 1.1em;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
+      padding: 20px;
+      background: #3a2e2e;
+      color: white;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Aphrodite Antiques & Vintage</h1>
     <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
   </header>
 
   <section class="categories">
-  <div class="category">
-    <a href="jewelry.html">
-      <h2>Jewelry Treasures</h2>
-      <img src="https://via.placeholder.com/300x200?text=Jewelry+Treasures" alt="Jewelry Treasures">
-      <p>Jewelry Treasures</p>
-    </a>
-  </div>
-
-  <div class="category">
-    <a href="ceramics.html">
-      <h2>Fine Ceramics & Porcelain</h2>
-      <img src="https://via.placeholder.com/300x200?text=Fine+Ceramics+%26+Porcelain" alt="Fine Ceramics & Porcelain">
-      <p>Fine Ceramics & Porcelain</p>
-    </a>
-  </div>
-
-  <div class="category">
-    <a href="vintage.html">
-      <h2>Vintage Elegance</h2>
-      <img src="https://via.placeholder.com/300x200?text=Vintage+Elegance" alt="Vintage Elegance">
-      <p>Vintage Elegance</p>
-    </a>
-  </div>
-
-  <div class="category">
-    <a href="woodwork.html">
-      <h2>Carved Woodwork</h2>
-      <img src="https://via.placeholder.com/300x200?text=Carved+Woodwork" alt="Carved Woodwork">
-      <p>Carved Woodwork</p>
-    </a>
-  </div>
-
-  <div class="category">
-    <a href="silverware.html">
-      <h2>Sterling Silverware</h2>
-      <img src="https://via.placeholder.com/300x200?text=Sterling+Silverware" alt="Sterling Silverware">
-      <p>Sterling Silverware</p>
-    </a>
-  </div>
-
-  <div class="category">
-    <a href="collectors.html">
-      <h2>Collectors’ Rarities</h2>
-      <img src="https://via.placeholder.com/300x200?text=Collectors+Rarities" alt="Collectors’ Rarities">
-      <p>Collectors’ Rarities</p>
-    </a>
-  </div>
-
-  <div class="category">
-    <a href="candleholders.html">
-      <h2>Antique Candleholders</h2>
-      <img src="https://via.placeholder.com/300x200?text=Antique+Candleholders" alt="Antique Candleholders">
-      <p>Antique Candleholders</p>
-    </a>
-  </div>
-
-  <div class="category">
-    <a href="apparel.html">
-      <h2>Vintage Apparel</h2>
-      <img src="https://via.placeholder.com/300x200?text=Vintage+Apparel" alt="Vintage Apparel">
-      <p>Vintage Apparel</p>
-    </a>
-  </div>
-</section>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Jewelry Treasures">
+      <h3>Jewelry Treasures</h3>
+    </div>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Fine Ceramics & Porcelain">
+      <h3>Fine Ceramics & Porcelain</h3>
+    </div>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Vintage Elegance">
+      <h3>Vintage Elegance</h3>
+    </div>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Carved Woodwork">
+      <h3>Carved Woodwork</h3>
+    </div>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Sterling Silverware">
+      <h3>Sterling Silverware</h3>
+    </div>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Collectors’ Rarities">
+      <h3>Collectors’ Rarities</h3>
+    </div>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Antique Candleholders">
+      <h3>Antique Candleholders</h3>
+    </div>
+    <div class="category">
+      <img src="https://via.placeholder.com/300x200" alt="Vintage Apparel">
+      <h3>Vintage Apparel</h3>
+    </div>
+  </section>
 
   <footer>
-    Aphrodite Antiques & Vintage © 2025
+    <p>© 2025 Aphrodite Antiques & Vintage | All Rights Reserved</p>
   </footer>
+
 </body>
 </html>
