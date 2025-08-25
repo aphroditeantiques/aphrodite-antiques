@@ -53,12 +53,16 @@
     }
 
 .hero {
-  background: url('antique-banner.png'); /* change image here */
+  background: url('antique-banner.png') no-repeat center center;
   background-size: cover;
-  background-position: center;
-  padding: 8rem 2rem; /* controls height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;    /* horizontal centering */
+  min-height: 80vh;       /* takes up 80% of screen height */
   text-align: center;
-  color: #fff; /* text color */
+  color: #fff;
+}
 }
 }
 }
