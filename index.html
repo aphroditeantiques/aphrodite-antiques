@@ -8,67 +8,68 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #fdfaf6;
-      color: #3a2e2e;
+      background-color: #fdfdfc;
+      color: #333;
       text-align: center;
     }
-
     header {
-      background: url('antique-banner.png') no-repeat center center/cover;
-      padding: 80px 20px;
+      background: url('hero-image.jpg') no-repeat center center;
+      background-size: cover;
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       color: white;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
-
     header h1 {
-      font-size: 2.8em;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 3rem;
       margin: 0;
     }
-
     header p {
-      font-size: 1.2em;
-      margin-top: 10px;
+      font-size: 1.2rem;
+      max-width: 600px;
     }
-
+    main {
+      padding: 2rem;
+    }
+    h2 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
     .categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
     }
-
     .category {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 15px;
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-
     .category:hover {
       transform: translateY(-5px);
     }
-
     .category img {
       width: 100%;
-      height: 150px;
+      height: 180px;
       object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 10px;
     }
-
     .category h3 {
-      font-size: 1.3em;
-      margin: 0;
-      font-style: italic;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
     }
-
     footer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #3a2e2e;
-      color: white;
-      font-size: 0.9em;
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #f1f1f1;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -79,43 +80,46 @@
     <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
   </header>
 
-  <section class="categories">
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Jewelry Treasures">
-      <h3>Jewelry Treasures</h3>
+  <main>
+    <h2>Discover Treasures</h2>
+    <div class="categories">
+      <a href="jewelry.html" class="category">
+        <img src="jewelry.jpg" alt="Jewelry">
+        <h3>Jewelry</h3>
+      </a>
+      <a href="ceramics.html" class="category">
+        <img src="ceramics.jpg" alt="Ceramics">
+        <h3>Ceramics</h3>
+      </a>
+      <a href="vintage.html" class="category">
+        <img src="vintage.jpg" alt="Vintage">
+        <h3>Vintage</h3>
+      </a>
+      <a href="wooden.html" class="category">
+        <img src="wooden.jpg" alt="Wooden Items">
+        <h3>Wooden Items</h3>
+      </a>
+      <a href="silver.html" class="category">
+        <img src="silver.jpg" alt="Silverware">
+        <h3>Silverware</h3>
+      </a>
+      <a href="rarities.html" class="category">
+        <img src="rarities.jpg" alt="Rarities">
+        <h3>Rarities</h3>
+      </a>
+      <a href="candleholders.html" class="category">
+        <img src="candleholders.jpg" alt="Candleholders">
+        <h3>Candleholders</h3>
+      </a>
+      <a href="clothes.html" class="category">
+        <img src="clothes.jpg" alt="Vintage Clothes">
+        <h3>Vintage Clothes</h3>
+      </a>
     </div>
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Fine Ceramics & Porcelain">
-      <h3>Fine Ceramics & Porcelain</h3>
-    </div>
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Vintage Elegance">
-      <h3>Vintage Elegance</h3>
-    </div>
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Carved Woodwork">
-      <h3>Carved Woodwork</h3>
-    </div>
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Sterling Silverware">
-      <h3>Sterling Silverware</h3>
-    </div>
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Collectors’ Rarities">
-      <h3>Collectors’ Rarities</h3>
-    </div>
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Antique Candleholders">
-      <h3>Antique Candleholders</h3>
-    </div>
-    <div class="category">
-      <img src="https://via.placeholder.com/300x200" alt="Vintage Apparel">
-      <h3>Vintage Apparel</h3>
-    </div>
-  </section>
+  </main>
 
   <footer>
-    <p>© 2025 Aphrodite Antiques & Vintage | All Rights Reserved</p>
+    <p>&copy; 2024 Aphrodite Antiques & Vintage. All rights reserved.</p>
   </footer>
 
 </body>
