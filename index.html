@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aphrodite Antiques & Vintage</title>
+  <link rel="icon" href="golden-key.png" type="image/png">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Brush Script MT", cursive;
+      background-color: #faf7f5;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: #fff;
+      padding: 20px;
+      font-size: 2em;
+      border-bottom: 2px solid #e6d8c3;
+    }
+    .hero {
+      position: relative;
+      background: url('antique-banner.png') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      padding: 30px;
+    }
+    .category {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+      transition: transform 0.3s;
+    }
+    .category:hover {
+      transform: scale(1.05);
+    }
+    .category img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .category h3 {
+      margin: 10px 0;
+      font-size: 1.3em;
+    }
+    .about {
+      background: #f3efe9;
+      padding: 40px 20px;
+      font-size: 1.1em;
+    }
+    .cart, .checkout {
+      padding: 30px;
+    }
+    button {
+      background: #c5a46d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #a88754;
+    }
+    footer {
+      margin-top: 40px;
+      background: #eee;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+  <script>
+    let cart = [];
 
+    function addToCart(item) {
+      cart.push(item);
+      alert(item + " added to cart!");
+    }
+
+    function viewCart() {
+      let cartContent = cart.length === 0 ? "Your cart is empty." : cart.join(", ");
+      alert("Cart: " + cartContent);
+    }
+
+    function checkout() {
+      let totalWeight = 2; // example placeholder
+      let region = prompt("Enter your region (Europe, USA, Australia):");
+      let shipping = 0;
+      if(region.toLowerCase() === "europe") shipping = 15;
+      else if(region.toLowerCase() === "usa") shipping = 25;
+      else if(region.toLowerCase() === "australia") shipping = 30;
+      else shipping = 20;
+
+      alert("Your shipping cost is $" + shipping + ".\nPayment options: Credit Card, PayPal, Apple Pay.");
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  Aphrodite Antiques & Vintage
+</header>
+
+<section class="hero">
+  <h1>Discover Treasures</h1>
+  <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
+</section>
+
+<section class="categories">
+  <div class="category" onclick="addToCart('Jewelry')">
+    <img src="jewelry.jpg" alt="Jewelry">
+    <h3>Jewelry</h3>
+  </div>
+  <div class="category" onclick="addToCart('Ceramics')">
+    <img src="ceramics.jpg" alt="Ceramics">
+    <h3>Ceramics</h3>
+  </div>
+  <div class="category" onclick="addToCart('Vintage Finds')">
+    <img src="vintage.jpg" alt="Vintage Finds">
+    <h3>Vintage Finds</h3>
+  </div>
+  <div class="category" onclick="addToCart('Wooden Items')">
+    <img src="wooden.jpg" alt="Wooden Items">
+    <h3>Wooden Items</h3>
+  </div>
+  <div class="category" onclick="addToCart('Silverware')">
+    <img src="silverware.jpg" alt="Silverware">
+    <h3>Silverware</h3>
+  </div>
+  <div class="category" onclick="addToCart('Rarities for Collectors')">
+    <img src="rarities.jpg" alt="Rarities">
+    <h3>Rarities for Collectors</h3>
+  </div>
+  <div class="category" onclick="addToCart('Candleholders')">
+    <img src="candleholders.jpg" alt="Candleholders">
+    <h3>Candleholders</h3>
+  </div>
+  <div class="category" onclick="addToCart('Vintage Clothes')">
+    <img src="clothes.jpg" alt="Vintage Clothes">
+    <h3>Vintage Clothes</h3>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About Us</h2>
+  <p>
+    Welcome to Aphrodite Antiques & Vintage — a place where time stands still, and every item tells a story.  
+    We don’t just sell antiques and vintage treasures — we preserve the essence of the past and offer it a new life in your home.  
+    With Aphrodite Antiques, timeless beauty always finds its way back to you.
+  </p>
+</section>
+
+<section class="cart">
+  <h2>Your Cart</h2>
+  <button onclick="viewCart()">View Cart</button>
+</section>
+
+<section class="checkout">
+  <h2>Checkout</h2>
+  <button onclick="checkout()">Proceed to Checkout</button>
+</section>
+
+<footer>
+  © 2025 Aphrodite Antiques & Vintage — All Rights Reserved
+</footer>
+
+</body>
+</html>
