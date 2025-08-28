@@ -4,62 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphrodite Antiques & Vintage</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background-color: #fffaf7;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px;
+      font-family: "Brush Script MT", cursive;
+      font-size: 48px;
+      color: #5a4634;
+    }
+
+    .hero {
+      background: url("https://i.ibb.co/mD3xWxB/antique-banner.png") no-repeat center center;
+      background-size: cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+      font-family: "Brush Script MT", cursive;
+      font-size: 36px;
+    }
+
+    .tagline {
+      margin: 30px auto;
+      font-size: 22px;
+      font-style: italic;
+      max-width: 700px;
+      color: #444;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .category {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .category:hover {
+      transform: scale(1.05);
+    }
+
+    .category img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .category span {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      font-family: "Brush Script MT", cursive;
+      font-size: 24px;
+      background: rgba(0,0,0,0.4);
+      color: white;
+      padding: 5px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #f5f0eb;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Aphrodite Antiques & Vintage</h1>
-    <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
-  </header>
 
-  <section>
-    <h2>Discover Treasures</h2>
-    <div class="categories">
-      
-      <a href="Jewelry.html" class="category">
-        <img src="jewelry.jpg" alt="Jewelry">
-        <span>Jewelry Treasures</span>
-      </a>
+  <header>Aphrodite Antiques & Vintage</header>
 
-      <a href="Ceramics.html" class="category">
-        <img src="porcelain.jpg" alt="Ceramics">
-        <span>Fine Ceramics & Porcelain</span>
-      </a>
+  <section class="hero">
+    Welcome to Aphrodite Antiques
+  </section>
 
-      <a href="Silverware.html" class="category">
-        <img src="silver.jpg" alt="Silverware">
-        <span>Sterling Silverware</span>
-      </a>
+  <p class="tagline">Each piece carries a memory of time, and soon it will begin its journey to you.</p>
 
-      <a href="Woodwork.html" class="category">
-        <img src="wood.jpg" alt="Woodwork">
-        <span>Carved Woodwork</span>
-      </a>
-
-      <a href="Rarities.html" class="category">
-        <img src="rarities.jpg" alt="Rarities">
-        <span>Collectors’ Rarities</span>
-      </a>
-
-      <a href="Candleholders.html" class="category">
-        <img src="candle.jpg" alt="Candleholders">
-        <span>Antique Candleholders</span>
-      </a>
-
-      <a href="Vintage.html" class="category">
-        <img src="clothes.jpg" alt="Vintage">
-        <span>Vintage Elegance</span>
-      </a>
-
-      <a href="Apparel.html" class="category">
-        <img src="apparel.jpg" alt="Apparel">
-        <span>Vintage Apparel</span>
-      </a>
+  <section class="categories">
+    <div class="category" onclick="window.location.href='#jewelry'">
+      <img src="https://i.ibb.co/VTRb1mj/jewelry.jpg" alt="Jewelry">
+      <span>Jewelry</span>
+    </div>
+    <div class="category" onclick="window.location.href='#porcelain'">
+      <img src="https://i.ibb.co/9rc5j0y/porcelain.jpg" alt="Porcelain">
+      <span>Porcelain</span>
+    </div>
+    <div class="category" onclick="window.location.href='#vintage'">
+      <img src="https://i.ibb.co/1rT4hhJ/vintage.jpg" alt="Vintage">
+      <span>Vintage</span>
+    </div>
+    <div class="category" onclick="window.location.href='#woodwork'">
+      <img src="https://i.ibb.co/BLX9m64/wood.jpg" alt="Woodwork">
+      <span>Woodwork</span>
+    </div>
+    <div class="category" onclick="window.location.href='#silverware'">
+      <img src="https://i.ibb.co/YRrq6Y8/silver.jpg" alt="Silverware & Candleholders">
+      <span>Silverware & Candleholders</span>
+    </div>
+    <div class="category" onclick="window.location.href='#crystal'">
+      <img src="https://i.ibb.co/B3W98Nq/crystal.jpg" alt="Crystal & Glass">
+      <span>Crystal & Glass</span>
+    </div>
+    <div class="category" onclick="window.location.href='#curiosities'">
+      <img src="https://i.ibb.co/jRgMMt3/curiosities.jpg" alt="Curiosities">
+      <span>Curiosities</span>
+    </div>
+    <div class="category" onclick="window.location.href='#clothes'">
+      <img src="https://i.ibb.co/3dRQtLR/clothes.jpg" alt="Vintage Clothes">
+      <span>Vintage Clothes</span>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Aphrodite Antiques & Vintage. All rights reserved.</p>
+    © 2025 Aphrodite Antiques & Vintage. All rights reserved.
   </footer>
+
 </body>
 </html>
