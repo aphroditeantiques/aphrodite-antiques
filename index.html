@@ -4,156 +4,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphrodite Antiques & Vintage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Great Vibes', cursive;
       margin: 0;
-      font-family: 'Brush Script MT', cursive; /* handwriting everywhere */
-      background-color: #fdfdfc;
-      color: #333;
-    }
-    header {
-      background: #fffaf5;
+      padding: 0;
+      background-color: #fdfaf7;
+      color: #2c2c2c;
       text-align: center;
-      padding: 2rem;
-      border-bottom: 2px solid #e5e5e5;
     }
+
+    header {
+      padding: 40px 20px;
+    }
+
     header h1 {
-      font-size: 3rem;
+      font-size: 56px;
       margin: 0;
     }
+
     header p {
-      font-size: 1.3rem;
-      margin-top: 0.5rem;
+      font-size: 26px;
+      margin-top: 10px;
     }
+
+    h2 {
+      font-size: 40px;
+      margin: 40px 0 20px;
+    }
+
     .categories {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
-      padding: 2rem;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
     .category {
-      text-align: center;
-    }
-    .category img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      display: block;
+      padding: 30px;
+      background: #fff;
       border-radius: 12px;
-      border: 2px solid #ddd;
-      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
     }
-    .category img:hover {
-      transform: scale(1.05);
+
+    .category:hover {
+      transform: translateY(-5px);
     }
-    .category h2 {
-      margin-top: 0.8rem;
-      font-size: 1.6rem;
-    }
-    section {
-      padding: 2rem;
-      border-top: 2px solid #eaeaea;
-    }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-align: center;
-    }
-    footer {
-      background: #fffaf5;
-      text-align: center;
-      padding: 1.5rem;
-      font-size: 1.2rem;
-      border-top: 2px solid #e5e5e5;
+
+    .category span {
+      display: block;
+      font-size: 28px;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Aphrodite Antiques & Vintage</h1>
     <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
   </header>
 
-  <!-- Category Grid -->
+  <h2>Discover Treasures</h2>
   <div class="categories">
-    <div class="category">
-      <a href="#jewelry"><img src="https://via.placeholder.com/400x300?text=Jewelry" alt="Jewelry"></a>
-      <h2>Jewelry</h2>
-    </div>
-    <div class="category">
-      <a href="#porcelain"><img src="https://via.placeholder.com/400x300?text=Porcelain+%26+Ceramic" alt="Porcelain and Ceramic"></a>
-      <h2>Porcelain / Ceramic</h2>
-    </div>
-    <div class="category">
-      <a href="#silverware"><img src="https://via.placeholder.com/400x300?text=Silverware+%26+Candleholders" alt="Silverware and Candleholders"></a>
-      <h2>Silverware & Candleholders</h2>
-    </div>
-    <div class="category">
-      <a href="#wooden"><img src="https://via.placeholder.com/400x300?text=Wooden+Items" alt="Wooden Items"></a>
-      <h2>Wooden Items</h2>
-    </div>
-    <div class="category">
-      <a href="#crystal"><img src="https://via.placeholder.com/400x300?text=Crystal+%26+Glass" alt="Crystal and Glass"></a>
-      <h2>Crystal & Glass</h2>
-    </div>
-    <div class="category">
-      <a href="#vintage"><img src="https://via.placeholder.com/400x300?text=Vintage" alt="Vintage"></a>
-      <h2>Vintage</h2>
-    </div>
-    <div class="category">
-      <a href="#curiosities"><img src="https://via.placeholder.com/400x300?text=Curiosities+%26+Rarities" alt="Curiosities and Rarities"></a>
-      <h2>Curiosities & Rarities</h2>
-    </div>
-    <div class="category">
-      <a href="#clothing"><img src="https://via.placeholder.com/400x300?text=Vintage+Clothing" alt="Vintage Clothing"></a>
-      <h2>Vintage Clothing</h2>
-    </div>
+    <a href="jewelry.html" class="category">
+      <span>Jewelry</span>
+    </a>
+    <a href="porcelain.html" class="category">
+      <span>Porcelain & Ceramic</span>
+    </a>
+    <a href="silverware.html" class="category">
+      <span>Silverware & Candleholders</span>
+    </a>
+    <a href="woodwork.html" class="category">
+      <span>Wooden Items</span>
+    </a>
+    <a href="crystal.html" class="category">
+      <span>Crystal & Glass</span>
+    </a>
+    <a href="vintage.html" class="category">
+      <span>Vintage</span>
+    </a>
+    <a href="curiosities.html" class="category">
+      <span>Curiosities & Rarities</span>
+    </a>
+    <a href="clothing.html" class="category">
+      <span>Vintage Clothing</span>
+    </a>
   </div>
-
-  <!-- Sections for each category (empty, waiting for your items) -->
-  <section id="jewelry">
-    <h2>Jewelry</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <section id="porcelain">
-    <h2>Porcelain / Ceramic</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <section id="silverware">
-    <h2>Silverware & Candleholders</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <section id="wooden">
-    <h2>Wooden Items</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <section id="crystal">
-    <h2>Crystal & Glass</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <section id="vintage">
-    <h2>Vintage</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <section id="curiosities">
-    <h2>Curiosities & Rarities</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <section id="clothing">
-    <h2>Vintage Clothing</h2>
-    <p style="text-align:center;">Your items will appear here soon.</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Aphrodite Antiques & Vintage</p>
-  </footer>
-
 </body>
 </html>
