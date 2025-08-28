@@ -4,114 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphrodite Antiques & Vintage</title>
-  <style>
-    body {
-      font-family: 'Brush Script MT', cursive;
-      margin: 0;
-      padding: 0;
-      background-color: #fdfdfd;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background: #fff;
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-    }
-    .hero {
-      position: relative;
-      text-align: center;
-      color: white;
-    }
-    .hero img {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-    }
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .hero-text h2 {
-      font-size: 2em;
-      margin: 0;
-    }
-    main {
-      padding: 30px 20px;
-    }
-    h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .category-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .category-box {
-      display: block;
-      background: #f9f9f9;
-      padding: 40px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #333;
-      font-size: 1.2em;
-      transition: all 0.3s ease;
-    }
-    .category-box:hover {
-      background: #eee;
-      transform: scale(1.05);
-    }
-    footer {
-      background: #fff;
-      border-top: 1px solid #ddd;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Aphrodite Antiques & Vintage</h1>
+    <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
   </header>
 
-  <section class="hero">
-    <img src="antique-banner.png" alt="Antique Banner">
-    <div class="hero-text">
-      <h2>Each piece carries a memory of time, and soon it will begin its journey to you.</h2>
-    </div>
-  </section>
-
   <main>
-    <section class="categories">
-      <h2>Discover Our Treasures</h2>
-      <div class="category-grid">
-        
-        <a href="jewelry.html" class="category-box">Jewelry</a>
-        <a href="ceramics.html" class="category-box">Porcelain & Ceramics</a>
-        <a href="silverware.html" class="category-box">Silverware & Candleholders</a>
-        <a href="woodwork.html" class="category-box">Wooden Items</a>
-        <a href="crystal.html" class="category-box">Crystal & Glass</a>
-        <a href="vintage.html" class="category-box">Vintage</a>
-        <a href="rarities.html" class="category-box">Curiosities & Rarities</a>
-        <a href="clothing.html" class="category-box">Vintage Clothing</a>
-        
-      </div>
-    </section>
+    <h2>Discover Treasures</h2>
+
+    <div class="categories">
+      <a href="jewelry.html" class="category">
+        <img src="jewelry.jpg" alt="Jewelry">
+        <span>Jewelry</span>
+      </a>
+
+      <a href="ceramics.html" class="category">
+        <img src="ceramics.jpg" alt="Porcelain and Ceramics">
+        <span>Porcelain & Ceramics</span>
+      </a>
+
+      <a href="silverware.html" class="category">
+        <img src="silverware.jpg" alt="Silverware and Candleholders">
+        <span>Silverware & Candleholders</span>
+      </a>
+
+      <a href="woodwork.html" class="category">
+        <img src="woodwork.jpg" alt="Wooden Items">
+        <span>Wooden Items</span>
+      </a>
+
+      <a href="crystal.html" class="category">
+        <img src="crystal.jpg" alt="Crystal and Glass">
+        <span>Crystal & Glass</span>
+      </a>
+
+      <a href="vintage.html" class="category">
+        <img src="vintage.jpg" alt="Vintage">
+        <span>Vintage</span>
+      </a>
+
+      <a href="rarities.html" class="category">
+        <img src="rarities.jpg" alt="Curiosities and Rarities">
+        <span>Curiosities & Rarities</span>
+      </a>
+
+      <a href="clothing.html" class="category">
+        <img src="clothing.jpg" alt="Vintage Clothing">
+        <span>Vintage Clothing</span>
+      </a>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 Aphrodite Antiques & Vintage. Timeless beauty finds its way back to you.</p>
+    <p>&copy; 2025 Aphrodite Antiques & Vintage. All rights reserved.</p>
   </footer>
 </body>
 </html>
