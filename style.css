@@ -1,96 +1,91 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Styles */
 body {
-  font-family: 'Brush Script MT', cursive, sans-serif;
-  background-color: #fffdfb;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+  background-color: #faf9f6;
   color: #333;
   text-align: center;
-  line-height: 1.6;
-  padding: 0;
-  margin: 0;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
   text-align: center;
-  margin-bottom: 30px;
+  color: white;
 }
-
 .hero-image {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 500px;
   object-fit: cover;
   opacity: 0.9;
 }
-
-.hero h1 {
-  font-size: 3rem;
-  margin-top: 20px;
-  color: #3a2e2e;
-}
-
-.hero p {
-  font-size: 1.4rem;
-  margin: 15px 0;
-  color: #5a4a4a;
-  font-style: italic;
-}
-
-/* Categories Section */
-.categories {
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.6);
   padding: 20px;
+  border-radius: 12px;
+  font-size: 1.4rem;
+  color: #2c2c2c;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #d4af37; /* Gold accent */
 }
 
+/* Categories */
+.categories {
+  padding: 40px 20px;
+}
 .categories h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
-  color: #3a2e2e;
+  margin-bottom: 30px;
+  color: #2c2c2c;
 }
-
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 10px;
 }
-
 .category-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  background-color: #faf7f2;
-  border: 2px solid #ddd;
-  border-radius: 12px;
   text-decoration: none;
+  color: inherit;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.category-card h3 {
   font-size: 1.5rem;
-  color: #3a2e2e;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  background: #fffaf5;
+  margin: 0;
+  border-top: 1px solid #e0e0e0;
 }
-
 .category-card:hover {
-  background-color: #fff2e6;
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-
-.category-card span {
-  font-family: 'Brush Script MT', cursive, sans-serif;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
 footer {
+  background: #2c2c2c;
+  color: white;
+  padding: 20px;
   margin-top: 40px;
-  padding: 15px;
-  background-color: #faf7f2;
   font-size: 1rem;
-  color: #444;
+  letter-spacing: 1px;
 }
+
+/* Handwriting Font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
