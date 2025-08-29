@@ -5,86 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphrodite Antiques & Vintage</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body { margin: 0; padding: 0; font-family: "Brush Script MT", cursive; background: #fff; text-align: center; }
+    header img { width: 100%; max-height: 500px; object-fit: cover; }
+    h1 { font-size: 2.5rem; margin: 20px 0; }
+    .categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; padding: 20px; }
+    .category { text-align: center; }
+    .category img { width: 100%; max-width: 250px; border-radius: 10px; }
+    .category p { font-size: 1.4rem; margin-top: 8px; }
+    footer { margin-top: 30px; padding: 15px; background: #f5f5f5; font-size: 1.2rem; }
+    a { text-decoration: none; color: black; }
+    a:hover { color: #666; }
+  </style>
 </head>
 <body>
+  <!-- Hero Image -->
   <header>
-    <h1 class="logo">Aphrodite Antiques & Vintage</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#categories">Categories</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <img src="hero.jpg" alt="Aphrodite Antiques & Vintage">
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="hero.jpg" alt="Aphrodite Antiques Hero Image">
-  </section>
-
-  <!-- Welcome Text -->
-  <section class="welcome-text">
-    <p>Each piece carries a memory of time, and soon it will begin its journey to you.</p>
-  </section>
+  <!-- Website Title -->
+  <h1>Aphrodite Antiques & Vintage</h1>
 
   <!-- Categories -->
-  <section id="categories">
-    <h2>Discover Treasures</h2>
-    <div class="categories-grid">
-      <a href="jewelry.html" class="category">
+  <section class="categories">
+    <div class="category">
+      <a href="jewelry.html">
         <img src="jewelry.jpg" alt="Jewelry">
-        <span>Jewelry</span>
+        <p>Jewelry</p>
       </a>
-      <a href="porcelain.html" class="category">
-        <img src="porcelain.jpg" alt="Porcelain & Ceramics">
-        <span>Porcelain & Ceramics</span>
+    </div>
+    <div class="category">
+      <a href="porcelain.html">
+        <img src="porcelain.jpg" alt="Porcelain & Ceramic">
+        <p>Porcelain & Ceramic</p>
       </a>
-      <a href="silverware.html" class="category">
+    </div>
+    <div class="category">
+      <a href="silverware.html">
         <img src="silverware.jpg" alt="Silverware & Candleholders">
-        <span>Silverware & Candleholders</span>
+        <p>Silverware & Candleholders</p>
       </a>
-      <a href="woodwork.html" class="category">
+    </div>
+    <div class="category">
+      <a href="woodwork.html">
         <img src="woodwork.jpg" alt="Woodwork">
-        <span>Woodwork</span>
+        <p>Woodwork</p>
       </a>
-      <a href="crystals.html" class="category">
-        <img src="crystals.jpg" alt="Crystals & Glassware">
-        <span>Crystals & Glassware</span>
+    </div>
+    <div class="category">
+      <a href="crystal.html">
+        <img src="crystal.jpg" alt="Crystal & Glass">
+        <p>Crystal & Glass</p>
       </a>
-      <a href="vintage.html" class="category">
+    </div>
+    <div class="category">
+      <a href="vintage.html">
         <img src="vintage.jpg" alt="Vintage">
-        <span>Vintage</span>
+        <p>Vintage</p>
       </a>
-      <a href="rarities.html" class="category">
+    </div>
+    <div class="category">
+      <a href="rarities.html">
         <img src="rarities.jpg" alt="Curiosities & Rarities">
-        <span>Curiosities & Rarities</span>
+        <p>Curiosities & Rarities</p>
       </a>
-      <a href="clothing.html" class="category">
+    </div>
+    <div class="category">
+      <a href="clothing.html">
         <img src="clothing.jpg" alt="Vintage Clothing">
-        <span>Vintage Clothing</span>
+        <p>Vintage Clothing</p>
       </a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>At Aphrodite Antiques & Vintage, we curate timeless pieces that bring history back to life.  
-    We don’t just sell antiques — we preserve the essence of the past and offer it a new life in your home.</p>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:webshop@aphroditeantiques.com">webshop@aphroditeantiques.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/aphroditeantique" target="_blank">@aphroditeantique</a></p>
-    <p>Etsy: <a href="https://www.etsy.com/shop/AphroditeAntiques25" target="_blank">AphroditeAntiques25</a></p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Aphrodite Antiques & Vintage</p>
+    <p>Contact: webshop@aphroditeantiques.com | Instagram: @aphroditeantique | Etsy: AphroditeAntiques25</p>
+    <p>&copy; 2025 Aphrodite Antiques & Vintage</p>
   </footer>
 </body>
 </html>
