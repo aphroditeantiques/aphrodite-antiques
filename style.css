@@ -95,3 +95,17 @@ footer {
   font-size: 0.9rem;
   margin-top: 20px;
 }
+.category-text {
+  font-family: 'Dancing Script', cursive; /* handwritten style */
+  font-size: 2em;
+  color: black;
+  text-shadow: 
+    1px 1px 3px white, 
+    -1px -1px 3px white, 
+    1px -1px 3px white, 
+    -1px 1px 3px white;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
