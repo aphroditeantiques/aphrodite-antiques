@@ -1,69 +1,97 @@
 body {
+  font-family: 'Brush Script MT', cursive;
   margin: 0;
   padding: 0;
-  font-family: "Dancing Script", cursive;
-  background-color: #fafafa;
+  background: #fff;
   color: #333;
   text-align: center;
 }
 
-/* Hero Section */
-.hero {
-  width: 100%;
-  overflow: hidden;
+header {
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 2px solid #ddd;
 }
-.hero-image {
+
+header .logo {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hero img {
   width: 100%;
-  height: auto;
+  max-height: 500px;
+  object-fit: cover;
   display: block;
 }
 
-/* Welcome Text */
-.welcome {
+.welcome-text {
   padding: 20px;
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-/* Categories */
-.categories {
+#categories {
+  padding: 40px 20px;
+}
+
+#categories h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
 }
+
 .category {
-  position: relative;
+  text-decoration: none;
+  color: #333;
 }
+
 .category img {
   width: 100%;
+  max-width: 350px;
   height: auto;
   border-radius: 10px;
-  display: block;
-}
-.category span {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.2em;
-  font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 5px 10px;
-  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
 
-/* Footer */
+.category img:hover {
+  transform: scale(1.05);
+}
+
+.category span {
+  display: block;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+#about, #contact {
+  padding: 40px 20px;
+}
+
 footer {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  font-size: 0.9em;
-}
-footer a {
-  color: #f8c291;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
+  background: #f2f2f2;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 20px;
 }
