@@ -1,48 +1,49 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Homemade Apple', cursive;
+  font-family: 'Great Vibes', cursive;
+  background-color: #fffdf8;
+  color: #000;
   text-align: center;
-  background-color: #fff;
-  color: #333;
 }
 
-.hero {
+.hero-image {
   width: 100%;
   height: auto;
-  max-height: 500px;
-  object-fit: cover;
   display: block;
 }
 
-h1, h2, p {
-  margin: 20px;
+.welcome, .mission {
+  margin: 20px auto;
+  max-width: 800px;
+  font-size: 1.8em;
 }
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 40px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.category {
+  text-align: center;
 }
 
 .category img {
   width: 100%;
   height: auto;
-  max-height: 250px;
-  object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-.category p {
+.category span {
+  display: block;
   margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 footer {
-  margin-top: 40px;
-  padding: 20px;
-  background: #f9f9f9;
-  font-size: 0.9em;
+  margin: 40px 0;
+  font-size: 1.2em;
 }
