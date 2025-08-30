@@ -1,49 +1,57 @@
+/* Import Handwriting Font */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Great Vibes', cursive;
-  background-color: #fffdf8;
+  font-family: 'Sacramento', cursive;
+  background-color: #fff;
   color: #000;
   text-align: center;
 }
 
-.hero-image {
+/* Hero Image */
+.hero {
   width: 100%;
-  height: auto;
+  max-height: 400px;   /* smaller hero image for better fit */
+  object-fit: cover;
   display: block;
+  margin: 0 auto;
 }
 
-.welcome, .mission {
-  margin: 20px auto;
-  max-width: 800px;
-  font-size: 1.8em;
-}
-
-.categories {
+/* Category Grid */
+.category-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: auto;
+  padding: 40px;
 }
 
-.category {
+.category-card {
   text-align: center;
 }
 
-.category img {
+.category-card img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-.category span {
-  display: block;
+/* Category Text */
+.category-card h2 {
+  font-family: 'Sacramento', cursive;
+  font-size: 28px;
+  color: #000;   /* handwritten black */
   margin-top: 10px;
-  font-size: 2em;
+  text-decoration: none;
 }
 
-footer {
-  margin: 40px 0;
-  font-size: 1.2em;
+/* Ensure links don’t show as blue/underlined */
+.category-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Section Titles */
+h1, h2, h3 {
+  font-family: 'Sacramento', cursive;
 }
