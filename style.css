@@ -1,78 +1,73 @@
-/* Apply handwriting font everywhere */
+/* General reset */
 body {
   margin: 0;
-  font-family: 'Dancing Script', cursive;
+  padding: 0;
+  font-family: 'Homemade Apple', cursive;
   background-color: #fff;
-  color: #333;
+  color: #000;
   text-align: center;
 }
 
 /* Hero Image */
 .hero-image {
   width: 100%;
-  height: auto;
   max-height: 500px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
 }
 
-/* Welcome and Mission sections */
+/* Welcome + Mission Sections */
 .welcome, .mission {
-  padding: 30px 20px;
+  margin: 40px auto;
   max-width: 900px;
-  margin: auto;
+  padding: 0 15px;
 }
 
 .welcome h1, .mission h2 {
-  font-size: 2.2em;
-  margin-bottom: 15px;
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 .welcome p, .mission p {
-  font-size: 1.3em;
-  line-height: 1.6em;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 /* Categories Section */
 .categories {
-  padding: 40px 20px;
-}
-
-.category-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 15px;
 }
 
-.category-grid a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.category-grid img {
+.category img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
 }
 
-.category-grid img:hover {
+.category img:hover {
   transform: scale(1.05);
 }
 
-.category-grid p {
-  margin-top: 10px;
-  font-size: 1.4em;
+.category p {
+  margin-top: 8px;
+  font-size: 1.3em;
+  color: #000;
 }
 
 /* Contact Section */
 .contact {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 0 15px;
 }
 
 .contact h2 {
@@ -82,18 +77,23 @@ body {
 
 .contact p {
   font-size: 1.2em;
-  margin: 8px 0;
+  margin: 5px 0;
 }
 
 .contact a {
-  color: #333;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact a:hover {
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
+  background-color: #fff;
+  color: #000;
   padding: 20px;
-  font-size: 1em;
-  background-color: #f1f1f1;
-  margin-top: 30px;
+  margin-top: 40px;
+  font-size: 0.9em;
 }
