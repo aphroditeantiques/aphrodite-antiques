@@ -1,58 +1,92 @@
-/* Global font */
-body {
-  margin: 0;
-  font-family: 'Great Vibes', cursive;
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aphrodite Antiques & Vintage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="hero.jpg" alt="Aphrodite Antiques & Vintage" class="hero-image">
+    <div class="hero-text">
+      <h1>Aphrodite Antiques & Vintage</h1>
+      <p>Discover timeless treasures curated with love.</p>
+      <a href="#categories" class="btn">Discover the Treasures</a>
+    </div>
+  </header>
 
-/* Hero Section */
-.hero {
-  width: 100%;
-  overflow: hidden;
-}
-.hero-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  max-height: 500px;
-  object-fit: cover;
-}
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <h2>Welcome</h2>
+    <p>
+      Welcome to Aphrodite Antiques & Vintage, where history, charm, and beauty come together. 
+      Explore our curated collection of unique items and find treasures that tell timeless stories.
+    </p>
+  </section>
 
-/* Categories */
-.categories {
-  padding: 40px 20px;
-}
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.category img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.category p {
-  margin-top: 10px;
-  font-size: 1.4rem;
-}
+  <!-- Our Mission -->
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      Our mission is to bring you authentic antiques and vintage pieces that reflect craftsmanship, elegance, and history. 
+      Each item is hand-selected with care and passion.
+    </p>
+  </section>
 
-/* Contact */
-footer.contact {
-  padding: 30px 20px;
-  background-color: #f9f9f9;
-}
-footer.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-footer.contact a {
-  color: #000;
-  text-decoration: none;
-}
+  <!-- Categories -->
+  <section id="categories" class="categories">
+    <h2>Categories</h2>
+    <div class="grid">
+      <a href="jewelry.html" class="category">
+        <img src="jewelry.jpg" alt="Jewelry">
+        <span>Jewelry</span>
+      </a>
+      <a href="porcelain.html" class="category">
+        <img src="porcelain.jpg" alt="Porcelain & Ceramics">
+        <span>Porcelain & Ceramics</span>
+      </a>
+      <a href="silverware_candleholders.html" class="category">
+        <img src="silverware_candleholders.jpg" alt="Silverware & Candleholders">
+        <span>Silverware & Candleholders</span>
+      </a>
+      <a href="woodwork.html" class="category">
+        <img src="woodwork.jpg" alt="Woodwork">
+        <span>Woodwork</span>
+      </a>
+      <a href="crystals.html" class="category">
+        <img src="crystals.jpg" alt="Crystal & Glass">
+        <span>Crystal & Glass</span>
+      </a>
+      <a href="vintage.html" class="category">
+        <img src="vintage.jpg" alt="Vintage">
+        <span>Vintage</span>
+      </a>
+      <a href="rarities.html" class="category">
+        <img src="rarities.jpg" alt="Curiosities & Rarities">
+        <span>Curiosities & Rarities</span>
+      </a>
+      <a href="clothing.html" class="category">
+        <img src="clothing.jpg" alt="Vintage Clothing">
+        <span>Vintage Clothing</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:webshop@aphroditeantiques.com">webshop@aphroditeantiques.com</a></p>
+    <p>Etsy: <a href="https://www.etsy.com/shop/AphroditeAntiques25" target="_blank">AphroditeAntiques25</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/aphroditeantique" target="_blank">@aphroditeantique</a></p>
+    <p>Pinterest: <a href="https://www.pinterest.com/AphroditeAntiques" target="_blank">AphroditeAntiques</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Aphrodite Antiques & Vintage. All rights reserved.</p>
+  </footer>
+</body>
+</html>
