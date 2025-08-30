@@ -1,55 +1,69 @@
 /* General Reset */
 body {
   margin: 0;
-  font-family: "Cormorant Garamond", serif;
+  font-family: 'Cormorant Garamond', serif;
   background-color: #fff;
   color: #333;
   text-align: center;
 }
 
+/* Headings – handwritten */
+h1, h2, h3, .category span {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 /* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 .hero-image {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Intro Section */
-.intro h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: 2.5rem;
-  margin: 20px 0 10px;
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
 
-.intro p {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.hero-text h1 {
+  font-size: 2.5em;
+}
+
+.hero-text p {
+  font-size: 1.3em;
+  font-style: italic;
 }
 
 /* Categories Grid */
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .category {
   position: relative;
-  display: block;
   overflow: hidden;
-  border-radius: 10px;
-  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .category img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -57,25 +71,32 @@ body {
   transform: scale(1.05);
 }
 
-/* Text Overlay */
 .category span {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Dancing Script", cursive;
-  font-size: 1.5rem;
   color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-  background: rgba(0, 0, 0, 0.3);
-  padding: 5px 10px;
-  border-radius: 5px;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
-/* Footer */
-footer {
-  margin-top: 30px;
-  padding: 20px;
-  background-color: #f4f4f4;
-  font-size: 1rem;
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background: #f8f8f8;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
