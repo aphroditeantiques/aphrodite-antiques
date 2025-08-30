@@ -1,65 +1,67 @@
+/* Global font */
 body {
+  font-family: 'Homemade Apple', cursive;
   margin: 0;
-  font-family: 'Great Vibes', cursive;
-  background-color: #fffaf5;
-  color: #2c2c2c;
+  padding: 0;
+  background: white;
+  color: black;
   text-align: center;
 }
 
-/* Hero image */
-.hero {
+/* HERO IMAGE */
+.hero img {
   width: 100%;
-  max-height: 500px;
-  object-fit: cover;
+  height: auto;
   display: block;
+  margin: 0 auto;
 }
 
-/* Section titles */
-h2 {
-  font-size: 2.5em;
-  margin: 20px 0 10px;
+/* INTRO + MISSION */
+.intro, .mission {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-p {
-  font-size: 1.5em;
-  margin: 10px 20px;
-}
-
-/* Categories grid */
+/* CATEGORY GRID */
 .categories {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.category {
-  text-decoration: none;
-  color: #2c2c2c;
+  gap: 20px;
+  padding: 40px;
 }
 
 .category img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
-
-.category img:hover {
-  transform: scale(1.05);
+  border-radius: 10px;
 }
 
 .category p {
-  font-size: 1.6em;
   margin-top: 10px;
+  font-size: 18px;
+  color: black;
 }
 
-/* Footer */
+/* CONTACT */
+.contact {
+  padding: 30px;
+  background: #f9f9f9;
+  margin-top: 40px;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
   margin-top: 40px;
-  padding: 20px;
-  font-size: 1.2em;
+  padding: 15px;
+  background: #f1f1f1;
 }
