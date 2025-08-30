@@ -1,92 +1,62 @@
+/* General */
 body {
+  font-family: 'Great Vibes', cursive;
   margin: 0;
   padding: 0;
-  font-family: 'Great Vibes', cursive;
-  background: #fff;
-  color: #333;
   text-align: center;
+  background-color: #fff;
+  color: #000;
 }
 
-.hero-image {
+/* Hero */
+.hero {
+  position: relative;
+}
+.hero-img {
   width: 100%;
-  height: auto;
+  max-height: 600px;
+  object-fit: cover;
 }
-
 .hero-text {
   position: absolute;
-  top: 20%;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  text-align: center;
-  color: black;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
-
-.hero-text h1 {
+  color: white;
   font-size: 3em;
-  margin: 0.5em 0;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
-.hero-text p {
+/* Categories */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+.category img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+}
+.category p {
+  margin-top: 10px;
   font-size: 1.5em;
 }
 
-.categories {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 2em auto;
-  max-width: 1200px;
-}
-
-.category {
-  margin: 1em;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-.category img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.category span {
-  display: block;
-  margin-top: 0.5em;
-  font-size: 2em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-}
-
+/* Footer */
 footer {
-  margin: 2em 0;
-  font-size: 1.4em;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-top: 40px;
+  padding: 20px;
+  background: #f7f7f7;
 }
-
+footer h2 {
+  font-size: 2em;
+}
 footer p {
-  margin: 0.5em 0;
-  line-height: 1.6;
+  font-size: 1.3em;
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2em;
-  }
-  .hero-text p {
-    font-size: 1.2em;
-  }
-  .category img {
-    width: 150px;
-  }
-  .category span {
-    font-size: 1.5em;
-  }
-  footer {
-    font-size: 1.2em;
-  }
+footer a {
+  color: black;
+  text-decoration: none;
 }
