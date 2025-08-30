@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Homemade Apple', cursive;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
+
+.hero {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+h1, h2, p {
+  margin: 20px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.category p {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  font-size: 0.9em;
+}
