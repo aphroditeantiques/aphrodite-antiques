@@ -5,60 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphrodite Antiques & Vintage</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Great Vibes', cursive;
+      background-color: #fffaf5;
+      color: #2c2c2c;
+      text-align: center;
+    }
+
+    /* Hero image */
+    .hero {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Section titles */
+    h2 {
+      font-size: 2.5em;
+      margin: 20px 0 10px;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin: 10px 20px;
+    }
+
+    /* Categories grid */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .category {
+      text-decoration: none;
+      color: #2c2c2c;
+    }
+
+    .category img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .category img:hover {
+      transform: scale(1.05);
+    }
+
+    .category p {
+      font-size: 1.6em;
+      margin-top: 10px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Hero Image -->
-  <img src="hero-banner.jpg" alt="" class="hero-image">
+  <!-- Hero image -->
+  <img src="hero-banner.jpg" alt="Aphrodite Antiques & Vintage" class="hero">
 
-  <!-- Welcome Section -->
-  <div class="welcome">
+  <!-- Welcome & Mission -->
+  <section>
     <h2>Welcome to Aphrodite Antiques & Vintage</h2>
     <p>Discover timeless treasures curated with love and passion for history.</p>
-  </div>
-
-  <!-- Mission Section -->
-  <div class="mission">
     <h2>Our Mission</h2>
     <p>We believe that every antique tells a story. Our goal is to preserve these rare pieces and share them with those who value their beauty and history.</p>
-  </div>
+  </section>
 
   <!-- Categories -->
-  <div class="categories">
-    <div class="category">
-      <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"></a>
-      <span>Jewelry</span>
-    </div>
-    <div class="category">
-      <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain"></a>
-      <span>Porcelain</span>
-    </div>
-    <div class="category">
-      <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware & Candleholders"></a>
-      <span>Silverware & Candleholders</span>
-    </div>
-    <div class="category">
-      <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"></a>
-      <span>Woodwork</span>
-    </div>
-    <div class="category">
-      <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystals & Glasses"></a>
-      <span>Crystals & Glasses</span>
-    </div>
-    <div class="category">
-      <a href="rarities.html"><img src="rarities.jpg" alt="Curiosities & Rarities"></a>
-      <span>Curiosities & Rarities</span>
-    </div>
-    <div class="category">
-      <a href="clothing.html"><img src="clothing.jpg" alt="Vintage Clothing"></a>
-      <span>Vintage Clothing</span>
-    </div>
-    <div class="category">
-      <a href="vintage.html"><img src="vintage.jpg" alt="Vintage"></a>
-      <span>Vintage</span>
-    </div>
-  </div>
+  <section class="categories">
+    <a href="jewelry.html" class="category">
+      <img src="jewelry.jpg" alt="Jewelry">
+      <p>Jewelry</p>
+    </a>
+    <a href="porcelain.html" class="category">
+      <img src="porcelain.jpg" alt="Porcelain">
+      <p>Porcelain</p>
+    </a>
+    <a href="silverware_candleholders.html" class="category">
+      <img src="silverware_candleholders.jpg" alt="Silverware & Candleholders">
+      <p>Silverware & Candleholders</p>
+    </a>
+    <a href="woodwork.html" class="category">
+      <img src="woodwork.jpg" alt="Woodwork">
+      <p>Woodwork</p>
+    </a>
+    <a href="crystals_glasses.html" class="category">
+      <img src="crystals_glasses.jpg" alt="Crystal & Glass">
+      <p>Crystal & Glass</p>
+    </a>
+    <a href="vintage.html" class="category">
+      <img src="vintage.jpg" alt="Vintage">
+      <p>Vintage</p>
+    </a>
+    <a href="rarities.html" class="category">
+      <img src="rarities.jpg" alt="Rarities">
+      <p>Rarities</p>
+    </a>
+    <a href="clothing.html" class="category">
+      <img src="clothing.jpg" alt="Clothing">
+      <p>Clothing</p>
+    </a>
+  </section>
 
   <!-- Footer -->
   <footer>
