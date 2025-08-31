@@ -1,59 +1,57 @@
-// Store cart items in localStorage
-function getCart() {
-  return JSON.parse(localStorage.getItem("cart")) || [];
-}
+// Load cart from localStorage
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-function saveCart(cart) {
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
+// Render cart items
+function renderCart() {
+  const cartContainer = document.getElementById("cart-items");
+  const cartTotal = document.getElementById("cart-total");
 
-// Add item to cart
-function addToCart(item) {
-  let cart = getCart();
-  cart.push(item);
-  saveCart(cart);
-  alert(item.name + " added to cart!");
-}
+  cartContainer.innerHTML = "";
 
-// Display cart
-function displayCart() {
-  let cart = getCart();
-  let cartItems = document.getElementById("cart-items");
-  let cartTotal = document.getElementById("cart-total");
-  cartItems.innerHTML = "";
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    cartTotal.textContent = "Total: $0";
+    return;
+  }
+
   let total = 0;
-
   cart.forEach((item, index) => {
-    let div = document.createElement("div");
+    total += item.price;
+
+    const div = document.createElement("div");
     div.classList.add("cart-item");
     div.innerHTML = `
       <p>${item.name} - $${item.price.toFixed(2)}</p>
       <button onclick="removeFromCart(${index})">Remove</button>
     `;
-    cartItems.appendChild(div);
-    total += item.price;
+    cartContainer.appendChild(div);
   });
 
-  cartTotal.textContent = `$${total.toFixed(2)}`;
+  cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+}
+
+// Add to cart function (to use later when adding items)
+function addToCart(name, price) {
+  cart.push({ name, price });
+  localStorage.setItem("cart", JSON.stringify(cart));
+  renderCart();
 }
 
 // Remove item
 function removeFromCart(index) {
-  let cart = getCart();
   cart.splice(index, 1);
-  saveCart(cart);
-  displayCart();
+  localStorage.setItem("cart", JSON.stringify(cart));
+  renderCart();
 }
 
-// Checkout
-document.addEventListener("DOMContentLoaded", () => {
-  if (document.getElementById("cart-items")) {
-    displayCart();
+// Checkout button (demo for now)
+document.getElementById("checkout-btn").addEventListener("click", () => {
+  if (cart.length === 0) {
+    alert("Your cart is empty!");
+    return;
   }
-  let checkoutBtn = document.getElementById("checkout-btn");
-  if (checkoutBtn) {
-    checkoutBtn.addEventListener("click", () => {
-      alert("Checkout process will be added here (Stripe/PayPal/Apple Pay).");
-    });
-  }
+  alert("Checkout coming soon — your items are ready!");
 });
+
+// Render on page load
+renderCart();
