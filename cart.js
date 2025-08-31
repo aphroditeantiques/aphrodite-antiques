@@ -13,10 +13,8 @@ function updateCart() {
   cart.forEach((item, index) => {
     let div = document.createElement("div");
     div.classList.add("cart-item");
-    div.innerHTML = `
-      ${item.name} – $${item.price.toFixed(2)}
-      <button onclick="removeItem(${index})">Remove</button>
-    `;
+    div.innerHTML = `${item.name} – $${item.price.toFixed(2)} 
+      <button onclick="removeItem(${index})">Remove</button>`;
     cartItems.appendChild(div);
     total += item.price;
   });
@@ -36,7 +34,7 @@ function removeItem(index) {
   updateCart();
 }
 
-// Checkout button (Stripe/Apple Pay will be wired here later)
+// Checkout button (Stripe/PayPal will be connected here later)
 checkoutBtn.addEventListener("click", () => {
-  alert("Redirecting to checkout (Stripe/Apple Pay will be here).");
+  alert("Redirecting to checkout (Stripe/PayPal will be connected here).");
 });
