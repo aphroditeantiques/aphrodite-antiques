@@ -8,61 +8,76 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Hero Banner -->
-  <header class="hero">
-    <img src="hero-banner.jpg" alt="Aphrodite Antiques Hero">
-    <h1>Discover timeless treasures curated with love ❤️</h1>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart 🛒</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Categories -->
+  <!-- Hero Image -->
+  <section class="hero">
+    <img src="hero-banner.jpg" alt="Aphrodite Antiques Hero Image">
+  </section>
+
+  <!-- Welcome Text -->
+  <section class="welcome">
+    <h1>Welcome to Aphrodite Antiques</h1>
+    <p>Discover timeless treasures curated with love.</p>
+  </section>
+
+  <!-- Categories Grid -->
   <section class="categories">
-    <div class="category">
-      <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"><p>Jewelry</p></a>
-    </div>
-    <div class="category">
-      <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain & Ceramic"><p>Porcelain & Ceramic</p></a>
-    </div>
-    <div class="category">
-      <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware & Candleholders"><p>Silverware & Candleholders</p></a>
-    </div>
-    <div class="category">
-      <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"><p>Woodwork</p></a>
-    </div>
-    <div class="category">
-      <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystals & Glasses"><p>Crystals & Glasses</p></a>
-    </div>
-    <div class="category">
-      <a href="clothing.html"><img src="clothing.jpg" alt="Clothing"><p>Clothing</p></a>
-    </div>
-    <div class="category">
-      <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"><p>Rarities</p></a>
+    <div class="grid">
+      <div class="category">
+        <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"><p>Jewelry</p></a>
+      </div>
+      <div class="category">
+        <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain"><p>Porcelain</p></a>
+      </div>
+      <div class="category">
+        <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystal & Glassware"><p>Crystal & Glassware</p></a>
+      </div>
+      <div class="category">
+        <a href="clothing.html"><img src="clothing.jpg" alt="Vintage Clothing"><p>Vintage Clothing</p></a>
+      </div>
+      <div class="category">
+        <a href="vintage.html"><img src="vintage.jpg" alt="Vintage"><p>Vintage</p></a>
+      </div>
+      <div class="category">
+        <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware & Candleholders"><p>Silverware & Candleholders</p></a>
+      </div>
+      <div class="category">
+        <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"><p>Woodwork</p></a>
+      </div>
+      <div class="category">
+        <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"><p>Rarities</p></a>
+      </div>
     </div>
   </section>
 
-  <!-- Mission -->
+  <!-- Mission Section -->
   <section class="mission">
     <h2>Our Mission</h2>
-    <p>We believe that every antique tells a story. Our goal is to preserve these rare pieces and share them with those who value their beauty and history.</p>
+    <p>At Aphrodite Antiques, we believe every piece has a story. Our mission is to bring you rare and timeless items that connect the past with the present.</p>
   </section>
 
-  <!-- Cart Preview -->
-  <section class="cart-preview">
-    <h2>Your Shopping Cart</h2>
-    <div id="cart-items"></div>
-    <p id="cart-total">Total: $0.00</p>
-    <button id="checkout-btn">Checkout</button>
-  </section>
-
-  <!-- Contact -->
-  <footer>
+  <!-- Contact Section -->
+  <section class="contact">
     <h2>Contact Us</h2>
-    <p>Email: webshop@aphroditeantiques.com</p>
-    <p>Instagram: @aphroditeantique</p>
-    <p>Pinterest: Aphrodite Antiques</p>
-    <p>© 2025 Aphrodite Antiques. All rights reserved.</p>
-  </footer>
+    <p>Email: <a href="mailto:webshop@aphroditeantiques.com">webshop@aphroditeantiques.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/aphroditeantique" target="_blank">@aphroditeantique</a></p>
+    <p>Etsy: <a href="https://etsy.com/shop/AphroditeAniques25" target="_blank">AphroditeAniques25</a></p>
+    <p>Pinterest: <a href="https://pinterest.com/AphroditeAntiqes" target="_blank">Aphrodite Antiqes</a></p>
+  </section>
 
-  <script src="cart.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Aphrodite Antiques. All rights reserved.</p>
+  </footer>
 </body>
 </html>
