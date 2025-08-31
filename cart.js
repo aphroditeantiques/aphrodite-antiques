@@ -1,50 +1,59 @@
-// cart.js
+// Store cart items in localStorage
+function getCart() {
+  return JSON.parse(localStorage.getItem("cart")) || [];
+}
 
-let cart = [];
+function saveCart(cart) {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
 
-// Update the cart display on cart.html
-function updateCart() {
-  const cartItems = document.getElementById("cart-items");
-  const cartTotal = document.getElementById("cart-total");
+// Add item to cart
+function addToCart(item) {
+  let cart = getCart();
+  cart.push(item);
+  saveCart(cart);
+  alert(item.name + " added to cart!");
+}
 
-  if (!cartItems || !cartTotal) return; // Only run on cart.html
-
+// Display cart
+function displayCart() {
+  let cart = getCart();
+  let cartItems = document.getElementById("cart-items");
+  let cartTotal = document.getElementById("cart-total");
   cartItems.innerHTML = "";
   let total = 0;
 
   cart.forEach((item, index) => {
     let div = document.createElement("div");
     div.classList.add("cart-item");
-    div.innerHTML = `${item.name} – $${item.price.toFixed(2)} 
-      <button onclick="removeItem(${index})">❌</button>`;
+    div.innerHTML = `
+      <p>${item.name} - $${item.price.toFixed(2)}</p>
+      <button onclick="removeFromCart(${index})">Remove</button>
+    `;
     cartItems.appendChild(div);
     total += item.price;
   });
 
-  cartTotal.innerText = `Total: $${total.toFixed(2)}`;
+  cartTotal.textContent = `$${total.toFixed(2)}`;
 }
 
-// Add an item to the cart
-function addToCart(name, price) {
-  cart.push({ name, price });
-  alert(`${name} has been added to your cart.`);
-  updateCart();
-}
-
-// Remove an item from the cart
-function removeItem(index) {
+// Remove item
+function removeFromCart(index) {
+  let cart = getCart();
   cart.splice(index, 1);
-  updateCart();
+  saveCart(cart);
+  displayCart();
 }
 
-// Checkout button (Stripe/Apple Pay integration comes later)
+// Checkout
 document.addEventListener("DOMContentLoaded", () => {
-  const checkoutBtn = document.getElementById("checkout-btn");
+  if (document.getElementById("cart-items")) {
+    displayCart();
+  }
+  let checkoutBtn = document.getElementById("checkout-btn");
   if (checkoutBtn) {
     checkoutBtn.addEventListener("click", () => {
-      alert("Redirecting to checkout (Stripe/Apple Pay will be added here)");
+      alert("Checkout process will be added here (Stripe/PayPal/Apple Pay).");
     });
   }
-
-  updateCart();
 });
