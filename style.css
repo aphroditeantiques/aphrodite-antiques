@@ -1,79 +1,123 @@
+/* General styles */
 body {
   font-family: 'Dancing Script', cursive;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background-color: #fff;
+  color: #000;
   text-align: center;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   position: relative;
+  text-align: center;
 }
-.hero-image {
+.hero-img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* FIX for mobile scaling */
+  object-fit: cover;
 }
-.tagline {
-  font-size: 1.5rem;
-  margin: 10px 0;
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
-/* Grid Categories */
-.grid {
+/* Categories */
+.categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
 }
-.grid img {
+.category img {
   width: 100%;
-  height: auto;
-  object-fit: contain; /* Prevents over-shrinking */
-  border-radius: 10px;
+  height: 250px;
+  object-fit: contain; /* ✅ ensures full item fits without cropping */
+  border-radius: 12px;
 }
-.grid p {
-  font-size: 1.3rem;
+.category h2 {
   margin-top: 10px;
+  font-size: 1.5rem;
   text-decoration: none;
   color: black;
 }
 
-/* Cart Section */
-.cart {
-  padding: 20px;
-  background: #f9f9f9;
+/* Mission */
+.mission {
+  padding: 40px 20px;
 }
-#checkout-button {
-  padding: 10px 20px;
-  margin: 15px 0;
-  border: none;
+.mission h2 {
+  font-size: 2rem;
+}
+.mission p {
+  font-size: 1.2rem;
+}
+
+/* Cart Preview */
+.cart-preview {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+}
+#checkout-btn {
   background: black;
   color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 1rem;
-  border-radius: 5px;
 }
-.payment-methods {
-  margin-top: 10px;
-}
-.payment-methods img {
-  height: 30px;
-  margin: 0 5px;
+#checkout-btn:hover {
+  background: #444;
 }
 
 /* Footer */
 footer {
-  background: #fff;
-  padding: 20px;
-  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding: 30px 20px;
+  background: #f1f1f1;
+  text-align: center;
 }
 .footer-logo img {
-  width: 150px;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.contact h2 {
+  font-size: 1.6rem;
   margin-bottom: 10px;
 }
-footer p {
+.contact p {
+  font-size: 1.2rem;
   margin: 5px 0;
-  font-size: 1rem;
+}
+.payments h2 {
+  font-size: 1.6rem;
+  margin: 20px 0 10px;
+}
+.payments img {
+  height: 40px;
+  margin: 5px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.4rem;
+    padding: 8px 15px;
+  }
+  .category img {
+    height: 180px;
+  }
 }
