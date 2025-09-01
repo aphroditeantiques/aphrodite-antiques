@@ -1,99 +1,86 @@
-/* Font */
+/* style.css */
+
+/* General reset */
 body {
-  font-family: 'Dancing Script', cursive;
   margin: 0;
   padding: 0;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
   background-color: #fff;
   color: #000;
-  text-align: center;
 }
 
-/* Hero Image */
-.hero img {
+/* Hero section */
+.hero {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+h1, h2, h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+/* Category images */
+.category img {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
+  border: none; /* removes black line */
+  margin: 0 auto;
 }
 
-/* Welcome / Mission Text */
-h1, h2, h3, p {
-  margin: 10px auto;
-  max-width: 900px;
-  line-height: 1.5;
-  font-size: 1.2rem;
-}
-
-/* Grid for Categories */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Category Images */
-.grid img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 8px;
-  display: block;
-}
-
-/* Category Text (under images) */
-.grid p {
-  font-size: 1.5rem;
-  margin-top: 8px;
-  color: #000;
-}
-
-/* Remove link underline and blue color */
-a {
-  text-decoration: none;
-  color: inherit;
+.category-title {
+  font-size: 1.6rem;
+  margin: 10px 0 30px;
 }
 
 /* Footer */
 footer {
-  background: #fff;
+  margin-top: 50px;
   padding: 20px;
-  margin-top: 40px;
+  background: #fff;
 }
 
-.footer-logo {
-  width: 150px;
-  margin: 10px auto;
+footer img.logo {
+  width: 200px;  /* smaller logo */
+  height: auto;
+  margin: 20px auto;
   display: block;
 }
 
+footer p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Payment icons */
 .payment-icons {
-  margin: 15px 0;
+  margin-top: 15px;
 }
 
 .payment-icons img {
-  height: 35px;
+  height: 30px;
   margin: 0 8px;
   vertical-align: middle;
 }
 
-footer p {
-  font-size: 1rem;
-  margin-top: 15px;
-}
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
 
-/* Cart Button */
-.cart-icon {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background: #000;
-  color: #fff;
-  border-radius: 50%;
-  padding: 10px 15px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  z-index: 1000;
+  .category-title {
+    font-size: 1.3rem;
+  }
+
+  footer img.logo {
+    width: 150px; /* even smaller on mobile */
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
 }
