@@ -1,86 +1,98 @@
-/* style.css */
-
-/* General reset */
+/* General Styles */
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Dancing Script', cursive;
   text-align: center;
-  background-color: #fff;
-  color: #000;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf5;
+  color: #333;
 }
 
-/* Hero section */
-.hero {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-}
-
-h1, h2, h3 {
-  font-size: 2rem;
-  margin: 20px 0;
-}
-
-/* Category images */
-.category img {
+/* Hero Section */
+.hero-image {
   width: 100%;
   height: auto;
+  max-height: 400px;
+  object-fit: cover;
   display: block;
-  border: none; /* removes black line */
   margin: 0 auto;
 }
 
-.category-title {
-  font-size: 1.6rem;
-  margin: 10px 0 30px;
+/* Welcome Section */
+.welcome p {
+  font-size: 1.4rem;
+  margin: 20px 10px;
+  color: #444;
+}
+
+/* Mission Section */
+.mission {
+  margin: 30px 20px;
+}
+.mission h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.mission p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+/* Categories */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.categories img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+.categories p {
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
 
 /* Footer */
 footer {
-  margin-top: 50px;
-  padding: 20px;
-  background: #fff;
+  background-color: #f9f4ef;
+  padding: 30px 15px;
+  margin-top: 40px;
 }
 
-footer img.logo {
-  width: 200px;  /* smaller logo */
-  height: auto;
-  margin: 20px auto;
-  display: block;
+.footer-logo img {
+  width: 180px; /* smaller logo size */
+  margin-bottom: 15px;
+}
+
+footer h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
 }
 
 footer p {
-  margin: 5px 0;
   font-size: 1rem;
+  margin: 5px 0;
 }
 
-/* Payment icons */
+/* Payment Icons */
 .payment-icons {
   margin-top: 15px;
 }
-
 .payment-icons img {
   height: 30px;
   margin: 0 8px;
   vertical-align: middle;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  h1, h2, h3 {
-    font-size: 1.5rem;
-  }
-
-  .category-title {
-    font-size: 1.3rem;
-  }
-
-  footer img.logo {
-    width: 150px; /* even smaller on mobile */
-  }
-
-  footer p {
-    font-size: 0.9rem;
-  }
+/* Fix black lines under images */
+img {
+  display: block;
+  margin: 0 auto;
 }
