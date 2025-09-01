@@ -1,106 +1,66 @@
-/* Global Styles */
 body {
   font-family: 'Dancing Script', cursive;
   margin: 0;
   padding: 0;
-  background-color: #fff;
-  text-align: center;
-  color: #000;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
   background: #fff;
-  border-bottom: 1px solid #ddd;
+  text-align: center;
 }
 
-header .logo {
-  font-size: 2rem;
+/* Hero */
+.hero {
+  position: relative;
 }
-
-header .cart-link {
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* FIX for mobile scaling */
+}
+.tagline {
   font-size: 1.5rem;
-  text-decoration: none;
-  color: #000;
+  margin: 10px 0;
 }
 
-/* Hero Section */
-.hero img {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
-/* Welcome & Mission */
-.welcome, .mission {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 0 15px;
-}
-
-.welcome h2, .mission h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.welcome p, .mission p {
-  font-size: 1.2rem;
-}
-
-/* Categories */
-.categories .grid {
+/* Grid Categories */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 25px;
-  padding: 40px;
-  max-width: 1200px;
-  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
-
-.categories a {
-  text-decoration: none;
-  color: #000;
-}
-
-.categories img {
+.grid img {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain; /* Prevents over-shrinking */
   border-radius: 10px;
-  display: block;
 }
-
-.categories p {
+.grid p {
   font-size: 1.3rem;
   margin-top: 10px;
-}
-
-/* Contact Section */
-.contact {
-  background: #f9f9f9;
-  padding: 40px 20px;
-  margin-top: 40px;
-}
-
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.contact p {
-  font-size: 1.1rem;
-}
-
-.contact a {
-  color: #000;
   text-decoration: none;
-  font-weight: bold;
+  color: black;
+}
+
+/* Cart Section */
+.cart {
+  padding: 20px;
+  background: #f9f9f9;
+}
+#checkout-button {
+  padding: 10px 20px;
+  margin: 15px 0;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.payment-methods {
+  margin-top: 10px;
+}
+.payment-methods img {
+  height: 30px;
+  margin: 0 5px;
 }
 
 /* Footer */
@@ -108,6 +68,12 @@ footer {
   background: #fff;
   padding: 20px;
   border-top: 1px solid #ddd;
+}
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+footer p {
+  margin: 5px 0;
   font-size: 1rem;
-  margin-top: 40px;
 }
