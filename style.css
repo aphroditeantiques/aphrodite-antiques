@@ -1,4 +1,4 @@
-/* General styles */
+/* Font */
 body {
   font-family: 'Dancing Script', cursive;
   margin: 0;
@@ -8,116 +8,92 @@ body {
   text-align: center;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-  text-align: center;
-}
-.hero-img {
+/* Hero Image */
+.hero img {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-.hero-text {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 2rem;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
-  border-radius: 8px;
+  display: block;
 }
 
-/* Categories */
-.categories {
+/* Welcome / Mission Text */
+h1, h2, h3, p {
+  margin: 10px auto;
+  max-width: 900px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+/* Grid for Categories */
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
-.category img {
+
+/* Category Images */
+.grid img {
   width: 100%;
   height: 250px;
-  object-fit: contain; /* ✅ ensures full item fits without cropping */
-  border-radius: 12px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
 }
-.category h2 {
-  margin-top: 10px;
+
+/* Category Text (under images) */
+.grid p {
   font-size: 1.5rem;
+  margin-top: 8px;
+  color: #000;
+}
+
+/* Remove link underline and blue color */
+a {
   text-decoration: none;
-  color: black;
-}
-
-/* Mission */
-.mission {
-  padding: 40px 20px;
-}
-.mission h2 {
-  font-size: 2rem;
-}
-.mission p {
-  font-size: 1.2rem;
-}
-
-/* Cart Preview */
-.cart-preview {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 12px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 500px;
-}
-#checkout-btn {
-  background: black;
-  color: white;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-#checkout-btn:hover {
-  background: #444;
+  color: inherit;
 }
 
 /* Footer */
 footer {
+  background: #fff;
+  padding: 20px;
   margin-top: 40px;
-  padding: 30px 20px;
-  background: #f1f1f1;
-  text-align: center;
-}
-.footer-logo img {
-  max-width: 200px;
-  margin-bottom: 20px;
-}
-.contact h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-}
-.contact p {
-  font-size: 1.2rem;
-  margin: 5px 0;
-}
-.payments h2 {
-  font-size: 1.6rem;
-  margin: 20px 0 10px;
-}
-.payments img {
-  height: 40px;
-  margin: 5px;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .hero-text {
-    font-size: 1.4rem;
-    padding: 8px 15px;
-  }
-  .category img {
-    height: 180px;
-  }
+.footer-logo {
+  width: 150px;
+  margin: 10px auto;
+  display: block;
+}
+
+.payment-icons {
+  margin: 15px 0;
+}
+
+.payment-icons img {
+  height: 35px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+footer p {
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+/* Cart Button */
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1000;
 }
