@@ -5,86 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphrodite Antiques</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    /* Hero */
+    .hero {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+    }
+
+    /* Categories */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .categories img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+    .categories p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    footer .logo {
+      max-width: 200px;
+      margin: 10px auto;
+      display: block;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    .payment-icons {
+      margin-top: 10px;
+    }
+    .payment-icons img {
+      width: 50px;
+      margin: 0 5px;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <img src="hero-banner.jpg" alt="Aphrodite Antiques" class="hero-img">
-    <h1 class="hero-text">Discover timeless treasures curated with love ❤️</h1>
-  </header>
+
+  <!-- Hero Banner -->
+  <img src="hero-banner.jpg" alt="Aphrodite Antiques Banner" class="hero">
 
   <!-- Categories -->
   <section class="categories">
-    <a href="jewelry.html" class="category">
-      <img src="jewelry.jpg" alt="Jewelry">
-      <h2>Jewelry</h2>
-    </a>
-    <a href="porcelain.html" class="category">
-      <img src="porcelain.jpg" alt="Porcelain & Ceramic">
-      <h2>Porcelain & Ceramic</h2>
-    </a>
-    <a href="silverware_candleholders.html" class="category">
-      <img src="silverware.jpg" alt="Silverware & Candleholders">
-      <h2>Silverware & Candleholders</h2>
-    </a>
-    <a href="woodwork.html" class="category">
-      <img src="woodwork.jpg" alt="Woodwork">
-      <h2>Woodwork</h2>
-    </a>
-    <a href="crystals_glasses.html" class="category">
-      <img src="crystals_glasses.jpg" alt="Crystals & Glasses">
-      <h2>Crystals & Glasses</h2>
-    </a>
-    <a href="rarities.html" class="category">
-      <img src="rarities.jpg" alt="Rarities">
-      <h2>Rarities</h2>
-    </a>
-    <a href="clothing.html" class="category">
-      <img src="clothing.jpg" alt="Clothing">
-      <h2>Clothing</h2>
-    </a>
-  </section>
-
-  <!-- Mission -->
-  <section class="mission">
-    <h2>Our Mission</h2>
-    <p>At Aphrodite Antiques, we bring history, art, and beauty into your everyday life.</p>
-  </section>
-
-  <!-- Cart -->
-  <section class="cart-preview">
-    <h2>Your Shopping Cart</h2>
-    <div id="cart-items"></div>
-    <p id="cart-total">Total: $0.00</p>
-    <button id="checkout-btn">Checkout</button>
+    <div>
+      <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"></a>
+      <p>Jewelry</p>
+    </div>
+    <div>
+      <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain"></a>
+      <p>Porcelain & Ceramic</p>
+    </div>
+    <div>
+      <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware & Candleholders"></a>
+      <p>Silverware & Candleholders</p>
+    </div>
+    <div>
+      <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"></a>
+      <p>Woodwork</p>
+    </div>
+    <div>
+      <a href="clothing.html"><img src="clothing.jpg" alt="Clothing"></a>
+      <p>Clothing</p>
+    </div>
+    <div>
+      <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystals & Glasses"></a>
+      <p>Crystals & Glasses</p>
+    </div>
+    <div>
+      <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"></a>
+      <p>Rarities</p>
+    </div>
+    <div>
+      <a href="vintage.html"><img src="vintage.jpg" alt="Vintage"></a>
+      <p>Vintage</p>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="footer-logo">
-      <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
+    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="logo">
+
+    <p><strong>Contact Us</strong></p>
+    <p>Email: webshop@aphroditeantiques.com</p>
+    <p>Instagram: @aphroditeantique</p>
+    <p>Pinterest: Aphrodite Antiques</p>
+    <p>Etsy: Aphrodite Antiques</p>
+    <p>TikTok: @aphrodite_antiques</p>
+
+    <div class="payment-icons">
+      <img src="applepay.png.png" alt="Apple Pay">
+      <img src="visa.png.png" alt="Visa">
+      <img src="mastercard.png.png" alt="Mastercard">
+      <img src="paypal.png.png" alt="PayPal">
     </div>
-    <div class="contact">
-      <h2>Contact Us</h2>
-      <p>Email: webshop@aphroditeantiques.com</p>
-      <p>Instagram: @aphroditeantique</p>
-      <p>Pinterest: Aphrodite Antiques</p>
-      <p>Etsy: Aphrodite Antiques</p>
-      <p>TikTok: @aphrodite_antiques</p>
-    </div>
-    <div class="payments">
-      <h2>We Accept</h2>
-      <img src="https://img.icons8.com/ios-filled/50/000000/apple-pay.png" alt="Apple Pay">
-      <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
-      <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
-      <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="PayPal">
-    </div>
+
     <p>© 2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
 
-  <!-- Stripe Checkout Placeholder -->
-  <script src="https://js.stripe.com/v3/"></script>
-  <script src="cart.js"></script>
 </body>
 </html>
