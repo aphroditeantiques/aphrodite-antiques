@@ -8,81 +8,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header with logo + cart -->
-  <header>
-    <h1 class="logo">Aphrodite Antiques</h1>
-    <nav>
-      <a href="cart.html" class="cart-link">🛒 Cart</a>
-    </nav>
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="hero-banner.jpg" alt="Aphrodite Antiques Hero Banner" class="hero-image">
+    <h1 class="tagline">Discover timeless treasures curated with love ❤️</h1>
   </header>
 
-  <!-- Hero Image -->
-  <section class="hero">
-    <img src="hero-banner.jpg" alt="Hero Antique Banner">
-  </section>
-
-  <!-- Welcome Section -->
-  <section class="welcome">
-    <h2>Welcome to Aphrodite Antiques</h2>
-    <p>Discover timeless treasures curated with love, waiting to find a place in your story.</p>
-  </section>
-
-  <!-- Mission Section -->
-  <section class="mission">
-    <h2>Our Mission</h2>
-    <p>We believe every antique holds a memory, a piece of history that deserves to be cherished again.</p>
-  </section>
-
-  <!-- Category Grid -->
+  <!-- Categories Section -->
   <section class="categories">
     <div class="grid">
-      <a href="jewelry.html">
-        <img src="jewelry.jpg" alt="Jewelry">
-        <p>Jewelry</p>
-      </a>
-      <a href="porcelain.html">
-        <img src="porcelain.jpg" alt="Porcelain & Ceramics">
-        <p>Porcelain & Ceramics</p>
-      </a>
-      <a href="crystals_glasses.html">
-        <img src="crystals_glasses.jpg" alt="Crystal & Glassware">
-        <p>Crystal & Glassware</p>
-      </a>
-      <a href="vintage.html">
-        <img src="vintage.jpg" alt="Vintage">
-        <p>Vintage</p>
-      </a>
-      <a href="clothing.html">
-        <img src="clothing.jpg" alt="Vintage Clothing">
-        <p>Vintage Clothing</p>
-      </a>
-      <a href="woodwork.html">
-        <img src="woodwork.jpg" alt="Woodwork">
-        <p>Woodwork</p>
-      </a>
-      <a href="silverware_candleholders.html">
-        <img src="silverware_candleholders.jpg" alt="Silverware & Candleholders">
-        <p>Silverware & Candleholders</p>
-      </a>
-      <a href="rarities.html">
-        <img src="rarities.jpg" alt="Rarities">
-        <p>Rarities</p>
-      </a>
+      <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"><p>Jewelry</p></a>
+      <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain & Ceramic"><p>Porcelain & Ceramic</p></a>
+      <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware & Candleholders"><p>Silverware & Candleholders</p></a>
+      <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"><p>Woodwork</p></a>
+      <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystals & Glasses"><p>Crystals & Glasses</p></a>
+      <a href="vintage.html"><img src="rarities.jpg" alt="Vintage & Rarities"><p>Vintage & Rarities</p></a>
+      <a href="clothing.html"><img src="clothing.jpg" alt="Clothing"><p>Clothing</p></a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:webshop@aphroditeantiques.com">webshop@aphroditeantiques.com</a></p>
-    <p>Etsy: <a href="https://www.etsy.com/shop/AphroditeAniques25" target="_blank">AphroditeAniques25</a></p>
-    <p>Instagram: <a href="https://www.instagram.com/aphroditeantique" target="_blank">@aphroditeantique</a></p>
-    <p>Pinterest: <a href="https://www.pinterest.com/AphroditeAntiqes" target="_blank">Aphrodite Antiqes</a></p>
+  <!-- Shopping Cart Section -->
+  <section class="cart">
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <p id="cart-total">Total: $0.00</p>
+    <button id="checkout-button">Checkout</button>
+    <!-- Payment methods -->
+    <div class="payment-methods">
+      <p>We accept:</p>
+      <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa">
+      <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard">
+      <img src="https://img.icons8.com/color/48/000000/amex.png" alt="Amex">
+      <img src="https://img.icons8.com/color/48/000000/apple-pay.png" alt="Apple Pay">
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Aphrodite Antiques. All rights reserved.</p>
+    <div class="footer-logo">
+      <img src="F10BE4D5-8392-4AE5-9F60-1F13F9DEB1FF.jpeg" alt="Aphrodite Antiques Logo">
+    </div>
+    <h2>Contact Us</h2>
+    <p>Email: webshop@aphroditeantiques.com</p>
+    <p>Instagram: @aphroditeantique</p>
+    <p>Pinterest: Aphrodite Antiques</p>
+    <p>Etsy: Aphrodite Antiques</p>
+    <p>TikTok: @aphrodite_antiques</p>
+    <p>© 2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
+
+  <script src="cart.js"></script>
 </body>
 </html>
