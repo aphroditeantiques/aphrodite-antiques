@@ -1,129 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Style */
 body {
+  margin: 0;
   font-family: 'Dancing Script', cursive;
-  line-height: 1.6;
   background-color: #fafafa;
-  text-align: center;
   color: #333;
+  text-align: center;
 }
 
 /* Hero */
-.hero img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
+.hero {
+  text-align: center;
+  padding: 20px;
+}
+.hero img.hero-image {
+  max-width: 100%;
+  height: auto;
 }
 .hero h1 {
-  margin-top: 20px;
-  font-size: 2.5rem;
+  font-size: 2.5em;
+  margin: 10px 0;
 }
 .hero p {
-  font-size: 1.2rem;
-  margin-top: 10px;
+  font-size: 1.3em;
 }
 
 /* Categories */
 .categories {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding: 40px;
-}
-.categories a {
-  text-decoration: none;
-  color: inherit;
-}
-.categories img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-.categories img:hover {
-  transform: scale(1.05);
-}
-.categories h2 {
-  margin-top: 10px;
-  font-size: 1.3rem;
-}
-
-/* Cart */
-#cart {
-  margin: 30px auto;
-  max-width: 500px;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  gap: 20px;
   padding: 20px;
 }
-#cart h2 {
-  margin-bottom: 10px;
+.category img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
-#cart ul {
-  list-style: none;
-  margin-bottom: 10px;
-}
-#cart-items li {
-  margin: 5px 0;
-}
-#checkout-btn {
-  background: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-#checkout-btn:hover {
-  background: #555;
-}
-
-/* Shipping Calculator */
-.shipping-calculator {
-  margin-top: 20px;
-}
-.shipping-calculator label {
-  display: block;
-  margin: 5px 0;
-}
-.shipping-calculator select {
-  padding: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
+.category h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
 }
 
 /* Footer */
 footer {
+  text-align: center;
   margin-top: 40px;
-  padding: 30px 20px;
-  background: #fff;
-  border-top: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  font-family: 'Dancing Script', cursive;
 }
-footer .contact p a {
-  text-decoration: none;
-  color: inherit;
+
+.footer-logo img.site-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
 }
-footer .payment-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin: 20px 0;
+
+.payment-icons img {
+  width: 50px;
+  height: auto;
+  margin: 0 8px;
+  vertical-align: middle;
 }
-footer .payment-icons img {
-  height: 40px;
-  width: auto;
+
+.contact p {
+  margin: 5px 0;
 }
-footer .domain {
+
+.shipping h3 {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+button {
+  font-family: 'Dancing Script', cursive;
+  padding: 10px 20px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
   margin-top: 10px;
-  font-size: 0.9rem;
-  color: #666;
+  border-radius: 5px;
+}
+button:hover {
+  background: #555;
 }
