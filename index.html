@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js" defer></script>
 </head>
 <body>
-  <!-- Hero Image -->
-  <img src="hero-banner.jpg" alt="Aphrodite Antiques Hero Banner" class="hero">
-
-  <!-- Welcome Text -->
-  <section>
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="hero-banner.jpg" alt="Aphrodite Antiques Banner" />
     <h1>Welcome to Aphrodite Antiques</h1>
-    <p>Discover timeless treasures curated with love and care, each piece carrying a story of history and beauty.</p>
+    <p>Discover timeless treasures curated with love and history.</p>
+  </header>
+
+  <!-- Categories Section -->
+  <section class="categories">
+    <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"><h2>Jewelry</h2></a>
+    <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain & Ceramic"><h2>Porcelain & Ceramic</h2></a>
+    <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware"><h2>Silverware</h2></a>
+    <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"><h2>Woodwork</h2></a>
+    <a href="vintage.html"><img src="vintage.jpg" alt="Vintage"><h2>Vintage</h2></a>
+    <a href="clothing.html"><img src="clothing.jpg" alt="Clothing"><h2>Clothing</h2></a>
+    <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystals & Glasses"><h2>Crystals & Glasses</h2></a>
+    <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"><h2>Rarities</h2></a>
   </section>
 
-  <!-- Our Mission -->
-  <section>
-    <h1>Our Mission</h1>
-    <p>At Aphrodite Antiques, we believe every object has a soul. Our mission is to bring these beautiful pieces back to life, offering them a new journey in your home.</p>
-  </section>
-
-  <!-- Categories Grid -->
-  <section>
-    <h1>Explore Our Collections</h1>
-    <div class="grid">
-      <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"><p>Jewelry</p></a>
-      <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain & Ceramics"><p>Porcelain & Ceramics</p></a>
-      <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"><p>Woodwork</p></a>
-      <a href="clothing.html"><img src="clothing.jpg" alt="Vintage Clothing"><p>Vintage Clothing</p></a>
-      <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystal & Glassware"><p>Crystal & Glassware</p></a>
-      <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"><p>Rarities</p></a>
-      <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware & Candleholders"><p>Silverware & Candleholders</p></a>
-      <a href="vintage.html"><img src="vintage.jpg" alt="Vintage Decor"><p>Vintage Decor</p></a>
-    </div>
-  </section>
-
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
-    <img src="logo.png" alt="Aphrodite Antiques Logo" style="max-width: 150px; margin: 20px auto; display: block;">
-    <p>© 2025 Aphrodite Antiques | webshop@aphroditeantiques.com</p>
-    <p>Instagram: @aphroditeantique | Etsy: AphroditeAntiques25 | Pinterest: Aphrodite Antiques | TikTok: @aphrodite_antiques</p>
-    <div style="margin-top: 15px;">
-      <img src="visa.png" alt="Visa" style="height:30px; margin: 0 5px;">
-      <img src="mastercard.png" alt="Mastercard" style="height:30px; margin: 0 5px;">
-      <img src="paypal.png" alt="PayPal" style="height:30px; margin: 0 5px;">
-      <img src="applepay.png" alt="Apple Pay" style="height:30px; margin: 0 5px;">
+    <div class="footer-logo">
+      <h2>Aphrodite Antiques</h2>
+    </div>
+
+    <div class="contact">
+      <p>Email: info@aphroditeantiques.com</p>
+      <p>Phone: +44 123 456 789</p>
+      <p>Address: 123 Antique Street, London, UK</p>
+      <p>Open: Mon–Sat, 10am–6pm</p>
+      <p>Follow us on Instagram & Facebook</p>
+    </div>
+
+    <!-- Payment Icons -->
+    <div class="payment-icons">
+      <img src="applepay.png.png" alt="Apple Pay">
+      <img src="visa.png.png" alt="Visa">
+      <img src="Mastercard.png.png" alt="Mastercard">
+      <img src="PayPal.png.png" alt="PayPal">
+    </div>
+
+    <!-- Domain -->
+    <p class="domain">www.aphroditeantiques.com</p>
+
+    <!-- Cart & Checkout -->
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: £<span id="cart-total">0.00</span></p>
+      <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <!-- Worldwide Shipping -->
+    <div class="shipping">
+      <h3>Worldwide Shipping</h3>
+      <p>We ship worldwide — shipping costs are calculated at checkout.</p>
     </div>
   </footer>
 </body>
