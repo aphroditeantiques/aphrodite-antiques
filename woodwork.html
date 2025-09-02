@@ -1,19 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Woodwork - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js" defer></script>
 </head>
 <body>
-  <h1>Woodwork</h1>
-  <p>Masterfully crafted woodwork, each piece shaped by hand and history.</p>
+  <header class="hero">
+    <h1>Woodwork</h1>
+    <p>Hand-crafted wooden antiques full of history and charm.</p>
+  </header>
 
-  <div class="grid">
-    <!-- Future items go here -->
-  </div>
+  <section class="products">
+    <p class="placeholder">Your Woodwork items will appear here.</p>
+  </section>
 
-  <p class="tagline">Each piece carries a memory of time and soon it will begin its journey to you.</p>
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Total: £<span id="cart-total">0.00</span></p>
+    <button id="checkout-btn">Checkout</button>
+  </section>
+
+  <footer>
+    <div class="footer-logo">
+      <h2>Aphrodite Antiques</h2>
+    </div>
+    <div class="contact">
+      <p>Email: info@aphroditeantiques.com</p>
+      <p>Phone: +44 123 456 789</p>
+      <p>Address: 123 Antique Street, London, UK</p>
+      <p>Open: Mon–Sat, 10am–6pm</p>
+      <p>Follow us on Instagram & Facebook</p>
+    </div>
+    <div class="payment-icons">
+      <img src="applepay.png.png" alt="Apple Pay">
+      <img src="visa.png.png" alt="Visa">
+      <img src="Mastercard.png.png" alt="Mastercard">
+      <img src="PayPal.png.png" alt="PayPal">
+    </div>
+    <p class="domain">www.aphroditeantiques.com</p>
+    <div class="shipping">
+      <h3>Worldwide Shipping</h3>
+      <p>We ship worldwide — shipping costs are calculated at checkout.</p>
+    </div>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </footer>
 </body>
 </html>
