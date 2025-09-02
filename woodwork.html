@@ -8,20 +8,24 @@
   <script src="cart.js" defer></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="hero">
     <h1>Woodwork</h1>
     <p>Hand-crafted wooden antiques full of history and charm.</p>
   </header>
 
+  <!-- Products -->
   <section class="products">
     <p class="placeholder">Your Woodwork items will appear here.</p>
   </section>
 
+  <!-- Cart -->
   <section id="cart">
     <h2>Your Cart</h2>
     <ul id="cart-items"></ul>
     <p>Items Total: €<span id="items-total">0.00</span></p>
 
+    <!-- Shipping Calculator -->
     <div class="shipping-calculator">
       <label for="region">Select Region:</label>
       <select id="region" onchange="updateCart()">
@@ -48,10 +52,14 @@
     <button id="checkout-btn">Checkout</button>
   </section>
 
+  <!-- Footer -->
   <footer>
+    <!-- Logo -->
     <div class="footer-logo">
-      <h2>Aphrodite Antiques</h2>
+      <img src="images/logo.png" alt="Aphrodite Antiques Logo" class="site-logo">
     </div>
+
+    <!-- Contact Info -->
     <div class="contact">
       <p><a href="mailto:webshop@aphroditeantiques.com">Email: webshop@aphroditeantiques.com</a></p>
       <p><a href="https://www.instagram.com/aphroditeantique" target="_blank">Instagram: @aphroditeantique</a></p>
@@ -59,17 +67,31 @@
       <p><a href="https://www.etsy.com/shop/" target="_blank">Etsy: Aphrodite Antiques</a></p>
       <p><a href="https://www.tiktok.com/@aphrodite__antiques" target="_blank">TikTok: @aphrodite__antiques</a></p>
     </div>
+
+    <!-- Payment Icons -->
     <div class="payment-icons">
-      <a href="https://www.apple.com/apple-pay/" target="_blank"><img src="applepay.png.png" alt="Apple Pay"></a>
-      <a href="https://www.visa.com/" target="_blank"><img src="visa.png.png" alt="Visa"></a>
-      <a href="https://www.mastercard.com/" target="_blank"><img src="Mastercard.png.png" alt="Mastercard"></a>
-      <a href="https://www.paypal.com/checkout" target="_blank"><img src="PayPal.png.png" alt="PayPal"></a>
+      <a href="https://www.apple.com/apple-pay/" target="_blank">
+        <img src="https://img.icons8.com/color/48/apple-pay.png" alt="Apple Pay">
+      </a>
+      <a href="https://www.visa.com/" target="_blank">
+        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+      </a>
+      <a href="https://img.icons8.com/color/48/mastercard-logo.png" target="_blank">
+        <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard">
+      </a>
+      <a href="https://www.paypal.com/checkout" target="_blank">
+        <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+      </a>
     </div>
+
+    <!-- Domain + Shipping -->
     <p class="domain">© 2025 Aphrodite Antiques. All rights reserved.</p>
     <div class="shipping">
       <h3>Worldwide Shipping</h3>
       <p>We ship worldwide — shipping costs are calculated at checkout.</p>
     </div>
+
+    <!-- Back to Home -->
     <button onclick="window.location.href='index.html'">Back to Home</button>
   </footer>
 </body>
