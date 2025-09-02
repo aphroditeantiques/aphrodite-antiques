@@ -27,44 +27,62 @@
     <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"><h2>Rarities</h2></a>
   </section>
 
-  <!-- Footer Section -->
+  <!-- Cart Section -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p>Items Total: €<span id="items-total">0.00</span></p>
+
+    <!-- Shipping Calculator -->
+    <div class="shipping-calculator">
+      <label for="region">Select Region:</label>
+      <select id="region" onchange="updateCart()">
+        <option value="0">-- Choose Region --</option>
+        <option value="10">EU (+€10)</option>
+        <option value="15">UK (+€15)</option>
+        <option value="20">USA (+€20)</option>
+        <option value="25">Rest of World (+€25)</option>
+      </select>
+
+      <label for="weight">Select Package Size:</label>
+      <select id="weight" onchange="updateCart()">
+        <option value="0">-- Choose Size --</option>
+        <option value="5">Small (+€5)</option>
+        <option value="10">Medium (+€10)</option>
+        <option value="20">Large (+€20)</option>
+        <option value="40">Heavy (+€40)</option>
+      </select>
+    </div>
+
+    <p>Shipping: €<span id="shipping-cost">0.00</span></p>
+    <p><strong>Final Total: €<span id="final-total">0.00</span></strong></p>
+
+    <button id="checkout-btn">Checkout</button>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="footer-logo">
       <h2>Aphrodite Antiques</h2>
     </div>
 
     <div class="contact">
-      <p>Email: info@aphroditeantiques.com</p>
-      <p>Phone: +44 123 456 789</p>
-      <p>Address: 123 Antique Street, London, UK</p>
-      <p>Open: Mon–Sat, 10am–6pm</p>
-      <p>Follow us on Instagram & Facebook</p>
+      <p><a href="mailto:webshop@aphroditeantiques.com">Email: webshop@aphroditeantiques.com</a></p>
+      <p><a href="https://www.instagram.com/aphroditeantique" target="_blank">Instagram: @aphroditeantique</a></p>
+      <p><a href="https://www.pinterest.com/" target="_blank">Pinterest: Aphrodite Antiques</a></p>
+      <p><a href="https://www.etsy.com/shop/" target="_blank">Etsy: Aphrodite Antiques</a></p>
+      <p><a href="https://www.tiktok.com/@aphrodite__antiques" target="_blank">TikTok: @aphrodite__antiques</a></p>
     </div>
 
     <!-- Payment Icons -->
     <div class="payment-icons">
-      <img src="applepay.png.png" alt="Apple Pay">
-      <img src="visa.png.png" alt="Visa">
-      <img src="Mastercard.png.png" alt="Mastercard">
-      <img src="PayPal.png.png" alt="PayPal">
+      <a href="https://www.apple.com/apple-pay/" target="_blank"><img src="applepay.png.png" alt="Apple Pay"></a>
+      <a href="https://www.visa.com/" target="_blank"><img src="visa.png.png" alt="Visa"></a>
+      <a href="https://www.mastercard.com/" target="_blank"><img src="Mastercard.png.png" alt="Mastercard"></a>
+      <a href="https://www.paypal.com/checkout" target="_blank"><img src="PayPal.png.png" alt="PayPal"></a>
     </div>
 
-    <!-- Domain -->
-    <p class="domain">www.aphroditeantiques.com</p>
-
-    <!-- Cart & Checkout -->
-    <section id="cart">
-      <h2>Your Cart</h2>
-      <ul id="cart-items"></ul>
-      <p>Total: £<span id="cart-total">0.00</span></p>
-      <button id="checkout-btn">Checkout</button>
-    </section>
-
-    <!-- Worldwide Shipping -->
-    <div class="shipping">
-      <h3>Worldwide Shipping</h3>
-      <p>We ship worldwide — shipping costs are calculated at checkout.</p>
-    </div>
+    <p class="domain">© 2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
 </body>
 </html>
