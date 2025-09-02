@@ -1,41 +1,36 @@
-/* General Styles */
 body {
-  margin: 0;
   font-family: 'Great Vibes', cursive;
+  margin: 0;
+  padding: 0;
   background-color: #fffdf9;
-  color: #000;
+  color: #333;
   text-align: center;
 }
 
-h1, h2, h3, p {
-  margin: 10px;
-}
-
-/* Hero Image */
-.hero-image {
+.hero {
   width: 100%;
-  height: auto;
   display: block;
 }
 
-/* Welcome & Mission */
-.welcome h1,
-.mission h2 {
-  font-size: 2rem;
-  margin-top: 20px;
+.welcome h1 {
+  font-size: 2.5em;
+  margin: 20px 0 10px;
 }
 
-.welcome p,
-.mission p {
-  font-size: 1.2rem;
-  margin: 10px auto;
-  max-width: 700px;
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
-/* Categories Grid */
+.mission {
+  font-size: 1.1em;
+  margin: 0 auto 30px;
+  max-width: 600px;
+}
+
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   padding: 20px;
 }
@@ -49,32 +44,35 @@ h1, h2, h3, p {
 
 .category p {
   margin-top: 10px;
-  font-size: 1.2rem;
+  font-size: 1.3em;
 }
 
-/* Footer */
 footer {
+  background-color: #fdf9f6;
+  padding: 30px;
   margin-top: 40px;
-  padding: 20px;
-  background: #fffaf3;
 }
 
 .footer-logo {
-  width: 120px;
-  margin-bottom: 15px;
-}
-
-.contact p {
-  margin: 5px 0;
-  font-size: 1.1rem;
+  width: 100px;
+  margin: 10px auto;
+  display: block;
 }
 
 .payments img {
-  width: 50px;
-  margin: 10px;
+  width: 60px;
+  margin: 5px;
+  display: inline-block;
   vertical-align: middle;
 }
 
-.shipping {
-  margin-top: 20px;
+/* Fix links (remove purple/underline, keep handwriting style) */
+a, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+  font-family: 'Great Vibes', cursive;
+}
+
+a:hover {
+  color: #444;
 }
