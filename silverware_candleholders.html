@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Silverware & Candleholders - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Silverware - Aphrodite Antiques</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js" defer></script>
 </head>
 <body>
-  <h1>Silverware & Candleholders</h1>
-  <p>Shining silverware and candleholders that bring grace and warmth to any setting.</p>
+  <header class="hero">
+    <h1>Silverware & Candleholders</h1>
+    <p>Elegant silver-crafted treasures for your home.</p>
+  </header>
 
-  <div class="grid">
-    <!-- Future items go here -->
-  </div>
+  <section class="products">
+    <div class="product">
+      <img src="silver1.jpg" alt="Silver Spoon Set">
+      <h2>Silver Spoon Set</h2>
+      <p>£60.00</p>
+      <button onclick="addToCart('Silver Spoon Set', 60)">Add to Cart</button>
+    </div>
 
-  <p class="tagline">Each piece carries a memory of time and soon it will begin its journey to you.</p>
+    <div class="product">
+      <img src="silver2.jpg" alt="Silver Candleholder">
+      <h2>Silver Candleholder</h2>
+      <p>£110.00</p>
+      <button onclick="addToCart('Silver Candleholder', 110)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="silver3.jpg" alt="Silver Teapot">
+      <h2>Silver Teapot</h2>
+      <p>£180.00</p>
+      <button onclick="addToCart('Silver Teapot', 180)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </footer>
 </body>
 </html>
