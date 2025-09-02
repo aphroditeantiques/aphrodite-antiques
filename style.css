@@ -1,25 +1,53 @@
+/* General Reset */
 body {
   margin: 0;
-  font-family: 'Dancing Script', cursive;
-  background-color: #fffaf5;
-  color: #333;
+  padding: 0;
+  font-family: 'Dancing Script', cursive, 'Georgia', serif;
+  background-color: #fefaf7;
+  color: #2c2c2c;
   text-align: center;
 }
 
-.hero-image {
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: auto;
+}
+
+.hero img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.welcome {
-  padding: 20px;
-}
-
-.welcome h1, .welcome h2 {
+/* Headings */
+h1, h2, h3 {
   font-family: 'Dancing Script', cursive;
+  margin: 20px 0 10px;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+/* Mission Section */
+.mission {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Categories Grid */
 .categories {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -27,49 +55,71 @@ body {
   padding: 20px;
 }
 
+.category {
+  text-align: center;
+}
+
 .category img {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
+  height: 300px;         /* Equal height */
+  object-fit: cover;     /* Crops nicely */
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
-.category h3 {
-  margin-top: 10px;
+.category a {
+  text-decoration: none;
+  color: #4b0082;
+  font-size: 1.3em;
   font-family: 'Dancing Script', cursive;
+  display: block;
+  margin-top: 10px;
 }
 
+/* Footer */
 footer {
-  background-color: #fffaf5;
-  padding: 20px;
-  margin-top: 20px;
+  background-color: #fdf8f4;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 1px solid #e0d6d1;
 }
 
-.footer-logo {
-  width: 120px;
-  height: auto;
+footer img.logo {
+  max-width: 120px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+footer h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8em;
   margin-bottom: 15px;
 }
 
-footer h2, footer h3, footer p {
-  font-family: 'Dancing Script', cursive;
+footer p {
   margin: 5px 0;
+  font-size: 1em;
 }
 
-.payment-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 15px 0;
+footer .payment-icons {
+  margin: 20px 0;
 }
 
-.payment-icons img {
+footer .payment-icons img {
   width: 60px;
-  height: auto;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+  margin: 0 10px;
+  vertical-align: middle;
 }
 
-.payment-icons img:hover {
-  transform: scale(1.1);
+/* Worldwide Shipping */
+footer h4 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+footer p.shipping {
+  font-style: italic;
+  font-size: 1.1em;
 }
