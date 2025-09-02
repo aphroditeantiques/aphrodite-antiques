@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jewelry - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="cart.js" defer></script>
 </head>
 <body>
-  <h1>Jewelry</h1>
-  <p>Exquisite jewelry pieces, carrying the elegance and allure of timeless beauty.</p>
+  <header class="hero">
+    <h1>Jewelry Collection</h1>
+    <p>Exquisite antique jewelry pieces from around the world.</p>
+  </header>
 
-  <div class="grid">
-    <!-- Future items go here -->
-  </div>
+  <section class="products">
+    <div class="product">
+      <img src="jewel1.jpg" alt="Gold Necklace">
+      <h2>Gold Necklace</h2>
+      <p>£120.00</p>
+      <button onclick="addToCart('Gold Necklace', 120)">Add to Cart</button>
+    </div>
 
-  <p class="tagline">Each piece carries a memory of time and soon it will begin its journey to you.</p>
+    <div class="product">
+      <img src="jewel2.jpg" alt="Diamond Ring">
+      <h2>Diamond Ring</h2>
+      <p>£250.00</p>
+      <button onclick="addToCart('Diamond Ring', 250)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="jewel3.jpg" alt="Pearl Earrings">
+      <h2>Pearl Earrings</h2>
+      <p>£80.00</p>
+      <button onclick="addToCart('Pearl Earrings', 80)">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </footer>
 </body>
 </html>
