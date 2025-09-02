@@ -1,76 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Woodwork - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="cart.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <section class="category-page">
     <h1>Woodwork</h1>
     <p>Hand-crafted wooden antiques full of history and charm.</p>
-  </header>
-
-  <section class="products">
-    <p class="placeholder">Your Woodwork items will appear here.</p>
   </section>
 
-  <section id="cart">
+  <section class="cart">
     <h2>Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <p>Items Total: €<span id="items-total">0.00</span></p>
+    <p>Items Total: €0.00</p>
+    <label for="region">Select Region:</label>
+    <select id="region">
+      <option>-- Choose Region --</option>
+      <option value="eu">Europe</option>
+      <option value="us">United States</option>
+      <option value="world">Worldwide</option>
+    </select>
 
-    <div class="shipping-calculator">
-      <label for="region">Select Region:</label>
-      <select id="region" onchange="updateCart()">
-        <option value="0">-- Choose Region --</option>
-        <option value="10">EU (+€10)</option>
-        <option value="15">UK (+€15)</option>
-        <option value="20">USA (+€20)</option>
-        <option value="25">Rest of World (+€25)</option>
-      </select>
+    <label for="package">Select Package Size:</label>
+    <select id="package">
+      <option>-- Choose Size --</option>
+      <option value="small">Small (up to 1kg)</option>
+      <option value="medium">Medium (1-5kg)</option>
+      <option value="large">Large (5kg+)</option>
+    </select>
 
-      <label for="weight">Select Package Size:</label>
-      <select id="weight" onchange="updateCart()">
-        <option value="0">-- Choose Size --</option>
-        <option value="5">Small (+€5)</option>
-        <option value="10">Medium (+€10)</option>
-        <option value="20">Large (+€20)</option>
-        <option value="40">Heavy (+€40)</option>
-      </select>
-    </div>
-
-    <p>Shipping: €<span id="shipping-cost">0.00</span></p>
-    <p><strong>Final Total: €<span id="final-total">0.00</span></strong></p>
-
-    <button id="checkout-btn">Checkout</button>
+    <p>Shipping: €0.00</p>
+    <p>Final Total: €0.00</p>
+    <button>Checkout</button>
   </section>
+
+  <div class="back-home">
+    <a href="index.html">← Back to Home</a>
+  </div>
 
   <footer>
     <div class="footer-logo">
-      <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="site-logo">
+      <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
     </div>
-    <div class="contact">
-      <p><a href="mailto:webshop@aphroditeantiques.com">Email: webshop@aphroditeantiques.com</a></p>
-      <p><a href="https://www.instagram.com/aphroditeantique" target="_blank">Instagram: @aphroditeantique</a></p>
-      <p><a href="https://www.pinterest.com/" target="_blank">Pinterest: Aphrodite Antiques</a></p>
-      <p><a href="https://www.etsy.com/shop/" target="_blank">Etsy: Aphrodite Antiques</a></p>
-      <p><a href="https://www.tiktok.com/@aphrodite__antiques" target="_blank">TikTok: @aphrodite__antiques</a></p>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: webshop@aphroditeantiques.com</p>
+      <p>Instagram: @aphroditeantique</p>
+      <p>Pinterest: Aphrodite Antiques</p>
+      <p>Etsy: Aphrodite Antiques</p>
+      <p>TikTok: @aphrodite__antiques</p>
     </div>
     <div class="payment-icons">
-      <img src="applepay.png" alt="Apple Pay">
-      <img src="visa.png" alt="Visa">
-      <img src="mastercard.png" alt="Mastercard">
-      <img src="paypal.png" alt="PayPal">
+      <img src="applepay.png.png" alt="Apple Pay">
+      <img src="visa.png.png" alt="Visa">
+      <img src="mastercard.png.png" alt="Mastercard">
+      <img src="paypal.png.png" alt="PayPal">
     </div>
-    <p class="domain">© 2025 Aphrodite Antiques. All rights reserved.</p>
+    <p class="footer-text">© 2025 Aphrodite Antiques. All rights reserved.</p>
     <div class="shipping">
       <h3>Worldwide Shipping</h3>
       <p>We ship worldwide — shipping costs are calculated at checkout.</p>
     </div>
-    <button onclick="window.location.href='index.html'">Back to Home</button>
   </footer>
 </body>
 </html>
