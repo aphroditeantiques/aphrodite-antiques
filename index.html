@@ -10,62 +10,71 @@
 <body>
   <!-- Hero Section -->
   <header class="hero">
-    <img src="hero-banner.jpg" alt="Aphrodite Antiques Banner" />
+    <img src="images/hero.jpg" alt="Aphrodite Antiques" class="hero-image">
     <h1>Welcome to Aphrodite Antiques</h1>
     <p>Discover timeless treasures curated with love and history.</p>
   </header>
 
-  <!-- Categories Section -->
+  <!-- Categories -->
   <section class="categories">
-    <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"><h2>Jewelry</h2></a>
-    <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain & Ceramic"><h2>Porcelain & Ceramic</h2></a>
-    <a href="silverware_candleholders.html"><img src="silverware_candleholders.jpg" alt="Silverware"><h2>Silverware</h2></a>
-    <a href="woodwork.html"><img src="woodwork.jpg" alt="Woodwork"><h2>Woodwork</h2></a>
-    <a href="vintage.html"><img src="vintage.jpg" alt="Vintage"><h2>Vintage</h2></a>
-    <a href="clothing.html"><img src="clothing.jpg" alt="Clothing"><h2>Clothing</h2></a>
-    <a href="crystals_glasses.html"><img src="crystals_glasses.jpg" alt="Crystals & Glasses"><h2>Crystals & Glasses</h2></a>
-    <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"><h2>Rarities</h2></a>
-  </section>
-
-  <!-- Cart Section -->
-  <section id="cart">
-    <h2>Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <p>Items Total: €<span id="items-total">0.00</span></p>
-
-    <!-- Shipping Calculator -->
-    <div class="shipping-calculator">
-      <label for="region">Select Region:</label>
-      <select id="region" onchange="updateCart()">
-        <option value="0">-- Choose Region --</option>
-        <option value="10">EU (+€10)</option>
-        <option value="15">UK (+€15)</option>
-        <option value="20">USA (+€20)</option>
-        <option value="25">Rest of World (+€25)</option>
-      </select>
-
-      <label for="weight">Select Package Size:</label>
-      <select id="weight" onchange="updateCart()">
-        <option value="0">-- Choose Size --</option>
-        <option value="5">Small (+€5)</option>
-        <option value="10">Medium (+€10)</option>
-        <option value="20">Large (+€20)</option>
-        <option value="40">Heavy (+€40)</option>
-      </select>
+    <div class="category">
+      <a href="jewelry.html">
+        <img src="images/jewelry.jpg" alt="Jewelry">
+        <h2>Jewelry</h2>
+      </a>
     </div>
-
-    <p>Shipping: €<span id="shipping-cost">0.00</span></p>
-    <p><strong>Final Total: €<span id="final-total">0.00</span></strong></p>
-
-    <button id="checkout-btn">Checkout</button>
+    <div class="category">
+      <a href="porcelain.html">
+        <img src="images/porcelain.jpg" alt="Porcelain & Ceramic">
+        <h2>Porcelain & Ceramic</h2>
+      </a>
+    </div>
+    <div class="category">
+      <a href="silverware_candleholders.html">
+        <img src="images/silverware.jpg" alt="Silverware & Candleholders">
+        <h2>Silverware & Candleholders</h2>
+      </a>
+    </div>
+    <div class="category">
+      <a href="woodwork.html">
+        <img src="images/woodwork.jpg" alt="Woodwork">
+        <h2>Woodwork</h2>
+      </a>
+    </div>
+    <div class="category">
+      <a href="vintage.html">
+        <img src="images/vintage.jpg" alt="Vintage">
+        <h2>Vintage</h2>
+      </a>
+    </div>
+    <div class="category">
+      <a href="clothing.html">
+        <img src="images/clothing.jpg" alt="Clothing">
+        <h2>Clothing</h2>
+      </a>
+    </div>
+    <div class="category">
+      <a href="crystals_glasses.html">
+        <img src="images/crystals.jpg" alt="Crystals & Glasses">
+        <h2>Crystals & Glasses</h2>
+      </a>
+    </div>
+    <div class="category">
+      <a href="rarities.html">
+        <img src="images/rarities.jpg" alt="Rarities">
+        <h2>Rarities</h2>
+      </a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
+    <!-- Logo -->
     <div class="footer-logo">
-      <h2>Aphrodite Antiques</h2>
+      <img src="images/logo.png" alt="Aphrodite Antiques Logo" class="site-logo">
     </div>
 
+    <!-- Contact Info -->
     <div class="contact">
       <p><a href="mailto:webshop@aphroditeantiques.com">Email: webshop@aphroditeantiques.com</a></p>
       <p><a href="https://www.instagram.com/aphroditeantique" target="_blank">Instagram: @aphroditeantique</a></p>
@@ -76,13 +85,26 @@
 
     <!-- Payment Icons -->
     <div class="payment-icons">
-      <a href="https://www.apple.com/apple-pay/" target="_blank"><img src="applepay.png.png" alt="Apple Pay"></a>
-      <a href="https://www.visa.com/" target="_blank"><img src="visa.png.png" alt="Visa"></a>
-      <a href="https://www.mastercard.com/" target="_blank"><img src="Mastercard.png.png" alt="Mastercard"></a>
-      <a href="https://www.paypal.com/checkout" target="_blank"><img src="PayPal.png.png" alt="PayPal"></a>
+      <a href="https://www.apple.com/apple-pay/" target="_blank">
+        <img src="https://img.icons8.com/color/48/apple-pay.png" alt="Apple Pay">
+      </a>
+      <a href="https://www.visa.com/" target="_blank">
+        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+      </a>
+      <a href="https://img.icons8.com/color/48/mastercard-logo.png" target="_blank">
+        <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="Mastercard">
+      </a>
+      <a href="https://www.paypal.com/checkout" target="_blank">
+        <img src="https://img.icons8.com/color/48/paypal.png" alt="PayPal">
+      </a>
     </div>
 
+    <!-- Domain + Shipping -->
     <p class="domain">© 2025 Aphrodite Antiques. All rights reserved.</p>
+    <div class="shipping">
+      <h3>Worldwide Shipping</h3>
+      <p>We ship worldwide — shipping costs are calculated at checkout.</p>
+    </div>
   </footer>
 </body>
 </html>
