@@ -1,57 +1,41 @@
-// Load cart from localStorage
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let cart = [];
+let total = 0;
 
-// Render cart items
-function renderCart() {
-  const cartContainer = document.getElementById("cart-items");
+function addToCart(item, price) {
+  cart.push({ item, price });
+  total += price;
+  updateCart();
+}
+
+function updateCart() {
+  const cartItems = document.getElementById("cart-items");
   const cartTotal = document.getElementById("cart-total");
 
-  cartContainer.innerHTML = "";
-
-  if (cart.length === 0) {
-    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
-    cartTotal.textContent = "Total: $0";
-    return;
-  }
-
-  let total = 0;
-  cart.forEach((item, index) => {
-    total += item.price;
-
-    const div = document.createElement("div");
-    div.classList.add("cart-item");
-    div.innerHTML = `
-      <p>${item.name} - $${item.price.toFixed(2)}</p>
-      <button onclick="removeFromCart(${index})">Remove</button>
-    `;
-    cartContainer.appendChild(div);
+  cartItems.innerHTML = "";
+  cart.forEach((entry, index) => {
+    const li = document.createElement("li");
+    li.textContent = `${entry.item} - £${entry.price.toFixed(2)} `;
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remove";
+    removeBtn.onclick = () => removeFromCart(index);
+    li.appendChild(removeBtn);
+    cartItems.appendChild(li);
   });
 
-  cartTotal.textContent = `Total: $${total.toFixed(2)}`;
+  cartTotal.textContent = total.toFixed(2);
 }
 
-// Add to cart function (to use later when adding items)
-function addToCart(name, price) {
-  cart.push({ name, price });
-  localStorage.setItem("cart", JSON.stringify(cart));
-  renderCart();
-}
-
-// Remove item
 function removeFromCart(index) {
+  total -= cart[index].price;
   cart.splice(index, 1);
-  localStorage.setItem("cart", JSON.stringify(cart));
-  renderCart();
+  updateCart();
 }
 
-// Checkout button (demo for now)
 document.getElementById("checkout-btn").addEventListener("click", () => {
   if (cart.length === 0) {
     alert("Your cart is empty!");
     return;
   }
-  alert("Checkout coming soon — your items are ready!");
+  // Secure redirect to payment gateway
+  window.location.href = "https://www.paypal.com/checkout"; // Replace with Stripe/PayPal live checkout URL
 });
-
-// Render on page load
-renderCart();
