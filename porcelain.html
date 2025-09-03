@@ -9,40 +9,43 @@
 </head>
 <body>
 
-  <!-- ✅ Page Title -->
   <section>
-    <h1>Porcelain</h1>
+    <h1 style="font-family: 'Great Vibes', cursive;">Porcelain</h1>
     <p><a href="index.html">← Back to Home</a></p>
   </section>
 
-  <!-- ✅ Cart Section -->
   <section class="cart-section">
-    <h2>Your Cart</h2>
+    <h2 style="font-family: 'Great Vibes', cursive;">Your Cart</h2>
     <p>Items Total: €0.00</p>
     <button>Checkout</button>
   </section>
 
-  <!-- ✅ Item 1: Vintage Chinese Vase -->
+  <!-- ✅ Chinese Vase -->
   <div class="item">
     <div class="product-images">
       <img src="depo/chinese_vase1.jpeg" alt="Vintage Chinese Vase">
       <img src="depo/chinese_vase2.jpeg" alt="Vintage Chinese Vase">
     </div>
-    <h2>Vintage Chinese Porcelain Vase</h2>
-    <p class="price">€80.00</p>
-    <p class="description">
+
+    <h2 style="font-family: 'Great Vibes', cursive; font-size: 2em;">Vintage Chinese Porcelain Vase</h2>
+    <p class="price" style="font-family: 'Great Vibes', cursive; font-size: 1.6em;">€80.00</p>
+    <p class="description" style="font-family: 'Great Vibes', cursive; font-size: 1.3em;">
       A beautiful vintage Chinese porcelain vase with traditional design.  
       Excellent condition with only a tiny chip visible in photos.
     </p>
-    <ul class="details">
+    <ul class="details" style="font-family: 'Great Vibes', cursive; font-size: 1.2em;">
       <li><strong>Height:</strong> 20 cm</li>
       <li><strong>Width:</strong> 10 cm</li>
       <li><strong>Condition:</strong> Very good, one tiny chip</li>
     </ul>
-    <button onclick="addToCart('Vintage Chinese Porcelain Vase', 80)">Add to Cart</button>
+    <button 
+      onclick="addToCart('Vintage Chinese Porcelain Vase', 80)" 
+      style="font-family: 'Great Vibes', cursive; font-size: 1.2em; padding: 10px 20px; border-radius: 6px; border: 1px solid #ccc; background-color: #f8f8f8; cursor: pointer;">
+      Add to Cart
+    </button>
   </div>
 
-  <!-- ✅ Item 2: Vintage Chinese Sake Cup Set -->
+  <!-- ✅ Chinese Sake Set -->
   <div class="item">
     <div class="product-images">
       <img src="depo/sake_set1.jpeg" alt="Vintage Chinese Sake Cup Set">
@@ -53,21 +56,26 @@
       <img src="depo/sake_set6.jpeg" alt="Vintage Chinese Sake Cup Set">
       <img src="depo/sake_set7.jpeg" alt="Vintage Chinese Sake Cup Set">
     </div>
-    <h2>Vintage Chinese Sake Cup Set (8 pcs, Original Box)</h2>
-    <p class="price">€80.00</p>
-    <p class="description">
+
+    <h2 style="font-family: 'Great Vibes', cursive; font-size: 2em;">Vintage Chinese Sake Cup Set (8 pcs, Original Box)</h2>
+    <p class="price" style="font-family: 'Great Vibes', cursive; font-size: 1.6em;">€80.00</p>
+    <p class="description" style="font-family: 'Great Vibes', cursive; font-size: 1.3em;">
       A complete vintage Chinese sake set of 8 miniature cups, presented in its original box.  
       Perfect condition, with no cracks or repairs.
     </p>
-    <ul class="details">
+    <ul class="details" style="font-family: 'Great Vibes', cursive; font-size: 1.2em;">
       <li><strong>Pieces:</strong> 8 miniature cups</li>
       <li><strong>Condition:</strong> Excellent</li>
       <li><strong>Includes:</strong> Original presentation box</li>
     </ul>
-    <button onclick="addToCart('Vintage Chinese Sake Cup Set', 80)">Add to Cart</button>
+    <button 
+      onclick="addToCart('Vintage Chinese Sake Cup Set', 80)" 
+      style="font-family: 'Great Vibes', cursive; font-size: 1.2em; padding: 10px 20px; border-radius: 6px; border: 1px solid #ccc; background-color: #f8f8f8; cursor: pointer;">
+      Add to Cart
+    </button>
   </div>
 
-  <!-- ✅ Lightbox (Zoom) -->
+  <!-- ✅ Lightbox -->
   <div id="lightbox" class="lightbox">
     <img src="" alt="Zoomed image">
   </div>
@@ -91,7 +99,6 @@
     <div class="footer-logo">
       <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
     </div>
-
     <div class="payment-icons">
       <img src="applepay.png.png" alt="Apple Pay">
       <img src="visa.png.png" alt="Visa">
