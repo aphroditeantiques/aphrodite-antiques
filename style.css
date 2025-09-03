@@ -161,3 +161,10 @@ footer {
 .product button:hover {
   background: #444;
 }
+.product-images img {
+    max-width: 250px;   /* makes sure images don’t grow too big */
+    height: auto;       /* keeps proportions correct */
+    margin: 10px;       /* space around the images */
+    border-radius: 6px; /* soft corners */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* light shadow for elegance */
+}
