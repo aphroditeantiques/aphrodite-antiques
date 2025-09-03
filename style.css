@@ -82,3 +82,82 @@ footer {
   margin: 0 10px;
   vertical-align: middle;
 }
+/* Product Listing */
+.product {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px auto;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+.product h3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+  margin: 15px 0 10px;
+}
+
+.product .price {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+
+.product .description {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.1em;
+  margin: 10px 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.product ul.description {
+  font-family: 'Great Vibes', cursive;
+  text-align: left;
+  margin: 10px auto;
+  padding: 0 20px;
+  list-style-type: square;
+  font-size: 1.1em;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.gallery img {
+  height: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Button */
+.product button {
+  font-family: 'Great Vibes', cursive;
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+
+.product button:hover {
+  background: #444;
+}
