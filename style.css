@@ -1,28 +1,26 @@
-/* General Styles */
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 body {
-  font-family: 'Georgia', serif;
   margin: 0;
-  padding: 0;
-  background-color: #fffaf7;
-  color: #000;
-  text-align: center;
+  font-family: 'Playfair Display', serif;
+  background-color: #fdf8f5;
+  color: #2c2c2c;
+  line-height: 1.6;
 }
 
-h1, h2, h3 {
-  font-family: 'Brush Script MT', cursive;
-  margin: 10px 0;
-}
-
-/* Hero Section */
+/* Hero section */
 .hero {
   position: relative;
   text-align: center;
-  margin-bottom: 20px;
+  color: #fff;
 }
 
-.hero-image {
+.hero img {
   width: 100%;
-  height: auto;
+  height: 60vh;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-text {
@@ -30,75 +28,131 @@ h1, h2, h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
   border-radius: 10px;
+  font-family: 'Dancing Script', cursive;
 }
 
-/* Mission */
+.hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Mission section */
 .mission {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
 }
 
-/* Categories Grid */
+.mission h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Categories grid */
 .categories {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  padding: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
-.category img {
+.categories img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
-.category img:hover {
+.categories img:hover {
   transform: scale(1.05);
 }
 
-.category p {
+.categories a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.3rem;
+  display: block;
   margin-top: 10px;
-  font-family: 'Brush Script MT', cursive;
-  font-size: 20px;
+}
+
+/* Product images */
+.product-gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Cart */
+.cart {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.cart h2 {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Dancing Script', cursive;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
 }
 
 /* Footer */
 footer {
+  text-align: center;
+  padding: 40px 20px;
   background-color: #fff;
-  padding: 30px 20px;
   border-top: 1px solid #ddd;
   margin-top: 40px;
 }
 
-.footer-logo {
-  max-width: 160px;
-  margin: 0 auto 20px auto;
-  display: block;
+footer img.logo {
+  width: 120px;
+  margin-bottom: 15px;
 }
 
-.footer-contact {
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.footer-contact p {
-  margin: 5px 0;
-}
-
-.footer-payments img {
-  height: 40px;
-  margin: 0 10px;
-  vertical-align: middle;
+footer .payment-icons img {
+  width: 50px;
+  margin: 10px;
+  display: inline-block;
 }
 
 footer p {
-  font-size: 12px;
-  margin-top: 10px;
+  margin: 5px 0;
+  font-size: 0.9rem;
 }
