@@ -9,6 +9,10 @@
 </head>
 <body>
 
+  <header>
+    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="site-logo">
+  </header>
+
   <section>
     <h1>Porcelain</h1>
     <p><a href="index.html">← Back to Home</a></p>
@@ -20,28 +24,28 @@
     <button>Checkout</button>
   </section>
 
-  <!-- ✅ Vintage Chinese Sake Cups Set -->
+  <!-- ✅ Chinese Sake Cups Set -->
   <div class="item">
     <div class="product-images">
-      <img src="polished_5B090D4F-EDE0-437B-B688-7C7BF9ACB6B6.jpeg" alt="Vintage Chinese Sake Cup Set">
-      <img src="polished_700D6F70-66C2-43E1-B1ED-5E40C725AD02.jpeg" alt="Vintage Chinese Sake Cup Set">
-      <img src="polished_9489093D-38BA-4CF9-834B-2A8D3673D718.jpeg" alt="Vintage Chinese Sake Cup Set">
-      <img src="polished_E7037977-9E53-4F7B-9A85-40D230E88E0F.jpeg" alt="Vintage Chinese Sake Cup Set">
-      <img src="polished_C5E7B1D7-1898-4020-BDEB-CB85C469218C.jpeg" alt="Vintage Chinese Sake Cup Set">
-      <img src="polished_A1C30450-8476-42AF-B8FD-65A0A523A4D2.jpeg" alt="Vintage Chinese Sake Cup Set">
-      <img src="polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Vintage Chinese Sake Cup Set">
+      <img src="depo/polished_5B090D4F-EDE0-437B-B688-7C7BF9ACB6B6.jpeg" alt="Vintage Chinese Sake Cup Set">
+      <img src="depo/polished_700D6F70-66C2-43E1-B1ED-5E40C725AD02.jpeg" alt="Vintage Chinese Sake Cup Set">
+      <img src="depo/polished_9489093D-38BA-4CF9-834B-2A8D3673D718.jpeg" alt="Vintage Chinese Sake Cup Set">
+      <img src="depo/polished_E7037977-9E53-4F7B-9A85-40D230E88E0F.jpeg" alt="Vintage Chinese Sake Cup Set">
+      <img src="depo/polished_C5E7B1D7-1898-4020-BDEB-CB85C469218C.jpeg" alt="Vintage Chinese Sake Cup Set">
+      <img src="depo/polished_A1C30450-8476-42AF-B8FD-65A0A523A4D2.jpeg" alt="Vintage Chinese Sake Cup Set">
+      <img src="depo/polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Vintage Chinese Sake Cup Set">
     </div>
     <h2>Vintage Chinese Sake Cups Set</h2>
     <p class="price">€80.00</p>
     <p class="description">
-      This exquisite set of 8 vintage miniature sake cups comes in its original richly decorated presentation box. 
-      Each porcelain cup is hand-painted with vibrant scenes of Chinese figures, florals, and traditional motifs, 
-      highlighted with fine gold accents. The set is preserved in perfect condition with no cracks or chips.
+      This exquisite set of 8 vintage miniature sake cups comes in its original richly decorated presentation box.  
+      Each porcelain cup is hand-painted with vibrant scenes of Chinese figures, florals, and traditional motifs,  
+      highlighted with fine gold accents. The set is preserved in <strong>perfect condition</strong> with no cracks or chips.
     </p>
     <ul class="details">
       <li><strong>Category:</strong> Porcelain & Ceramics</li>
       <li><strong>Pieces:</strong> 8 miniature cups</li>
-      <li><strong>Condition:</strong> Excellent, comes with original box</li>
+      <li><strong>Condition:</strong> Excellent, original box included</li>
     </ul>
     <button onclick="addToCart('Vintage Chinese Sake Cups Set', 80)">Add to Cart</button>
   </div>
@@ -60,40 +64,36 @@
     <h2>Vintage Chinese Porcelain Vase</h2>
     <p class="price">€80.00</p>
     <p class="description">
-      A delicate vintage Chinese porcelain vase decorated with a finely hand-painted female figure, 
-      adorned in traditional robes and vibrant colors. Marked <em>Hong Mei</em>, Liaoning, China. 
-      The vase shows light wear and a small chip at the rim, consistent with age and use, 
+      A delicate vintage Chinese porcelain vase decorated with a finely hand-painted female figure,  
+      adorned in traditional robes and vibrant colors. Marked <em>Hong Mei</em>, Liaoning, China.  
+      The vase shows light wear and a small chip at the rim, consistent with age,  
       but remains a beautiful display piece.
     </p>
     <ul class="details">
-      <li><strong>Category:</strong> Porcelain & Ceramics</li>
       <li><strong>Height:</strong> 29 cm / 11.41 in</li>
       <li><strong>Width:</strong> 12 cm / 4.72 in</li>
       <li><strong>Opening:</strong> 6 cm × 4 cm / 2.36 × 1.57 in</li>
       <li><strong>Base:</strong> 7.5 cm / 2.95 in</li>
       <li><strong>Weight:</strong> 0.44 kg / 0.97 lbs</li>
-      <li><strong>Condition:</strong> Lightly used, small chip at rim, no structural issues</li>
+      <li><strong>Condition:</strong> Small chip at rim, no structural issues</li>
     </ul>
     <button onclick="addToCart('Vintage Chinese Porcelain Vase', 80)">Add to Cart</button>
   </div>
 
-  <!-- ✅ Lightbox container -->
+  <!-- ✅ Lightbox -->
   <div id="lightbox" class="lightbox">
     <img src="" alt="Zoomed image">
   </div>
 
-  <!-- ✅ JavaScript -->
   <script>
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = lightbox.querySelector("img");
-
     document.querySelectorAll(".product-images img").forEach(img => {
       img.addEventListener("click", () => {
         lightboxImg.src = img.src;
         lightbox.style.display = "flex";
       });
     });
-
     lightbox.addEventListener("click", () => {
       lightbox.style.display = "none";
     });
