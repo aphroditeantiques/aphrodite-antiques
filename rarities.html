@@ -3,107 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rarities</title>
+  <title>Rarities - Aphrodite Antiques</title>
   <link rel="stylesheet" href="cart.css">
-  <style>
-    body {
-      font-family: 'Brush Script MT', cursive;
-      background-color: #fff8f5;
-      color: #2c2c2c;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h1, h2, h3, p {
-      font-family: 'Brush Script MT', cursive;
-    }
-    .cart {
-      border: 2px solid #ccc;
-      padding: 15px;
-      margin: 20px auto;
-      width: 90%;
-      max-width: 400px;
-      border-radius: 10px;
-      background: #fff;
-    }
-    .product {
-      margin: 40px auto;
-      max-width: 800px;
-    }
-    .product img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-    .price {
-      font-size: 1.8em;
-      margin: 15px 0;
-    }
-    button {
-      font-family: 'Brush Script MT', cursive;
-      font-size: 1.2em;
-      padding: 8px 18px;
-      border: none;
-      border-radius: 6px;
-      background: black;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #444;
-    }
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      font-size: 1em;
-    }
-    .payment-icons img {
-      height: 25px;
-      margin: 0 8px;
-    }
-  </style>
 </head>
 <body>
   <h1>Rarities</h1>
-  <p><a href="index.html">← Back to Home</a></p>
+  <a href="index.html">← Back to Home</a>
 
-  <div class="cart">
+  <div class="cart-container">
     <h2>Your Cart</h2>
     <p>Items Total: €0.00</p>
-    <button onclick="window.location.href='cart.html'">Checkout</button>
+    <button onclick="location.href='cart.html'">Checkout</button>
   </div>
 
-  <!-- Citroën Vase Listing -->
+  <!-- Pierre Culot Citroën Vase -->
   <div class="product">
     <h2>Pierre Culot Citroën Vase</h2>
-    <img src="clean_091ECD4E-C.jpeg" alt="Pierre Culot Vase">
-    <img src="clean_178E8482-4E.jpeg" alt="Pierre Culot Vase">
-    <img src="clean_B6E1D166-EC.jpeg" alt="Pierre Culot Vase">
-    <img src="clean_EEA3C1D0-57.jpeg" alt="Pierre Culot Vase">
-    <img src="clean_F4F8DDA4-D.jpeg" alt="Pierre Culot Vase">
-    <img src="clean_F6354F58-9E.jpeg" alt="Pierre Culot Vase">
 
-    <p class="price">€1200.00</p>
+    <div class="product-images">
+      <img src="clean_091ECD4E-Cxxx.jpeg" alt="Pierre Culot Vase">
+      <img src="clean_178E8482-Exxx.jpeg" alt="Pierre Culot Vase">
+      <img src="clean_B6E1D166-Exxx.jpeg" alt="Pierre Culot Vase">
+      <img src="clean_EEA3C1D0-Exxx.jpeg" alt="Pierre Culot Vase">
+      <img src="clean_F4F8DDA4-Exxx.jpeg" alt="Pierre Culot Vase">
+      <img src="clean_F6354F58-Exxx.jpeg" alt="Pierre Culot Vase">
+    </div>
+
+    <p><strong>€1200.00</strong></p>
     <p>
-      A rare and important vase by Belgian artist <b>Pierre Culot</b>, associated with the Citroën project.  
-      This exceptional piece displays Culot’s mastery of ceramic forms with clean lines,  
-      balanced proportions, and a textured surface.
+      A rare and important vase by Belgian artist <em>Pierre Culot</em>,
+      associated with the Citroën project. This exceptional piece displays
+      Culot’s mastery of ceramic forms with clean lines, balanced proportions,
+      and a textured surface.
     </p>
-    <p><b>Height:</b> 25 cm</p>
-    <p><b>Width:</b> 14 cm</p>
-    <p><b>Condition:</b> Perfect, no chips</p>
-
-    <button onclick="addToCart('Pierre Culot Citroën Vase', 1200)">Add to Cart</button>
+    <p><strong>Height:</strong> 25 cm<br>
+       <strong>Width:</strong> 14 cm<br>
+       <strong>Condition:</strong> Perfect, no chips
+    </p>
+    <button onclick="addToCart('Pierre Culot Citroën Vase', 1200.00)">Add to Cart</button>
   </div>
 
   <footer>
-    <img src="rarities.jpg" alt="Aphrodite Antiques Logo" style="max-width:180px; display:block; margin:0 auto;">
+    <img src="porcelain.jpg" alt="Aphrodite Antiques Logo" style="max-width:200px; margin-top:20px;">
     <div class="payment-icons">
-      <img src="applepay.png.png" alt="Apple Pay">
-      <img src="visa.png" alt="Visa">
-      <img src="mastercard.png" alt="Mastercard">
-      <img src="paypal.png" alt="PayPal">
+      <img src="applepay.png.png" alt="Apple Pay" style="height:30px;">
+      <img src="visa.png" alt="Visa" style="height:30px;">
+      <img src="mastercard.png" alt="Mastercard" style="height:30px;">
+      <img src="paypal.png" alt="PayPal" style="height:30px;">
     </div>
     <p>©2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
