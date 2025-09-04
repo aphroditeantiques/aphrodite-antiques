@@ -3,47 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porcelain - Aphrodite Antiques</title>
+  <title>Porcelain</title>
   <link rel="stylesheet" href="style.css">
+  <script src="cart.js" defer></script>
 </head>
 <body>
-
+  <h1>Porcelain</h1>
   <a href="index.html">← Back to Home</a>
-
-  <div class="product">
-    <h2>Vintage Chinese Sake Cup Set</h2>
-    <div class="product-gallery">
-      <img src="polished_sake1.jpg" alt="Chinese Sake Cups">
-      <img src="polished_sake2.jpg" alt="Chinese Sake Cups">
-      <img src="polished_sake3.jpg" alt="Chinese Sake Cups">
-      <img src="polished_sake4.jpg" alt="Chinese Sake Cups">
-    </div>
-    <p class="price">€80</p>
-    <p class="product-details">A vintage set of 8 miniature Chinese sake cups in their original presentation box. Perfect condition.</p>
-    <ul class="product-details">
-      <li>Condition: Perfect (no chips)</li>
-      <li>Pieces: 8 miniature cups</li>
-      <li>Comes with original box</li>
-      <li>Category: Porcelain</li>
-    </ul>
-    <button>Add to Cart</button>
-  </div>
 
   <div class="cart">
     <h2>Your Cart</h2>
-    <p>No items yet.</p>
-    <button>Checkout</button>
+    <p id="cart-total">Items Total: €0.00</p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+
+  <!-- Vintage Chinese Sake Cup Set -->
+  <div class="product">
+    <h2>Vintage Chinese Sake Cup Set (8 pieces)</h2>
+    <img src="polished_5B090D4F-EDE0-437B-B688-sake.jpg" alt="Vintage Chinese Sake Cup Set" class="product-img">
+    <p class="price">€80.00</p>
+    <p>
+      A vintage set of 8 miniature Chinese sake cups in their original presentation box. Perfect condition.
+    </p>
+    <ul>
+      <li><b>Condition:</b> Perfect, no chips</li>
+      <li><b>Pieces:</b> 8 miniature cups</li>
+      <li><b>Comes with:</b> Original box</li>
+      <li><b>Category:</b> Porcelain</li>
+    </ul>
+    <button onclick="addToCart('Vintage Chinese Sake Cup Set', 80)">Add to Cart</button>
+  </div>
+
+  <!-- Vintage Chinese Porcelain Vase -->
+  <div class="product">
+    <h2>Vintage Chinese Porcelain Vase</h2>
+    <img src="polished_chinese_vase.jpg" alt="Vintage Chinese Porcelain Vase" class="product-img">
+    <p class="price">€80.00</p>
+    <p>
+      A delicate vintage Chinese porcelain vase decorated with a finely hand-painted female figure,
+      adorned in traditional robes and vibrant colors.
+    </p>
+    <ul>
+      <li><b>Height:</b> 20 cm</li>
+      <li><b>Width:</b> 12 cm</li>
+      <li><b>Condition:</b> Perfect, no chips</li>
+      <li><b>Category:</b> Porcelain</li>
+    </ul>
+    <button onclick="addToCart('Vintage Chinese Porcelain Vase', 80)">Add to Cart</button>
   </div>
 
   <footer>
-    <img src="IMG_6649.jpeg" alt="Aphrodite Logo" class="logo">
-    <div class="payment-icons">
+    <img src="rarities.jpg" alt="Aphrodite Antiques Logo" class="footer-logo">
+    <p>Contact Us</p>
+    <p>Email: webshop@aphroditeantiques.com</p>
+    <p>Instagram: @aphroditeantique</p>
+    <p>Pinterest: Aphrodite Antiques</p>
+    <p>Etsy: AphroditeAntiques</p>
+    <p>TikTok: @aphrodite____antiques</p>
+    <div class="payments">
       <img src="applepay.png.png" alt="Apple Pay">
       <img src="visa.png.png" alt="Visa">
       <img src="mastercard.png.png" alt="Mastercard">
       <img src="paypal.png.png" alt="PayPal">
     </div>
+    <p>© 2025 Aphrodite Antiques. All rights reserved.</p>
+    <p>Worldwide Shipping – costs calculated at checkout.</p>
   </footer>
-
 </body>
 </html>
