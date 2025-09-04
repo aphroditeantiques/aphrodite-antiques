@@ -5,56 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rarities - Aphrodite Antiques</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body { font-family: 'Dancing Script', cursive; background: #fffaf7; text-align: center; }
-    h1, h2, h3, p { font-family: 'Dancing Script', cursive; }
-    .cart { border: 1px solid #ddd; padding: 10px; margin: 15px auto; max-width: 400px; border-radius: 8px; }
-    .item img { width: 280px; cursor: pointer; border-radius: 6px; }
-    .price { font-size: 1.4em; margin: 10px 0; }
-    .details { font-style: italic; margin: 10px 0; }
-    .add-to-cart { background: black; color: white; padding: 8px 16px; border: none; border-radius: 6px; cursor: pointer; }
-    footer { margin-top: 30px; }
-    footer img.logo { max-width: 180px; margin: 10px auto; display: block; }
-    footer .payments img { height: 28px; margin: 0 5px; }
-
-    /* Zoom modal */
-    .modal { display: none; position: fixed; z-index: 999; padding-top: 60px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto;
-             background-color: rgba(0,0,0,0.8); }
-    .modal-content { margin: auto; display: block; max-width: 90%; max-height: 80%; border-radius: 6px; }
-    .modal:target { display: block; }
-    .close { position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold; text-decoration: none; }
-  </style>
 </head>
 <body>
-
   <h1>Rarities</h1>
-  <p><a href="index.html">← Back to Home</a></p>
+  <a href="index.html">← Back to Home</a>
 
-  <div class="cart">
+  <section class="cart">
     <h2>Your Cart</h2>
     <p>Items Total: €0.00</p>
-    <button class="add-to-cart">Checkout</button>
-  </div>
+    <button>Checkout</button>
+  </section>
 
-  <div class="item">
+  <section class="product">
     <h2>Pierre Culot Citroën Vase</h2>
-    <!-- Image with zoom -->
-    <a href="#zoom1"><img src="clean_091ECD4E-CCD3-445B-A6C4-2684C11F2309.jpeg" alt="Pierre Culot Vase"></a>
-    <div id="zoom1" class="modal">
-      <a href="#" class="close">&times;</a>
-      <img class="modal-content" src="clean_091ECD4E-CCD3-445B-A6C4-2684C11F2309.jpeg" alt="Pierre Culot Vase">
-    </div>
+
+    <!-- All 6 images in safe mode -->
+    <img src="clean_091ECD4E-CCD3-445B-A6C4-26E8358B77D0.jpeg" alt="Pierre Culot Vase">
+    <img src="clean_178E8482-4EDB-440B-8EDA-F7C9B379FCED.jpeg" alt="Pierre Culot Vase">
+    <img src="clean_B6E1D166-ECD8-4307-85AD-5FBE021C7050.jpeg" alt="Pierre Culot Vase">
+    <img src="clean_EEA3C1D0-5767-46FB-9C8A-194D8C9AB7A7.jpeg" alt="Pierre Culot Vase">
+    <img src="clean_F4F8DDA4-D6E3-45B4-A7EC-1A79A0AB02E2.jpeg" alt="Pierre Culot Vase">
+    <img src="clean_F6354F58-9EEB-4A34-B66B-C1D1C119BB1A.jpeg" alt="Pierre Culot Vase">
 
     <p class="price">€1200.00</p>
-    <p class="details">A rare and important vase by Belgian artist <strong>Pierre Culot</strong>, associated with the Citroën project. This exceptional piece displays Culot's mastery of ceramic forms with clean lines, balanced proportions, and a textured surface.</p>
-    <p><em>Height:</em> 25 cm<br>
-       <em>Width:</em> 14 cm<br>
-       <em>Condition:</em> Perfect, no chips</p>
-    <button class="add-to-cart">Add to Cart</button>
-  </div>
+    <p>
+      A rare and important vase by Belgian artist <em>Pierre Culot</em>, 
+      associated with the Citroën project. This exceptional piece displays Culot’s mastery 
+      of ceramic forms with clean lines, balanced proportions, and a textured surface.
+    </p>
+    <p><strong>Height:</strong> 25 cm<br>
+       <strong>Width:</strong> 14 cm<br>
+       <strong>Condition:</strong> Perfect, no chips</p>
+    <button>Add to Cart</button>
+  </section>
 
   <footer>
-    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="logo">
+    <img src="logo.png" alt="Aphrodite Antiques Logo" class="footer-logo">
     <div class="payments">
       <img src="applepay.png.png" alt="Apple Pay">
       <img src="visa.png.png" alt="Visa">
@@ -63,6 +49,5 @@
     </div>
     <p>© 2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
