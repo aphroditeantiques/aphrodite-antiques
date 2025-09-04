@@ -6,70 +6,112 @@
   <title>Porcelain - Aphrodite Antiques</title>
   <link rel="stylesheet" href="cart.css">
   <style>
-    body { font-family: 'Dancing Script', cursive; background-color: #fff9f6; text-align: center; }
-    h1, h2, p { font-family: 'Dancing Script', cursive; }
-    img { width: 90%; max-width: 400px; border-radius: 8px; margin: 10px auto; display: block; }
-    .item { margin-bottom: 40px; }
-    .price { font-size: 1.5em; font-weight: bold; }
-    .footer-logo { max-width: 180px; margin: 20px auto; }
-    .payment-icons img { max-height: 32px; margin: 0 6px; }
+    body {
+      font-family: "Brush Script MT", cursive;
+      background-color: #fff7f5;
+      color: #000;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      font-family: "Brush Script MT", cursive;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .price {
+      font-size: 1.5em;
+      margin: 15px 0;
+    }
+    .description {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+    .footer-logo {
+      margin: 25px 0;
+    }
+    .footer-logo img {
+      width: 150px;
+      height: auto;
+    }
+    .payment-icons img {
+      width: 50px;
+      height: auto;
+      margin: 0 8px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 15px 0;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
   <h1>Porcelain</h1>
-  <a href="index.html">← Back to Home</a>
+  <a class="back-link" href="index.html">← Back to Home</a>
 
-  <div id="cart"></div>
-
-  <!-- Sake Set -->
-  <div class="item">
-    <h2>Vintage Chinese Sake Cup Set</h2>
-    <div>
-      <img src="polished_5B090D4F..." alt="Chinese Sake Cup">
-      <img src="polished_700D6F70..." alt="Chinese Sake Cup">
-      <img src="polished_9489093D..." alt="Chinese Sake Cup">
-      <img src="polished_A1C30450..." alt="Chinese Sake Cup">
-      <img src="polished_C5E7B1D7..." alt="Chinese Sake Cup">
-      <img src="polished_E7037977..." alt="Chinese Sake Cup">
-      <img src="polished_F1266B60..." alt="Chinese Sake Cup">
-    </div>
-    <p class="price">€80.00</p>
-    <p>A vintage set of 8 miniature Chinese sake cups in their original presentation box. Perfect condition.</p>
-    <p><strong>Condition:</strong> Perfect (no chips)<br>
-       <strong>Pieces:</strong> 8 miniature cups<br>
-       <strong>Comes with:</strong> Original box</p>
-    <button onclick="addToCart('Vintage Chinese Sake Cup Set', 80)">Add to Cart</button>
+  <!-- Sake Cup Set -->
+  <h2>Vintage Chinese Sake Cup Set (8 pieces)</h2>
+  <div class="gallery">
+    <img src="polished_5B090D4F-EDE0-437B-B688-7C7BF9ACB6B6.jpeg" alt="Sake Cup">
+    <img src="polished_700D6F70-66C2-43E1-B1ED-5E40C725AD02.jpeg" alt="Sake Cup">
+    <img src="polished_9489093D-38BA-4CF9-834B-2A8D3673D718.jpeg" alt="Sake Cup">
+    <img src="polished_A1C30450-8476-42AF-B8FD-65A0A523A4D2.jpeg" alt="Sake Cup">
+    <img src="polished_C5E7B1D7-1898-4020-BDEB-CB85C469218C.jpeg" alt="Sake Cup">
+    <img src="polished_E7037977-9E53-4F7B-9A85-40D230E88E0F.jpeg" alt="Sake Cup">
+    <img src="polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Sake Cup">
   </div>
+  <div class="price">€80.00</div>
+  <div class="description">
+    A charming vintage Chinese <strong>8-piece sake cup set</strong> in its original box.  
+    Miniature porcelain cups with beautiful craftsmanship.  
+    <br><br>
+    <strong>Condition:</strong> Perfect, no chips  
+  </div>
+  <button onclick="addToCart('Vintage Chinese Sake Cup Set', 80)">Add to Cart</button>
 
   <!-- Chinese Vase -->
-  <div class="item">
-    <h2>Chinese Vase</h2>
-    <div>
-      <img src="polished_chinese_vase1.jpg" alt="Chinese Vase">
-      <img src="polished_chinese_vase2.jpg" alt="Chinese Vase">
-      <img src="polished_chinese_vase3.jpg" alt="Chinese Vase">
-      <img src="polished_chinese_vase4.jpg" alt="Chinese Vase">
-      <img src="polished_chinese_vase5.jpg" alt="Chinese Vase">
-      <img src="polished_chinese_vase6.jpg" alt="Chinese Vase">
-    </div>
-    <p class="price">€150.00</p>
-    <p>A traditional Chinese porcelain vase with elegant form and detailed design.</p>
-    <p><strong>Condition:</strong> Excellent<br>
-       <strong>Height:</strong> 22 cm<br>
-       <strong>Category:</strong> Porcelain</p>
-    <button onclick="addToCart('Chinese Vase', 150)">Add to Cart</button>
+  <h2>Vintage Chinese Vase</h2>
+  <div class="gallery">
+    <img src="polished_chinese_vase1.jpeg" alt="Chinese Vase">
+    <img src="polished_chinese_vase2.jpeg" alt="Chinese Vase">
+    <img src="polished_chinese_vase3.jpeg" alt="Chinese Vase">
+    <img src="polished_chinese_vase4.jpeg" alt="Chinese Vase">
+    <img src="polished_chinese_vase5.jpeg" alt="Chinese Vase">
+    <img src="polished_chinese_vase6.jpeg" alt="Chinese Vase">
+  </div>
+  <div class="price">€80.00</div>
+  <div class="description">
+    An elegant <strong>vintage Chinese porcelain vase</strong>.  
+    <br><br>
+    <strong>Height:</strong> 18 cm <br>
+    <strong>Width:</strong> 10 cm <br>
+    <strong>Condition:</strong> Small chip visible (see pictures)  
+  </div>
+  <button onclick="addToCart('Vintage Chinese Vase', 80)">Add to Cart</button>
+
+  <!-- Footer with logo + payment -->
+  <div class="footer-logo">
+    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
+  </div>
+  <div class="payment-icons">
+    <img src="applepay.png" alt="Apple Pay">
+    <img src="visa.png" alt="Visa">
+    <img src="mastercard.png" alt="Mastercard">
+    <img src="paypal.png" alt="PayPal">
   </div>
 
-  <!-- Footer -->
   <footer>
-    <img src="logo.png" alt="Aphrodite Antiques" class="footer-logo">
-    <div class="payment-icons">
-      <img src="applepay.png.png" alt="Apple Pay">
-      <img src="visa.png" alt="Visa">
-      <img src="mastercard.png.png" alt="Mastercard">
-      <img src="paypal.png.png" alt="PayPal">
-    </div>
-    <p>© 2025 Aphrodite Antiques. All rights reserved.</p>
+    <p>©2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
 
   <script src="cart.js"></script>
