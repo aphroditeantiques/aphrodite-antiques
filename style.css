@@ -166,3 +166,8 @@ p {
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+/* Make handwriting font more readable */
+h1, h2, h3, h4, h5, h6, p, .description, .details, .price {
+  font-weight: 600; /* makes text look thicker */
+  letter-spacing: 0.5px; /* improves readability */
+}
