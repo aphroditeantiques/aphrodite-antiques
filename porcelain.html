@@ -3,80 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ceramics - Aphrodite Antiques</title>
+  <title>Porcelain - Aphrodite Antiques</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Ensure consistent sizing */
-    footer img.logo {
-      max-width: 120px;
-      height: auto;
-    }
-    footer img.payment-icon {
-      max-width: 50px;
-      height: auto;
-      margin: 5px;
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 20px auto;
+      max-width: 900px;
     }
     .image-grid img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .product-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2em;
+      margin-top: 20px;
+    }
+    .product-desc {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.3em;
+      max-width: 750px;
+      margin: 15px auto;
+      line-height: 1.6;
+    }
+    .product-details {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.2em;
+      margin: 10px auto;
+    }
+    .price {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5em;
+      margin: 15px 0;
+    }
+    .back-btn {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.2em;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+    }
+    footer img.logo {
+      width: 140px;
+      margin: 15px auto;
+      display: block;
+    }
+    footer img.payment-icon {
+      width: 60px;
+      margin: 5px;
+      display: inline-block;
+    }
+    footer p {
+      margin-top: 15px;
+      font-size: 1em;
+      font-family: 'Great Vibes', cursive;
     }
   </style>
 </head>
 <body>
 
-  <!-- Category Title -->
-  <h1>Ceramics</h1>
-  <a href="index.html" class="btn">← Back to Home</a>
+  <h1>Porcelain</h1>
 
-  <!-- Product 1: Vintage Chinese Porcelain Vase -->
-  <div class="product">
-    <h2>Vintage Chinese Porcelain Vase</h2>
-    <div class="image-grid">
-      <img src="polished_chinese_vase1.jpeg" alt="Chinese Vase">
-      <img src="polished_chinese_vase2.jpeg" alt="Chinese Vase">
-      <img src="polished_chinese_vase3.jpeg" alt="Chinese Vase">
-      <img src="polished_chinese_vase4.jpeg" alt="Chinese Vase">
-      <img src="polished_chinese_vase5.jpeg" alt="Chinese Vase">
-      <img src="polished_chinese_vase6.jpeg" alt="Chinese Vase">
-    </div>
-    <p>€60.00</p>
-    <p>
-      A charming <em>vintage Chinese porcelain vase</em>, delicately decorated with 
-      hand-painted motifs. This collectible piece showcases traditional craftsmanship 
-      and elegance, making it a refined addition to any home.
-    </p>
-    <p><strong>Height:</strong> 17 cm<br>
-       <strong>Width:</strong> 12 cm<br>
-       <strong>Condition:</strong> Good, with two visible chips (see photos).
-    </p>
-    <button>Add to Cart</button>
+  <!-- Vase -->
+  <h2 class="product-title">Vintage Chinese Porcelain Vase</h2>
+  <div class="image-grid">
+    <img src="polished_chinese_vase1.jpeg" alt="Chinese Vase 1">
+    <img src="polished_chinese_vase2.jpeg" alt="Chinese Vase 2">
+    <img src="polished_chinese_vase3.jpeg" alt="Chinese Vase 3">
+    <img src="polished_chinese_vase4.jpeg" alt="Chinese Vase 4">
+    <img src="polished_chinese_vase5.jpeg" alt="Chinese Vase 5">
+    <img src="polished_chinese_vase6.jpeg" alt="Chinese Vase 6">
   </div>
+  <p class="price">€60.00</p>
+  <p class="product-desc">
+    A charming <em>vintage Chinese porcelain vase</em>, delicately decorated with hand-painted motifs.  
+    This collectible piece showcases traditional craftsmanship and elegance, making it a refined addition to any home.
+  </p>
+  <p class="product-details"><strong>Height:</strong> 17 cm</p>
+  <p class="product-details"><strong>Width:</strong> 12 cm</p>
+  <p class="product-details"><strong>Condition:</strong> Good, with two visible chips (see photos).</p>
+  <a href="#" class="back-btn">← Back to Home</a>
 
-  <!-- Product 2: Vintage Chinese Sake Cup Set -->
-  <div class="product">
-    <h2>Vintage Chinese Sake Cup Set (8 pieces)</h2>
-    <div class="image-grid">
-      <img src="polished_5B090D4F-EDE0-437B-B688-7C7BF9ACB6B6.jpeg" alt="Chinese Sake Cups">
-      <img src="polished_700D6F70-66C2-43E1-B1ED-5E40C725AD02.jpeg" alt="Chinese Sake Cups">
-      <img src="polished_9489093D-38BA-4CF9-834B-2A8D3673D718.jpeg" alt="Chinese Sake Cups">
-      <img src="polished_A1C30450-8476-42AF-B8FD-65A0A523A4D2.jpeg" alt="Chinese Sake Cups">
-      <img src="polished_E7037977-9E53-4F7B-9A85-40D230E88E0F.jpeg" alt="Chinese Sake Cups">
-      <img src="polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Chinese Sake Cups">
-    </div>
-    <p>€85.00</p>
-    <p>
-      A delightful <em>vintage Chinese sake cup set</em>, comprising eight finely 
-      crafted porcelain cups. Each cup is richly decorated with traditional 
-      hand-painted motifs in vibrant colors, presented in its original red silk-lined box. 
-      A perfect collectible for lovers of Chinese artistry and tea ceremonies.
-    </p>
-    <p><strong>Dimensions (per cup):</strong> 5 cm diameter<br>
-       <strong>Condition:</strong> Excellent, no chips or cracks, box shows minor age-related wear.
-    </p>
-    <button>Add to Cart</button>
+  <!-- Sake Set -->
+  <h2 class="product-title">Vintage Chinese Sake Cup Set (8 pieces)</h2>
+  <div class="image-grid">
+    <img src="polished_5B090D4F-EDE0-437B-B688-7C7BF9ACB6B6.jpeg" alt="Sake Cup 1">
+    <img src="polished_700D6F70-66C2-43E1-B1ED-5E40C725AD02.jpeg" alt="Sake Cup 2">
+    <img src="polished_9489093D-38BA-4CF9-834B-2A8D3673D718.jpeg" alt="Sake Cup 3">
+    <img src="polished_A1C30450-8476-42AF-B8FD-65A0A523A4D2.jpeg" alt="Sake Cup 4">
+    <img src="polished_E7037977-9E53-4F7B-9A85-40D230E88E0F.jpeg" alt="Sake Cup 5">
+    <img src="polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Sake Cup 6">
   </div>
+  <p class="price">€85.00</p>
+  <p class="product-desc">
+    A delightful <em>vintage Chinese sake cup set</em>, comprising eight finely crafted porcelain cups.  
+    Each cup is richly decorated with hand-painted motifs in vibrant colors, presented in its original red silk-lined box.  
+    A perfect collectible for lovers of Chinese artistry and tea ceremonies.
+  </p>
+  <p class="product-details"><strong>Dimensions (per cup):</strong> 5 cm diameter</p>
+  <p class="product-details"><strong>Condition:</strong> Excellent, no chips or cracks; box shows minor age-related wear.</p>
+  <a href="#" class="back-btn">← Back to Home</a>
 
   <!-- Footer -->
   <footer>
@@ -87,6 +127,7 @@
       <img src="mastercard.png.png" alt="Mastercard" class="payment-icon">
       <img src="paypal.png.png" alt="PayPal" class="payment-icon">
     </div>
+    <p>©2025 aphroditeantiques.com. All rights reserved.</p>
   </footer>
 
 </body>
