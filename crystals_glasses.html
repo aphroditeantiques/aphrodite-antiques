@@ -4,37 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crystals & Glasses - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cart.css">
+  <style>
+    body {
+      font-family: "Brush Script MT", cursive;
+      background-color: #fff7f5;
+      color: #000;
+      text-align: center;
+    }
+    h1, h2, h3 {
+      font-family: "Brush Script MT", cursive;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .price {
+      font-size: 1.5em;
+      margin: 15px 0;
+    }
+    .description {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+    .footer-logo {
+      margin: 25px 0;
+    }
+    .footer-logo img {
+      width: 150px;
+      height: auto;
+    }
+    .payment-icons img {
+      width: 50px;
+      height: auto;
+      margin: 0 8px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 15px 0;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
+  <h1>Crystals & Glasses</h1>
+  <a class="back-link" href="index.html">← Back to Home</a>
 
-  <section>
-    <h1 style="font-family: 'Great Vibes', cursive;">Crystals & Glasses</h1>
-    <p><a href="index.html">← Back to Home</a></p>
-  </section>
+  <!-- ITEM: Amber Glass Decanter -->
+  <h2>Textured Amber Glass Decanter – Wayne Husted for Stelvia (1960s)</h2>
 
-  <section class="cart-section">
-    <h2 style="font-family: 'Great Vibes', cursive;">Your Cart</h2>
-    <p>Items Total: €0.00</p>
-    <button style="font-family: 'Great Vibes', cursive;">Checkout</button>
-  </section>
+  <div class="gallery">
+    <img src="amber_decanter1.jpeg" alt="Amber Glass Decanter">
+    <img src="amber_decanter2.jpeg" alt="Amber Glass Decanter">
+    <img src="amber_decanter3.jpeg" alt="Amber Glass Decanter">
+    <img src="amber_decanter4.jpeg" alt="Amber Glass Decanter">
+    <img src="amber_decanter5.jpeg" alt="Amber Glass Decanter">
+    <img src="amber_decanter6.jpeg" alt="Amber Glass Decanter">
+  </div>
 
-  <div class="item">
-    <p style="font-family: 'Great Vibes', cursive; font-size: 1.3em;">No items listed yet.</p>
+  <div class="price">€420.00</div>
+
+  <div class="description">
+    A striking <strong>Textured Amber Glass Decanter</strong>, designed by <em>Wayne Husted</em> for Stelvia in the 1960s.  
+    This elegant mid-century piece features a beautifully ribbed surface with a deep amber hue,  
+    making it both a decorative object and a collectible design piece.  
+
+    <br><br>
+    <strong>Height:</strong> 40 cm <br>
+    <strong>Diameter:</strong> 14 cm <br>
+    <strong>Condition:</strong> Excellent vintage condition, no chips or cracks.
+  </div>
+
+  <button onclick="addToCart('Amber Glass Decanter – Wayne Husted for Stelvia (1960s)', 420)">Add to Cart</button>
+
+  <!-- Footer with Logo & Payment Icons -->
+  <div class="footer-logo">
+    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
+  </div>
+
+  <div class="payment-icons">
+    <img src="applepay.png.png" alt="Apple Pay">
+    <img src="visa.png.png" alt="Visa">
+    <img src="mastercard.png.png" alt="Mastercard">
+    <img src="paypal.png.png" alt="PayPal">
   </div>
 
   <footer>
-    <div class="footer-logo">
-      <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
-    </div>
-    <div class="payment-icons">
-      <img src="applepay.png.png" alt="Apple Pay">
-      <img src="visa.png.png" alt="Visa">
-      <img src="mastercard.png.png" alt="Mastercard">
-      <img src="paypal.png.png" alt="PayPal">
-    </div>
+    <p>©2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
 
+  <script src="cart.js"></script>
 </body>
 </html>
