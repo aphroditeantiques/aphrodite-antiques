@@ -1,70 +1,131 @@
-<h2>Crystals & Glasses</h2>
-<a href="index.html" class="back-home">← Back to Home</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystals & Glasses - Aphrodite Antiques</title>
+  <link rel="stylesheet" href="cart.css">
+  <style>
+    body {
+      font-family: 'Great Vibes', cursive;
+      background-color: #fff7f5;
+      color: #000;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3 {
+      font-family: 'Great Vibes', cursive;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      max-width: 900px;
+      margin: 0 auto 20px auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+    .price {
+      font-size: 1.5em;
+      margin: 15px 0;
+    }
+    .description {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto 25px auto;
+      line-height: 1.6;
+    }
+    .footer-logo {
+      margin: 25px 0;
+    }
+    .footer-logo img {
+      width: 150px;
+      height: auto;
+    }
+    .payment-icons img {
+      width: 50px;
+      height: auto;
+      margin: 0 8px;
+    }
+    footer p {
+      font-size: 0.9em;
+      font-style: italic;
+      margin-top: 10px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 15px 0;
+      font-size: 1em;
+      font-style: italic;
+    }
+    button {
+      background-color: black;
+      color: white;
+      font-family: 'Great Vibes', cursive;
+      border: none;
+      padding: 10px 18px;
+      margin: 15px 0;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #5a2a2a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Crystals & Glasses</h1>
+  <a class="back-link" href="index.html">← Back to Home</a>
 
-<!-- Amber Decanter -->
-<h2>Textured Amber Glass Decanter – Wayne Husted for Stelvia (1960s)</h2>
+  <!-- Amber Vase -->
+  <h2>Amber Glass Vase</h2>
+  <div class="gallery">
+    <img src="polished_amber_vase1.jpeg" alt="Amber Vase">
+    <img src="polished_amber_vase2.jpeg" alt="Amber Vase">
+    <img src="polished_amber_vase3.jpeg" alt="Amber Vase">
+    <img src="polished_amber_vase4.jpeg" alt="Amber Vase">
+    <img src="polished_amber_vase5.jpeg" alt="Amber Vase">
+    <img src="polished_amber_vase6.jpeg" alt="Amber Vase">
+  </div>
+  <div class="price">€150.00</div>
+  <div class="description">
+    A delicate <em>amber glass vase</em> with a warm hue that beautifully reflects the light.  
+    Its elegant, timeless form makes it a perfect centerpiece or decorative accent.  
+    <br><br>
+    <strong>Height:</strong> 16 cm <br>
+    <strong>Width:</strong> 9 cm <br>
+    <strong>Condition:</strong> Excellent, no chips or cracks
+  </div>
+  <button onclick="addToCart('Amber Glass Vase', 150)">Add to Cart</button>
 
-<div class="image-grid">
-  <img src="polished_amber_decanter1.jpeg" alt="Amber Decanter 1">
-  <img src="polished_amber_decanter2.jpeg" alt="Amber Decanter 2">
-  <img src="polished_amber_decanter3.jpeg" alt="Amber Decanter 3">
-  <img src="polished_amber_decanter4.jpeg" alt="Amber Decanter 4">
-  <img src="polished_amber_decanter5.jpeg" alt="Amber Decanter 5">
-  <img src="polished_amber_decanter6.jpeg" alt="Amber Decanter 6">
-</div>
+  <!-- Amber Decanter -->
+  <h2>Amber Glass Decanter</h2>
+  <div class="gallery">
+    <img src="amber_decanter1.jpeg" alt="Amber Decanter">
+    <img src="amber_decanter2.jpeg" alt="Amber Decanter">
+    <img src="amber_decanter3.jpeg" alt="Amber Decanter">
+    <img src="amber_decanter4.jpeg" alt="Amber Decanter">
+    <img src="amber_decanter5.jpeg" alt="Amber Decanter">
+    <img src="amber_decanter6.jpeg" alt="Amber Decanter">
+  </div>
+  <div class="price">€420.00</div>
+  <div class="description">
+    A beautiful <em>amber glass decanter</em>, hand-blown with elegant proportions and fine craftsmanship.  
+    The deep amber tone enhances its refined appearance, making it a standout piece for collectors.  
+    <br><br>
+    <strong>Height:</strong> 27 cm <br>
+    <strong>Width:</strong> 14 cm <br>
+    <strong>Condition:</strong> Excellent, no chips or cracks
+  </div>
+  <button onclick="addToCart('Amber Glass Decanter', 420)">Add to Cart</button>
 
-<p class="price">€420.00</p>
-
-<p>
-A striking <em>Textured Amber Glass Decanter</em>, designed by the renowned Wayne Husted for Stelvia in the 1960s.  
-This elegant mid-century piece showcases Husted’s iconic eye for bold form and subtle detail.  
-The surface is richly textured with a ribbed design that catches and reflects light beautifully,  
-highlighted by a warm amber hue that gives depth and sophistication.  
-Its sculptural presence makes it not only a functional vessel but also a collectible statement piece,  
-perfect for lovers of modernist glassware and vintage design.  
-</p>
-
-<p>
-<strong>Height:</strong> 27 cm<br>
-<strong>Diameter:</strong> 14 cm<br>
-<strong>Condition:</strong> Excellent vintage condition, no chips or cracks.
-</p>
-
-<button onclick="addToCart('Amber Decanter', 420)">Add to Cart</button>
-
-
-<!-- Amber Vase -->
-<h2>Amber Vase</h2>
-
-<div class="image-grid">
-  <img src="polished_amber_vase1.jpeg" alt="Amber Vase 1">
-  <img src="polished_amber_vase2.jpeg" alt="Amber Vase 2">
-  <img src="polished_amber_vase3.jpeg" alt="Amber Vase 3">
-  <img src="polished_amber_vase4.jpeg" alt="Amber Vase 4">
-  <img src="polished_amber_vase5.jpeg" alt="Amber Vase 5">
-  <img src="polished_amber_vase6.jpeg" alt="Amber Vase 6">
-</div>
-
-<p class="price">€150.00</p>
-
-<p>
-An elegant <em>amber glass vase</em> with golden decorative details, this piece is a testament to refined mid-century artistry.  
-Its smooth, fluid lines highlight expert craftsmanship, while the deep amber tones evoke warmth, luxury, and timeless style.  
-The textured golden accents add a subtle touch of ornamentation, elevating it beyond simplicity into a sophisticated decorative object.  
-Perfect as a standalone statement piece, this vase also complements a range of interiors — from minimal modern spaces to richly layered vintage collections.  
-Whether placed on a sideboard, a dining table, or within a curated display of fine glassware, it brings depth, charm, and an aura of quiet elegance.  
-</p>
-
-<p>
-<strong>Dimensions:</strong> 16 × 9 cm<br>
-<strong>Condition:</strong> Excellent, no chips or cracks.
-</p>
-
-<button onclick="addToCart('Amber Vase', 150)">Add to Cart</button>
-
-
-<!-- Footer -->
-<footer>
+  <!-- Footer -->
   <div class="footer-logo">
     <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
   </div>
@@ -74,5 +135,10 @@ Whether placed on a sideboard, a dining table, or within a curated display of fi
     <img src="mastercard.png.png" alt="Mastercard">
     <img src="paypal.png.png" alt="PayPal">
   </div>
-  <p>©2025 Aphrodite Antiques. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>©2025 Aphrodite Antiques. All rights reserved.</p>
+  </footer>
+
+  <script src="cart.js"></script>
+</body>
+</html>
