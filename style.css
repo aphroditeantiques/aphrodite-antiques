@@ -171,3 +171,95 @@ h1, h2, h3, h4, h5, h6, p, .description, .details, .price {
   font-weight: 600; /* makes text look thicker */
   letter-spacing: 0.5px; /* improves readability */
 }
+/* --- Unified Handwriting Style for All Categories --- */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  background-color: #fdf8f5;
+  color: #2c2c2c;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+}
+
+/* Titles */
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+/* Prices */
+.price {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* Descriptions */
+.description {
+  font-size: 1.3em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Product Details */
+.details {
+  font-size: 1.2em;
+  margin: 15px auto;
+}
+
+/* Image Grids */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Back to Home Button */
+.back-home {
+  display: inline-block;
+  background: black;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background 0.3s ease;
+}
+.back-home:hover {
+  background: #5a2a2a;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f3ece7;
+}
+footer img.payment-icon {
+  width: 50px;
+  margin: 5px;
+}
+footer img.logo {
+  width: 160px;
+  display: block;
+  margin: 20px auto;
+}
+footer p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.2em;
+  margin-top: 15px;
+}
