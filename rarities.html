@@ -7,51 +7,43 @@
   <link rel="stylesheet" href="cart.css">
   <style>
     body {
-      font-family: "Brush Script MT", cursive;
+      font-family: 'Great Vibes', cursive;
       background-color: #fff7f5;
       color: #000;
       text-align: center;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 2em;
-      margin-top: 20px;
-      margin-bottom: 10px;
+    h1, h2, h3, p {
+      font-family: 'Great Vibes', cursive;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 15px;
-      max-width: 800px;
-      margin: 0 auto 20px auto;
+      max-width: 900px;
+      margin: 20px auto;
     }
     .gallery img {
       width: 100%;
       height: auto;
       border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
     .price {
-      font-size: 1.3em;
+      font-size: 1.5em;
       margin: 15px 0;
     }
     .description {
-      font-size: 1.1em;
+      font-size: 1.2em;
       max-width: 800px;
       margin: 0 auto 20px auto;
-      line-height: 1.5;
+      line-height: 1.6;
     }
     .footer-logo {
       margin: 25px 0;
     }
     .footer-logo img {
-      width: 120px;
+      width: 150px;
       height: auto;
-    }
-    .payment-icons {
-      margin: 15px 0;
     }
     .payment-icons img {
       width: 50px;
@@ -62,8 +54,10 @@
       display: inline-block;
       margin: 15px 0;
       font-size: 1.2em;
-      text-decoration: none;
-      color: black;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 10px;
     }
   </style>
 </head>
@@ -86,12 +80,19 @@
   <div class="price">€800.00</div>
 
   <div class="description">
-    A rare and important vase by Belgian artist <em>Pierre Culot</em>, associated with the Citroën project.  
-    This exceptional piece demonstrates Culot’s mastery of form and texture. The surface reflects his unique approach to ceramics, with organic imperfections and balance.  
+    This rare **Citroën vase** is an exceptional work of modern ceramic design.  
+    Its form balances **geometric precision** with an elegant flow, giving the piece both strength and softness.  
+    The glaze reveals subtle tonal variations, creating a depth of texture that draws the eye closer with every look.  
+
+    <br><br>
+    The surface is lightly textured, catching the light in ways that emphasize its contours and proportions.  
+    Minimalist in decoration yet rich in presence, this vase represents the harmony of **function and artistry**.  
+    A true collectible statement piece for refined interiors.  
+
     <br><br>
     <strong>Height:</strong> 14 cm <br>
-    <strong>Diameter:</strong> 14 cm <br>
-    <strong>Condition:</strong> Perfect, no chips or cracks
+    <strong>Width:</strong> 14 cm <br>
+    <strong>Condition:</strong> Perfect, no chips
   </div>
 
   <button onclick="addToCart('Pierre Culot Citroën Vase', 800)">Add to Cart</button>
@@ -108,7 +109,7 @@
   </div>
 
   <footer>
-    <p>©2025 Aphrodite Antiques. All rights reserved.</p>
+    <p>©2025 Aphrodite Antiques — aphroditeantiques.com</p>
   </footer>
 
   <script src="cart.js"></script>
