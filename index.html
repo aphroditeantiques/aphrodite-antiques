@@ -5,129 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aphrodite Antiques</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Import Handwriting Font */
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-    body {
-      font-family: 'Great Vibes', cursive;
-      background-color: #fdf8f5;
-      color: #2c2c2c;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    /* Hero Section */
-    .hero {
-      width: 100%;
-      max-height: 500px;
-      overflow: hidden;
-    }
-    .hero img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .hero-text {
-      margin: 20px auto;
-      font-size: 28px;
-      max-width: 800px;
-      line-height: 1.5;
-    }
-
-    /* Categories Section */
-    .categories {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .categories img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-    }
-    .categories img:hover {
-      transform: scale(1.05);
-    }
-    .categories a {
-      display: block;
-      margin-top: 10px;
-      font-size: 22px;
-      color: #000;
-      text-decoration: none;
-    }
-
-    /* Footer */
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      background: #f3ece7;
-    }
-    footer img.payment-icon {
-      width: 50px;
-      height: auto;
-      margin: 5px;
-    }
-    footer img.logo {
-      width: 160px;
-      display: block;
-      margin: 20px auto;
-    }
-    footer p {
-      font-family: 'Great Vibes', cursive;
-      font-size: 1.2em;
-      margin-top: 15px;
-    }
-  </style>
 </head>
 <body>
+
   <!-- Hero Section -->
   <div class="hero">
-    <img src="hero.jpg" alt="Aphrodite Antiques Hero">
-  </div>
-  <div class="hero-text">
-    Welcome to Aphrodite Antiques – where timeless elegance meets history. Explore our curated collection of rare and beautiful treasures.
+    <img src="hero.jpeg" alt="Aphrodite Antiques Hero">
   </div>
 
-  <!-- Categories -->
+  <!-- Welcome Text -->
+  <div class="hero-text">
+    <h1>Welcome to Aphrodite Antiques</h1>
+    <p>Discover unique treasures and timeless pieces for your collection.</p>
+  </div>
+
+  <!-- Mission Statement -->
+  <div class="mission">
+    <p>
+      At <strong>Aphrodite Antiques</strong>, we bring together carefully selected antiques, 
+      vintage treasures, and unique rarities from across the globe.  
+      Each piece tells a story, carrying history, charm, and timeless beauty.
+    </p>
+  </div>
+
+  <!-- Categories Section -->
   <div class="categories">
     <div>
-      <a href="porcelain.html"><img src="porcelain.jpg" alt="Porcelain"></a>
-      <a href="porcelain.html">Porcelain</a>
+      <a href="jewelry.html">
+        <img src="jewelry_category.jpeg" alt="Jewelry">
+        Jewelry
+      </a>
     </div>
     <div>
-      <a href="ceramic.html"><img src="ceramic.jpg" alt="Ceramics"></a>
-      <a href="ceramic.html">Ceramics</a>
+      <a href="porcelain.html">
+        <img src="porcelain_category.jpeg" alt="Porcelain & Ceramics">
+        Porcelain & Ceramics
+      </a>
     </div>
     <div>
-      <a href="glass.html"><img src="glass.jpg" alt="Glass & Crystal"></a>
-      <a href="glass.html">Glass & Crystal</a>
+      <a href="silverware_candleholders.html">
+        <img src="silverware_category.jpeg" alt="Silverware">
+        Silverware
+      </a>
     </div>
     <div>
-      <a href="silverware.html"><img src="silverware.jpg" alt="Silverware"></a>
-      <a href="silverware.html">Silverware</a>
+      <a href="woodwork.html">
+        <img src="woodwork_category.jpeg" alt="Woodwork">
+        Woodwork
+      </a>
     </div>
     <div>
-      <a href="vintage.html"><img src="vintage.jpg" alt="Vintage"></a>
-      <a href="vintage.html">Vintage</a>
+      <a href="clothing.html">
+        <img src="clothing_category.jpeg" alt="Clothing">
+        Clothing
+      </a>
     </div>
     <div>
-      <a href="paintings.html"><img src="paintings.jpg" alt="Paintings"></a>
-      <a href="paintings.html">Paintings</a>
+      <a href="vintage.html">
+        <img src="vintage_category.jpeg" alt="Vintage">
+        Vintage
+      </a>
     </div>
     <div>
-      <a href="jewelry.html"><img src="jewelry.jpg" alt="Jewelry"></a>
-      <a href="jewelry.html">Jewelry</a>
+      <a href="rarities.html">
+        <img src="rarities_category.jpeg" alt="Rarities">
+        Rarities
+      </a>
     </div>
     <div>
-      <a href="rarities.html"><img src="rarities.jpg" alt="Rarities"></a>
-      <a href="rarities.html">Rarities</a>
+      <a href="crystals_glasses.html">
+        <img src="crystals_glasses_category.jpeg" alt="Crystals & Glasses">
+        Crystals & Glasses
+      </a>
     </div>
   </div>
 
@@ -140,7 +89,8 @@
       <img src="mastercard.png.png" alt="Mastercard" class="payment-icon">
       <img src="paypal.png.png" alt="PayPal" class="payment-icon">
     </div>
-    <p>©2025 aphroditeantiques.com</p>
+    <p>©2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
