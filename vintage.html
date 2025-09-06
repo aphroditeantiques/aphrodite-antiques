@@ -3,58 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vintage - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Polished Antler Knives – Handmade Finland</title>
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #fff9f6;
+      color: #2c2c2c;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    h1 {
+      font-family: "Brush Script MT", cursive;
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+    .back-link {
+      display: block;
+      margin: 15px;
+      font-size: 1em;
+      text-decoration: none;
+      color: #5a3e36;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 15px auto;
+      max-width: 800px;
+    }
+    .price {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .button {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 20px 0;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 6px;
+    }
+    .footer {
+      margin-top: 40px;
+      padding: 20px;
+    }
+    .footer img {
+      height: 40px;
+      margin: 8px;
+    }
+    .logo {
+      max-width: 220px;
+      margin: 0 auto 10px auto;
+      display: block;
+    }
+    footer {
+      margin-top: 15px;
+      font-size: 0.9em;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
-  <h1>Vintage</h1>
-  <a class="back-link" href="index.html">← Back to Home</a>
 
-  <h2>Finnish Antler-Handled Knife Set – “Oulu” Carving</h2>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <h1>Polished Antler Knives – Handmade in Finland</h1>
 
   <div class="image-grid">
-    <img src="polished_antler_knives1.jpeg" alt="Finnish Antler Knife">
-    <img src="polished_antler_knives2.jpeg" alt="Finnish Antler Knife">
-    <img src="polished_antler_knives3.jpeg" alt="Finnish Antler Knife">
-    <img src="polished_antler_knives4.jpeg" alt="Finnish Antler Knife">
-    <img src="polished_antler_knives5.jpeg" alt="Finnish Antler Knife">
-    <img src="polished_antler_knives6.jpeg" alt="Finnish Antler Knife">
-    <img src="polished_antler_knives7.jpeg" alt="Finnish Antler Knife">
-    <img src="polished_antler_knives8.jpeg" alt="Finnish Antler Knife">
+    <img src="polished_antler_knives1.jpeg" alt="Polished Antler Knives 1">
+    <img src="polished_antler_knives2.jpeg" alt="Polished Antler Knives 2">
+    <img src="polished_antler_knives3.jpeg" alt="Polished Antler Knives 3">
+    <img src="polished_antler_knives4.jpeg" alt="Polished Antler Knives 4">
+    <img src="polished_antler_knives5.jpeg" alt="Polished Antler Knives 5">
+    <img src="polished_antler_knives6.jpeg" alt="Polished Antler Knives 6">
+    <img src="polished_antler_knives7.jpeg" alt="Polished Antler Knives 7">
+    <img src="polished_antler_knives8.jpeg" alt="Polished Antler Knives 8">
   </div>
 
-  <p><strong>Price:</strong> €60.00</p>
+  <p class="price">€60.00</p>
 
   <p>
-    A unique handmade knife set from <strong>Finland</strong>, crafted with antler handles.  
-    The carving <em>“Oulu”</em> represents the northern Finnish city in Lapland, known for its traditional craftsmanship.  
-    Each piece reflects rustic Nordic heritage, combining natural antler and steel into functional art.  
+    A striking set of <em>polished antler knives</em>, handmade in Finland.  
+    The natural antler has been skillfully carved and polished, giving each piece a rustic yet refined charm.  
+    Signed with the word <strong>“Oulu”</strong>, the name of the city in Lapland, this piece carries both local heritage and artistry.  
+    The antler handles display rich natural tones, while the carving transforms them into functional art.
   </p>
 
   <p><strong>Dimensions:</strong> 38 cm wide × 25 cm height</p>
   <p><strong>Condition:</strong> Excellent vintage condition</p>
 
-  <button onclick="addToCart('Finnish Antler-Handled Knife Set – Oulu Carving', 60)">
-    Add to Cart
-  </button>
+  <a href="#" class="button">Add to Cart</a>
 
-  <!-- Logo at bottom -->
-  <div class="footer-logo">
-    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
+  <div class="footer">
+    <img src="logo.png" alt="Aphrodite Antiques Logo" class="logo">
+    <div>
+      <img src="applepay.png.png" alt="Apple Pay">
+      <img src="visa.png.png" alt="Visa">
+      <img src="mastercard.png.png" alt="Mastercard">
+      <img src="paypal.png.png" alt="PayPal">
+    </div>
+    <footer>©2025 Aphrodite Antiques. All rights reserved.</footer>
   </div>
 
-  <!-- Payment icons -->
-  <div class="payment-icons">
-    <img src="applepay.png.png" alt="Apple Pay">
-    <img src="visa.png.png" alt="Visa">
-    <img src="mastercard.png.png" alt="Mastercard">
-    <img src="paypal.png.png" alt="PayPal">
-  </div>
-
-  <footer>
-    <p>©2025 aphroditeantiques.com – All rights reserved.</p>
-  </footer>
-
-  <script src="cart.js"></script>
 </body>
 </html>
