@@ -1,113 +1,116 @@
-<section class="product-category">
+<section id="vintage">
   <h2 class="category-title">Vintage</h2>
 
-  <!-- Polished Antler Knives -->
-  <div class="product-item">
-    <h3 class="product-title">Polished Antler Knives</h3>
-    <div class="product-gallery">
-      <img src="polished_antler_knives1.jpeg" alt="Polished Antler Knives 1">
-      <img src="polished_antler_knives2.jpeg" alt="Polished Antler Knives 2">
-      <img src="polished_antler_knives3.jpeg" alt="Polished Antler Knives 3">
-      <img src="polished_antler_knives4.jpeg" alt="Polished Antler Knives 4">
-      <img src="polished_antler_knives5.jpeg" alt="Polished Antler Knives 5">
-      <img src="polished_antler_knives6.jpeg" alt="Polished Antler Knives 6">
-      <img src="polished_antler_knives7.jpeg" alt="Polished Antler Knives 7">
-      <img src="polished_antler_knives8.jpeg" alt="Polished Antler Knives 8">
+  <div class="item">
+    <h3 class="item-title">Polished Antler Knives</h3>
+    <div class="image-grid">
+      <img src="polished_antler_knives1.jpeg" alt="Polished Antler Knives">
+      <img src="polished_antler_knives2.jpeg" alt="Polished Antler Knives">
+      <img src="polished_antler_knives3.jpeg" alt="Polished Antler Knives">
+      <img src="polished_antler_knives4.jpeg" alt="Polished Antler Knives">
+      <img src="polished_antler_knives5.jpeg" alt="Polished Antler Knives">
+      <img src="polished_antler_knives6.jpeg" alt="Polished Antler Knives">
+      <img src="polished_antler_knives7.jpeg" alt="Polished Antler Knives">
+      <img src="polished_antler_knives8.jpeg" alt="Polished Antler Knives">
     </div>
+
     <p class="price">€60.00</p>
     <p class="description">
-      A striking set of <em>polished antler knives</em>, handmade in Finland. The natural antler has been skillfully carved and polished, giving each piece a rustic yet refined charm. Signed with the word <strong>“Oulu”</strong>, the name of the city in Lapland, this piece carries both local heritage and artistry. The antler handles display rich natural tones, while the carving transforms them into functional art.
+      A striking set of <em>polished antler knives</em>, handmade in Finland. The natural antler has been skillfully carved and polished, giving each piece a rustic yet refined charm. Signed with the word 
+      <strong>“Oulu”</strong>, the name of the city in Lapland, this piece carries both local heritage and artistry. The antler handles display rich natural tones, while the carving transforms them into functional art.
     </p>
-    <p><strong>Dimensions:</strong> 38 cm wide × 25 cm height</p>
-    <p><strong>Condition:</strong> Excellent vintage condition</p>
+    <p class="details">
+      <strong>Dimensions:</strong> 38 cm wide × 25 cm height <br>
+      <strong>Condition:</strong> Excellent vintage condition
+    </p>
+
     <button class="add-to-cart">Add to Cart</button>
   </div>
+
+  <div class="back-home">
+    <a href="#home">← Back to Home</a>
+  </div>
+
+  <footer class="site-footer">
+    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="footer-logo">
+    <p>©2025 Aphrodite Antiques. All rights reserved.</p>
+    <div class="payment-icons">
+      <img src="applepay.png.png" alt="Apple Pay">
+      <img src="visa.png.png" alt="Visa">
+      <img src="mastercard.png.png" alt="Mastercard">
+      <img src="paypal.png.png" alt="PayPal">
+    </div>
+  </footer>
 </section>
 
-<!-- Footer with logo and payment icons -->
-<footer>
-  <div class="footer-logo">
-    <img src="logo.png" alt="Aphrodite Antiques Logo">
-  </div>
-  <div class="payment-icons">
-    <img src="applepay.png" alt="Apple Pay">
-    <img src="visa.png" alt="Visa">
-    <img src="mastercard.png" alt="Mastercard">
-    <img src="paypal.png" alt="PayPal">
-  </div>
-  <p>©2025 Aphrodite Antiques. All rights reserved.</p>
-</footer>
-
 <style>
-/* Category Title */
-.category-title {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.2em;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Product Title */
-.product-title {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.8em;
-  text-align: center;
-  margin: 15px 0;
-}
-
-/* Product Gallery */
-.product-gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin-bottom: 15px;
-}
-.product-gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Price */
-.price {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.6em;
-  text-align: center;
-  margin: 10px 0;
-}
-
-/* Description, Dimensions, Condition */
-.description, p {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.2em;
-  text-align: center;
-  margin: 5px 0;
-}
-
-/* Add to Cart Button */
-.add-to-cart {
-  display: block;
-  margin: 15px auto;
-  padding: 8px 18px;
-  background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.1em;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 30px;
-}
-.footer-logo img {
-  width: 120px;
-  margin-bottom: 10px;
-}
-.payment-icons img {
-  width: 50px;
-  margin: 0 6px;
-}
+  /* Ensure uniform style like other categories */
+  #vintage {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 1000px;
+  }
+  .category-title {
+    font-size: 28px;
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 20px;
+  }
+  .item-title {
+    font-size: 22px;
+    font-family: 'Great Vibes', cursive;
+    margin: 20px 0;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .description, .details {
+    font-size: 18px;
+    font-family: 'Dancing Script', cursive;
+    margin: 15px 0;
+  }
+  .add-to-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  .back-home {
+    margin-top: 30px;
+  }
+  .back-home a {
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    color: black;
+  }
+  .site-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .payment-icons img {
+    width: 50px;
+    margin: 0 5px;
+  }
 </style>
