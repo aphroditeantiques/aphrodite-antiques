@@ -10,7 +10,13 @@ body {
   text-align: center;
 }
 
-/* --- Homepage Hero Section --- */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Great Vibes', cursive;
+  margin: 10px 0;
+}
+
+/* Hero Section */
 .hero {
   width: 100%;
   max-height: 500px;
@@ -24,23 +30,30 @@ body {
 .hero-text {
   margin: 20px auto;
   font-size: 28px;
-  font-weight: 600;
 }
 
-/* --- Homepage Categories Grid --- */
+/* Mission Section */
+.mission {
+  padding: 20px;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Categories Grid */
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns on desktop */
   gap: 20px;
   padding: 20px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .categories img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
   border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 .categories img:hover {
@@ -49,72 +62,80 @@ body {
 .categories a {
   display: block;
   margin-top: 10px;
-  font-size: 22px;
+  font-size: 20px;
   color: #000;
   text-decoration: none;
+  font-family: 'Great Vibes', cursive;
 }
 
-/* --- Category Pages (Unified Style) --- */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Great Vibes', cursive;
-  font-weight: 600;
+/* Mobile responsive layout */
+@media (max-width: 768px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 15px;
+  }
+  .categories img {
+    height: 180px; /* smaller for mobile */
+  }
+}
+
+/* Product Items */
+.product {
+  margin: 20px auto;
+  max-width: 600px;
+}
+.product img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.product img:hover {
+  transform: scale(1.2);
+}
+.product h2 {
+  font-size: 28px;
   margin: 10px 0;
 }
-
-.price {
-  font-size: 1.5em;
-  margin: 15px 0;
-  font-weight: 600;
+.product p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.product ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 20px;
 }
 
-.description, .details, p {
-  font-family: 'Great Vibes', cursive;
-  font-size: 1.3em;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 10px auto 20px;
-  font-weight: 600;
-  letter-spacing: 0.4px;
-}
-
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-  margin: 20px auto;
-  max-width: 1000px;
-}
-.image-grid img {
-  width: 100%;
-  height: auto;
+/* Cart */
+.cart {
+  border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 500px;
 }
-.image-grid img:hover {
-  transform: scale(1.05);
+.cart h2 {
+  font-size: 26px;
 }
-
-/* --- Buttons --- */
-button, .btn, .back-home {
+button, .btn {
   background-color: black;
   color: white;
   font-family: 'Great Vibes', cursive;
   border: none;
-  padding: 10px 20px;
-  border-radius: 8px;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 1.2em;
-  margin: 15px 0;
-  text-decoration: none;
-  display: inline-block;
 }
-button:hover, .btn:hover, .back-home:hover {
+button:hover, .btn:hover {
   background-color: #5a2a2a;
 }
 
-/* --- Footer --- */
+/* Footer */
 footer {
   margin-top: 40px;
   padding: 20px;
@@ -131,8 +152,39 @@ footer img.logo {
   margin: 20px auto;
 }
 footer p {
+  font-family: 'Great Vibes', cursive;
   font-size: 1.2em;
   margin-top: 15px;
+}
+
+/* Product Descriptions Styling */
+.description {
+  font-size: 1.3em;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+.details {
+  font-size: 1.2em;
+  margin: 15px auto;
+}
+.price {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+/* Back to Home Button */
+.back-home {
+  display: inline-block;
+  background: black;
+  color: white;
   font-family: 'Great Vibes', cursive;
-  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background 0.3s ease;
+}
+.back-home:hover {
+  background: #5a2a2a;
 }
