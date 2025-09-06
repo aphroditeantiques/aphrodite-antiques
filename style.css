@@ -263,3 +263,26 @@ footer p {
   font-size: 1.2em;
   margin-top: 15px;
 }
+/* Vintage category fix - keep same style, just adjust text size */
+.vintage-category .product-description,
+.vintage-category p {
+  font-size: 1.2em;   /* slightly larger text */
+  line-height: 1.6;
+  font-family: 'Dancing Script', cursive; /* keep handwriting */
+  text-align: center;
+}
+
+.vintage-category h2,
+.vintage-category h3 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+/* Keep images neat and same size as other categories */
+.vintage-category .product-images img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 10px;
+}
