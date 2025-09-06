@@ -127,3 +127,23 @@ footer p {
   font-size: 1.2em;
   margin-top: 15px;
 }
+/* Homepage Fix */
+.homepage h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.2em;   /* smaller than before */
+  margin: 15px 0;
+}
+
+.homepage h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8em;
+  margin: 12px 0;
+}
+
+.homepage p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.2em;   /* elegant readable size */
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 10px auto;
+}
