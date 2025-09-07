@@ -3,211 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ceramics - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="cart.css">
-  <style>
-    body {
-      font-family: 'Great Vibes', cursive;
-      background-color: #fdf8f5;
-      color: #2c2c2c;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1, h2 {
-      font-family: 'Great Vibes', cursive;
-      margin: 15px 0;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-      max-width: 900px;
-      margin: 0 auto 20px auto;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
-
-    .price {
-      font-size: 1.5em;
-      margin: 10px 0;
-    }
-
-    .description {
-      font-size: 1.2em;
-      max-width: 800px;
-      margin: 0 auto 20px auto;
-      line-height: 1.6;
-    }
-
-    .footer-logo {
-      margin: 30px 0 15px 0;
-    }
-
-    .footer-logo img {
-      width: 140px;
-      height: auto;
-    }
-
-    .payment-icons img {
-      width: 50px;
-      height: auto;
-      margin: 0 8px;
-    }
-
-    footer {
-      margin-top: 25px;
-      padding: 15px;
-      background: #f3ece7;
-      font-size: 18px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin: 15px 0;
-      font-size: 1.3em;
-      text-decoration: none;
-      color: #000;
-    }
-
-    button {
-      background-color: black;
-      color: white;
-      font-family: 'Great Vibes', cursive;
-      border: none;
-      padding: 10px 18px;
-      margin: 10px 0;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #5a2a2a;
-    }
-  </style>
+  <title>Ceramics</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Ceramics</h1>
-  <a class="back-link" href="index.html">← Back to Home</a>
 
-  <!-- Item 1: Japanese Porcelain Sake Set -->
-  <h2>Japanese Porcelain Sake Set</h2>
-  <div class="gallery">
-    <img src="polished_5B090D4F-EDE0-437B-B688-7C7BF9ACB6B6.jpeg" alt="Sake Set">
-    <img src="polished_700D6F70-66C2-43E1-B1ED-5E40C725AD02.jpeg" alt="Sake Set">
-    <img src="polished_9489093D-38BA-4CF9-834B-2A8D3673D718.jpeg" alt="Sake Set">
-    <img src="polished_A1C30450-8476-42AF-B8FD-65A0A523A4D2.jpeg" alt="Sake Set">
-    <img src="polished_C5E7B1D7-1898-4020-BDEB-CB85C469218C.jpeg" alt="Sake Set">
-    <img src="polished_E7037977-9E53-4F7B-9A85-40D230E88E0F.jpeg" alt="Sake Set">
-    <img src="polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Sake Set">
-  </div>
-  <div class="price">€80.00</div>
-  <div class="description">
-    A finely crafted <em>Japanese porcelain sake set</em>, consisting of a carafe and six matching cups.  
-    Sets like this were traditionally used in <strong>New Year celebrations</strong>, weddings, and family gatherings, where sake symbolized togetherness, purity, and good fortune.  
-    <br><br>
-    The elegant form and smooth white glaze reflect both functionality and artistry, with a design that balances refinement and everyday use. Today, it stands as both a practical serving set and a collectible that carries centuries of cultural meaning.  
-    <br><br>
-    <strong>Condition:</strong> Excellent, no chips or cracks.  
-    <strong>Includes:</strong> Carafe + 6 cups.
-  </div>
-  <button onclick="addToCart('Japanese Porcelain Sake Set', 80)">Add to Cart</button>
+  <a href="index.html" class="back-home">← Back to Home</a>
+  <h1>Ceramics Collection</h1>
 
-  <!-- Item 2: Chinese Vase -->
-  <h2>Chinese Vase</h2>
-  <div class="gallery">
-    <img src="polished_chinese_vase1.jpeg" alt="Chinese Vase">
-    <img src="polished_chinese_vase2.jpeg" alt="Chinese Vase">
-    <img src="polished_chinese_vase3.jpeg" alt="Chinese Vase">
-    <img src="polished_chinese_vase4.jpeg" alt="Chinese Vase">
-    <img src="polished_chinese_vase5.jpeg" alt="Chinese Vase">
-    <img src="polished_chinese_vase6.jpeg" alt="Chinese Vase">
-  </div>
-  <div class="price">€50.00</div>
-  <div class="description">
-    A delicate <em>Chinese vase</em>, showcasing traditional ceramic craftsmanship with a simple yet refined profile.  
-    Its balanced form and glossy surface evoke timeless beauty and versatility in any collection.  
-    <br><br>
-    Though it carries <strong>two small chips</strong>, these do not diminish its charm — instead, they highlight its authenticity and history as a lived object, making it a genuine antique rather than a flawless reproduction.  
-    <br><br>
-    <strong>Height:</strong> 25 cm <br>
-    <strong>Width:</strong> 14 cm <br>
-    <strong>Condition:</strong> Two small chips, otherwise stable.
-  </div>
-  <button onclick="addToCart('Chinese Vase', 50)">Add to Cart</button>
-
-  <!-- Item 3: Royal Porzellan Vase -->
-  <h2>Royal Porzellan Vase</h2>
-  <div class="gallery">
-    <img src="polished_ceramic_vase1.jpeg" alt="Royal Vase">
-    <img src="polished_ceramic_vase2.jpeg" alt="Royal Vase">
-    <img src="polished_ceramic_vase3.jpeg" alt="Royal Vase">
-    <img src="polished_ceramic_vase4.jpeg" alt="Royal Vase">
-    <img src="polished_ceramic_vase5.jpeg" alt="Royal Vase">
-    <img src="polished_ceramic_vase6.jpeg" alt="Royal Vase">
-  </div>
-  <div class="price">€40.00</div>
-  <div class="description">
-    A <em>Royal Porzellan vase</em> from Germany, made during the postwar era when German porcelain manufacturers sought to revive their centuries-old traditions with modern elegance.  
-    <br><br>
-    The piece exemplifies <strong>mid-20th-century European design</strong> — clean, refined, and versatile. Its glossy finish and harmonious silhouette reflect both durability and artistry, qualities that made Royal Porzellan a household name across Europe.  
-    <br><br>
-    Compact yet elegant, this vase fits beautifully in any setting, whether displayed alone or with fresh flowers.  
-    <br><br>
-    <strong>Height:</strong> 17 cm <br>
-    <strong>Width:</strong> 11 cm <br>
-    <strong>Condition:</strong> Excellent, no damage.
-  </div>
-  <button onclick="addToCart('Royal Porzellan Vase', 40)">Add to Cart</button>
-<!-- Fourth Item: Speckled Porcelain Vase -->
-<div class="product">
-  <h2>Speckled Porcelain Vase</h2>
-  <div class="product-gallery">
-    <img src="polished_ceramic_vase1.jpeg" alt="Speckled Porcelain Vase front view">
-    <img src="polished_ceramic_vase2.jpeg" alt="Speckled Porcelain Vase side view">
-    <img src="polished_ceramic_vase3.jpeg" alt="Speckled Porcelain Vase top view">
-    <img src="polished_ceramic_vase4.jpeg" alt="Speckled Porcelain Vase base view">
+  <!-- Japanese Sake Set -->
+  <div class="product">
+    <h2>Japanese Sake Set</h2>
+    <div class="product-gallery">
+      <img src="polished_5B090D4F-EDE0-437B-B688-7C7BF9ACB6B6.jpeg" alt="Sake Set 1">
+      <img src="polished_700D6F70-66C2-43E1-B1ED-5E40C725AD02.jpeg" alt="Sake Set 2">
+      <img src="polished_9489093D-38BA-4CF9-834B-2A8D3673D718.jpeg" alt="Sake Set 3">
+      <img src="polished_A1C30450-8476-42AF-B8FD-65A0A523A4D2.jpeg" alt="Sake Set 4">
+      <img src="polished_C5E7B1D7-1898-4020-BDEB-CB85C469218C.jpeg" alt="Sake Set 5">
+      <img src="polished_E7037977-9E53-4F7B-9A85-40D230E88E0F.jpeg" alt="Sake Set 6">
+      <img src="polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Sake Set 7">
+    </div>
+    <div class="price">€80.00</div>
+    <div class="description">
+      A traditional Japanese sake set featuring a bottle (tokkuri) and matching cups (ochoko). Handcrafted with elegant form and smooth glaze, this set embodies the refinement of Japanese ceramic art. Perfect for serving warm or cold sake and a great addition for collectors.  
+      <br><br>
+      <strong>Condition:</strong> Excellent, no chips or cracks.
+    </div>
+    <button onclick="addToCart('Japanese Sake Set', 80.00)">Add to Cart</button>
   </div>
 
-  <div class="price">€85.00</div>
-
-  <div class="description">
-    This vintage <em>speckled porcelain vase</em> is a beautiful example of rustic charm and timeless ceramic artistry. 
-    Its organic form and earthy glaze create a warm and natural look that complements both modern and traditional interiors.  
-    Perfect for displaying flowers or as a standalone decorative piece, this vase brings character and texture to any space.  
-
-    <br><br>
-    <strong>Height:</strong> 24 cm  
-    <br>
-    <strong>Width:</strong> approx. 18 cm  
-    <br>
-    <strong>Condition:</strong> Excellent vintage condition, no chips or cracks  
+  <!-- Royal Porzellan Vase -->
+  <div class="product">
+    <h2>Royal Porzellan Vase</h2>
+    <div class="product-gallery">
+      <img src="ceramic_vase1.jpeg.HEIC" alt="Royal Vase 1">
+      <img src="ceramic_vase2.jpeg.HEIC" alt="Royal Vase 2">
+      <img src="ceramic_vase3.jpeg.HEIC" alt="Royal Vase 3">
+      <img src="ceramic_vase4.jpeg.HEIC" alt="Royal Vase 4">
+      <img src="ceramic_vase5.jpeg.HEIC" alt="Royal Vase 5">
+      <img src="ceramic_vase6.jpeg.HEIC" alt="Royal Vase 6">
+    </div>
+    <div class="price">€40.00</div>
+    <div class="description">
+      This German Royal Porzellan vase is a mid-century treasure, featuring hand-applied glazing with modernist influences. The shape reflects refined craftsmanship, perfect for displaying flowers or as a standalone decorative object.  
+      <br><br>
+      <strong>Height:</strong> 17 cm <br>
+      <strong>Width:</strong> 11 cm <br>
+      <strong>Condition:</strong> Excellent vintage condition.
+    </div>
+    <button onclick="addToCart('Royal Porzellan Vase', 40.00)">Add to Cart</button>
   </div>
 
-  <button onclick="addToCart('Speckled Porcelain Vase', 85)">Add to Cart</button>
-</div>
+  <!-- Chinese Vase -->
+  <div class="product">
+    <h2>Chinese Vase</h2>
+    <div class="product-gallery">
+      <img src="polished_chinese_vase1.jpeg" alt="Chinese Vase 1">
+      <img src="polished_chinese_vase2.jpeg" alt="Chinese Vase 2">
+      <img src="polished_chinese_vase3.jpeg" alt="Chinese Vase 3">
+      <img src="polished_chinese_vase4.jpeg" alt="Chinese Vase 4">
+      <img src="polished_chinese_vase5.jpeg" alt="Chinese Vase 5">
+      <img src="polished_chinese_vase6.jpeg" alt="Chinese Vase 6">
+    </div>
+    <div class="price">€50.00</div>
+    <div class="description">
+      A refined Chinese porcelain vase with delicate hand-painted motifs inspired by classical themes. This vase captures the artistry and balance of traditional Chinese ceramics. Ideal as a centerpiece or collectible display piece.  
+      <br><br>
+      <strong>Height:</strong> 28 cm <br>
+      <strong>Width:</strong> 14 cm <br>
+      <strong>Condition:</strong> Two small chips (see photos), otherwise excellent.
+    </div>
+    <button onclick="addToCart('Chinese Vase', 50.00)">Add to Cart</button>
+  </div>
+
+  <!-- Speckled Porcelain Pottery -->
+  <div class="product">
+    <h2>Speckled Porcelain Pottery</h2>
+    <div class="product-gallery">
+      <img src="polished_4A3F0B3A-07CF-44B9-9C5F-E82D5CF95F2B.jpeg" alt="Speckled Pottery 1">
+      <img src="polished_C6601521-EC59-4D52-A8F8-FA46B7DB8B98.jpeg" alt="Speckled Pottery 2">
+      <img src="polished_CB224CBB-AEB9-431A-A441-CDFE19866364.jpeg" alt="Speckled Pottery 3">
+      <img src="polished_41850358-3B59-4678-B786-17BC850EF53C.jpeg" alt="Speckled Pottery 4">
+    </div>
+    <div class="price">€85.00</div>
+    <div class="description">
+      A handmade speckled porcelain pottery piece showcasing natural textures and earthy tones. The surface glaze produces a unique speckled pattern, making it a charming addition to any collection of artisanal ceramics.  
+      <br><br>
+      <strong>Height:</strong> 24 cm <br>
+      <strong>Width:</strong> 18 cm <br>
+      <strong>Condition:</strong> Excellent, no chips or cracks.
+    </div>
+    <button onclick="addToCart('Speckled Porcelain Pottery', 85.00)">Add to Cart</button>
+  </div>
+
   <!-- Footer -->
-  <div class="footer-logo">
-    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
-  </div>
-  <div class="payment-icons">
-    <img src="applepay.png.png" alt="Apple Pay">
-    <img src="visa.png.png" alt="Visa">
-    <img src="mastercard.png.png" alt="Mastercard">
-    <img src="paypal.png.png" alt="PayPal">
-  </div>
   <footer>
-    <p>©2025 Aphrodite Antiques. All rights reserved. www.aphroditeantiques.com</p>
+    <img src="IMG_6649.jpeg" alt="Logo" class="logo">
+    <div class="payment-icons">
+      <img src="visa.png.png" alt="Visa" class="payment-icon">
+      <img src="mastercard.png.png" alt="Mastercard" class="payment-icon">
+      <img src="paypal.png.png" alt="PayPal" class="payment-icon">
+      <img src="amex.png.png" alt="Amex" class="payment-icon">
+    </div>
+    <p>© Aphrodite Antiques | webshop@aphroditeantiques.com</p>
+    <p>
+      <a href="https://instagram.com/aphroditeantiques">Instagram</a> | 
+      <a href="https://tiktok.com/@aphroditeantiques">TikTok</a> | 
+      <a href="https://etsy.com/shop/aphroditeantiques">Etsy</a>
+    </p>
   </footer>
 
-  <script src="cart.js"></script>
 </body>
 </html>
