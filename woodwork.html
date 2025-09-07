@@ -5,66 +5,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Woodwork – Aphrodite Antiques</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Great Vibes', cursive;
+      background-color: #fdf6f2;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 20px 0 10px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin: 15px 0;
+    }
+
+    .back-link {
+      display: block;
+      margin: 10px 0;
+      font-size: 1em;
+      text-decoration: none;
+      color: black;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .details {
+      max-width: 800px;
+      margin: 30px auto;
+      text-align: left;
+      font-size: 1.2em;  /* larger for readability */
+      line-height: 1.8;
+    }
+
+    .details h3 {
+      font-size: 1.6em;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .details ul {
+      padding-left: 20px;
+    }
+
+    .details li {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.6em;
+      margin: 20px 0;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .add-to-cart {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1.1em;
+      cursor: pointer;
+      border-radius: 5px;
+      display: block;
+      margin: 15px auto;
+    }
+
+    footer {
+      background-color: #fdf6f2;
+      padding: 30px 20px;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+    }
+
+    footer img {
+      max-width: 120px;
+      margin-bottom: 15px;
+    }
+
+    footer h3 {
+      margin: 10px 0;
+      font-size: 1.5em;
+    }
+
+    footer p {
+      margin: 5px 0;
+      font-size: 1em;
+    }
+
+    footer a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .payments {
+      margin: 15px 0;
+    }
+
+    .payments img {
+      width: 50px;
+      margin: 0 10px;
+    }
+
+    .copyright {
+      margin-top: 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Woodwork Collection</h1>
-  </header>
+  <h1>Woodwork</h1>
+  <a class="back-link" href="index.html">← Back to Home</a>
 
-  <main>
-    <section class="category-intro">
-      <p>Discover finely crafted wooden antiques, each with timeless beauty and craftsmanship.</p>
-    </section>
+  <h2>Hand-Carved Wooden Horse Head Bookends</h2>
 
-    <!-- First Item: Hand-Carved Wooden Horse Head Bookends -->
-    <section class="item">
-      <h2>Hand-Carved Wooden Horse Head Bookends – Rustic Vintage Decor</h2>
-      <div class="gallery">
-        <img src="polished_D2634D9F-5AD1-4EF4-A355-38F56EB9D59D.jpeg" alt="Horse Bookends front view">
-        <img src="polished_FE74323D-5258-4B93-83C2-7ED439BD3E73.jpeg" alt="Horse Bookends side view">
-        <img src="polished_C26A0AEB-384F-45F5-91D9-0221B20864D2.jpeg" alt="Horse Bookends angled view">
-        <img src="polished_E81FF074-BC03-40FD-8BEB-48997C99ED1C.jpeg" alt="Horse Bookends detail closeup">
-        <img src="polished_F777D9B0-7B84-4176-BF99-AAAC03574F83.jpeg" alt="Horse Bookends close view">
-        <img src="polished_B06A2445-5AA2-4BBB-9257-84E7B8B5D86B.jpeg" alt="Horse Bookends top angle">
-        <img src="polished_2AD60B2A-1DB5-4572-A086-610707861282.jpeg" alt="Horse Bookends back view">
-        <img src="polished_D07FFE5F-DA1E-4E7A-BD4D-82CF8007F85A.jpeg" alt="Horse Bookends pair view">
-      </div>
-      <div class="description">
-        <p>Bring timeless elegance to your bookshelf with this beautiful pair of <strong>hand-carved wooden horse head bookends</strong>. Expertly crafted with rich wood grain and rustic details, these bookends showcase exquisite artistry and add character to any space.</p>
-        <h3>✨ Details:</h3>
-        <ul>
-          <li><strong>Material:</strong> Solid carved wood</li>
-          <li><strong>Design:</strong> Horse head motif, finely detailed</li>
-          <li><strong>Style:</strong> Rustic / Mid-century vintage</li>
-          <li><strong>Condition:</strong> Excellent vintage condition with natural patina</li>
-          <li><strong>Dimensions (each):</strong> approx. 18 cm high × 12 cm wide × 9 cm deep</li>
-          <li><strong>Set Includes:</strong> 2 bookends (sold as a pair)</li>
-        </ul>
-        <p class="price">💶 Price: €85 (pair)</p>
-        <button class="add-to-cart" data-item="horse-bookends" data-price="85">Add to Cart</button>
-      </div>
-    </section>
+  <div class="gallery">
+    <img src="polished_D2634D9F-5AD1-4EF4-A355-38F56EB9D59D.jpeg" alt="Horse Bookends">
+    <img src="polished_FE74323D-5258-4B93-83C2-7ED439BD3E73.jpeg" alt="Horse Bookends">
+    <img src="polished_C26A0AEB-384F-45F5-91D9-0221B20864D2.jpeg" alt="Horse Bookends">
+    <img src="polished_E81FF074-BC03-40FD-8BEB-48997C99ED1C.jpeg" alt="Horse Bookends">
+    <img src="polished_F777D9B0-7B84-4176-BF99-AAAC03574F83.jpeg" alt="Horse Bookends">
+    <img src="polished_B06A2445-5AA2-4BBB-9257-84E7B8B5D86B.jpeg" alt="Horse Bookends">
+    <img src="polished_2AD60B2A-1DB5-4572-A086-610707861282.jpeg" alt="Horse Bookends">
+    <img src="polished_D07FFE5F-DA1E-4E7A-BD4D-82CF8007F85A.jpeg" alt="Horse Bookends">
+  </div>
 
-    <!-- Existing items in Woodwork category go here -->
-    <!-- Example placeholder, don’t remove -->
-    <section class="item">
-      <h2>Example Existing Woodwork Item</h2>
-      <img src="woodwork.jpg" alt="Woodwork Example">
-      <p>Description of your existing woodwork item…</p>
-      <p class="price">💶 Price: €XX</p>
-      <button class="add-to-cart">Add to Cart</button>
-    </section>
-  </main>
+  <div class="details">
+    <p>
+      Bring timeless elegance to your bookshelf with this beautiful pair of 
+      <strong>hand-carved wooden horse head bookends.</strong> Expertly crafted with rich wood grain 
+      and rustic details, these bookends showcase exquisite artistry and add character to any space.
+    </p>
 
-  <!-- Footer with Contact Details -->
+    <h3>✨ Details:</h3>
+    <ul>
+      <li><strong>Material:</strong> Solid carved wood</li>
+      <li><strong>Design:</strong> Horse head motif, finely detailed</li>
+      <li><strong>Style:</strong> Rustic / Mid-century vintage</li>
+      <li><strong>Condition:</strong> Excellent vintage condition with natural patina</li>
+      <li><strong>Dimensions (each):</strong> approx. 18 cm high × 12 cm wide × 9 cm deep</li>
+      <li><strong>Set Includes:</strong> 2 bookends (sold as a pair)</li>
+    </ul>
+
+    <p class="price">💶 Price: €85 (pair)</p>
+    <button class="add-to-cart">Add to Cart</button>
+  </div>
+
   <footer>
-    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="footer-logo">
-    <h2>Contact Us</h2>
+    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
+    <h3>Contact Us</h3>
     <p>Email: <a href="mailto:webshop@aphroditeantiques.com">webshop@aphroditeantiques.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/aphroditeantique">@aphroditeantique</a></p>
-    <p>Pinterest: <a href="#">Aphrodite Antiques</a></p>
-    <p>Etsy: <a href="#">Aphrodite Antiques</a></p>
-    <p>TikTok: <a href="https://tiktok.com/@aphrodite___antiques">@aphrodite___antiques</a></p>
+    <p>Instagram: <a href="https://instagram.com/aphroditeantique" target="_blank">@aphroditeantique</a></p>
+    <p>Pinterest: <a href="https://pinterest.com/AphroditeAntiques" target="_blank">Aphrodite Antiques</a></p>
+    <p>Etsy: <a href="https://etsy.com/shop/AphroditeAntiques" target="_blank">Aphrodite Antiques</a></p>
+    <p>TikTok: <a href="https://tiktok.com/@aphrodite___antiques" target="_blank">@aphrodite___antiques</a></p>
 
     <div class="payments">
       <img src="applepay.png.png" alt="Apple Pay">
@@ -73,8 +183,7 @@
       <img src="paypal.png.png" alt="PayPal">
     </div>
 
-    <p>©2025 Aphrodite Antiques. All rights reserved.</p>
-    <p><strong>Worldwide Shipping</strong><br>We ship worldwide — shipping costs are calculated at checkout.</p>
+    <p class="copyright">© 2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
 </body>
 </html>
