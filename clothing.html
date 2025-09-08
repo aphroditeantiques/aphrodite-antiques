@@ -4,14 +4,110 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vintage Clothing - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #fdf6f2;
+      color: #2e2e2e;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: "Brush Script MT", cursive;
+      font-size: 2em;
+      margin: 20px 0;
+    }
+
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .product-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .description {
+      font-family: "Brush Script MT", cursive;
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    .price {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .details {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .back-home, .add-to-cart {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 12px 24px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .back-home:hover, .add-to-cart:hover {
+      background-color: #444;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f4e9e4;
+    }
+
+    .footer-logo img {
+      max-width: 120px;
+      display: block;
+      margin: 10px auto;
+    }
+
+    .payment-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 15px 0;
+    }
+
+    .payment-icons img {
+      max-height: 40px;
+      width: auto;
+    }
+
+    .social-links p {
+      font-family: "Brush Script MT", cursive;
+      font-size: 1.1em;
+    }
+  </style>
 </head>
 <body>
 
   <a href="index.html" class="back-home">← Back to Home</a>
 
   <div class="product">
-    <h2>Vintage 1950s Designer Heels with Matching Purse</h2>
+    <h2>Vintage 1950s René Caovilla Heels with Matching Purse</h2>
     <div class="product-gallery">
       <img src="shoes1..jpeg" alt="Vintage Shoes 1">
       <img src="shoes2..jpeg" alt="Vintage Shoes 2">
@@ -20,22 +116,32 @@
       <img src="shoes5..jpeg" alt="Vintage Shoes 5">
       <img src="shoes6..jpeg" alt="Vintage Shoes 6">
     </div>
+
+    <p class="price">€550.00</p>
+
     <p class="description">
-      Step back into the glamorous late 1950s with this exquisite pair of vintage designer heels. 
-      Crafted with timeless elegance, these heels showcase delicate detailing and sophisticated shaping, 
-      making them an essential piece for collectors and fashion enthusiasts alike. <br><br>
-      The shoes are preserved in remarkable condition and come with a matching little purse, 
-      completing the ensemble for a true mid-century statement of style. 
-      Perfect for display, collection, or occasional wear for those who love vintage fashion.
+      A rare and exquisite pair of <b>René Caovilla slingback heels</b>, dating from the 
+      <b>late 1950s to early 1960s</b>. Expertly handcrafted in Italy from soft 
+      <i>Capretto Platino</i> (kid leather), these shoes feature a refined silhouette 
+      with mid-high heels and elegant slingback straps. 
+      <br><br>
+      Preserved with their <b>original shoebox</b>, this pair showcases authentic markings: 
+      <i>Art. 892, Pellame Capretto Platino, Forma N 80, Tacco N 80</i>. 
+      The soles bear the traditional <i>Vero Cuoio</i> and <i>Made in Italy</i> stamp, affirming their heritage. 
+      <br><br>
+      This set also comes with a <b>matching gold evening purse</b>, creating a complete and timeless ensemble. 
+      <br><br>
+      <b>Size:</b> 34.5 (EU) <br>
+      <b>Condition:</b> Excellent vintage condition <br>
+      <b>Provenance:</b> Family-owned, preserved with original box
     </p>
-    <p class="details">Size: 34.5 (EU)</p>
-    <p class="price">Price: €550</p>
-    <button>Add to Cart</button>
+
+    <a href="#" class="add-to-cart">Add to Cart</a>
   </div>
 
   <footer>
     <div class="footer-logo">
-      <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="footer-logo-img">
+      <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo">
     </div>
 
     <div class="payment-icons">
