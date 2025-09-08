@@ -6,153 +6,139 @@
   <title>Crystals & Glasses</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #fdf6f3;
+      font-family: "Georgia", serif;
+      background-color: #fff8f5;
+      color: #2c2c2c;
+      text-align: center;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
 
-    h1 {
-      font-size: 2em;
-      margin: 20px 0;
-      font-family: 'Brush Script MT', cursive;
+    h1, h2 {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
     }
 
-    .back-home {
+    .back-button {
       display: inline-block;
-      margin: 15px auto;
-      padding: 10px 25px;
+      margin: 20px auto;
+      padding: 10px 20px;
       background-color: black;
       color: white;
-      font-family: 'Brush Script MT', cursive;
-      font-size: 1.2em;
-      border-radius: 8px;
       text-decoration: none;
-    }
-
-    .back-home:hover {
-      background-color: #444;
-    }
-
-    .item {
-      margin: 50px auto;
-      max-width: 900px;
+      border-radius: 8px;
+      font-size: 16px;
     }
 
     .gallery {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      margin: 20px 0;
+      margin: 20px;
     }
 
     .gallery img {
       width: 100%;
-      height: 320px; /* consistent size */
+      height: 250px; /* consistent size */
       object-fit: cover;
       border-radius: 8px;
     }
 
-    .description {
-      font-size: 1.1em;
-      margin: 15px auto;
-      max-width: 750px;
-      line-height: 1.6;
-      font-style: italic;
+    .item {
+      margin-bottom: 50px;
     }
 
-    .details {
-      font-size: 1.1em;
-      margin: 10px 0;
-      font-weight: bold;
+    .description {
+      font-size: 16px;
+      margin: 15px auto;
+      max-width: 700px;
+      line-height: 1.6;
     }
 
     .price {
-      font-size: 1.2em;
-      margin: 10px 0;
       font-weight: bold;
-    }
-
-    .add-to-cart {
-      display: inline-block;
-      padding: 10px 25px;
-      background-color: black;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
+      font-size: 18px;
       margin-top: 10px;
     }
 
-    .add-to-cart:hover {
-      background-color: #444;
+    .add-to-cart {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
 
   <h1>Crystals & Glasses</h1>
-  <a href="index.html" class="back-home">← Back to Home</a>
+  <a href="index.html" class="back-button">← Back to Home</a>
 
-  <!-- Item 1 -->
+  <!-- Wayne Husted Amber Decanter -->
   <div class="item">
-    <h2>Wayne Crystal Vase</h2>
+    <h2>Wayne Husted Amber Decanter (Bird of Peace, Antiqua Collection)</h2>
     <div class="gallery">
-      <img src="wayne1.jpg" alt="Wayne Crystal Vase">
-      <img src="wayne2.jpg" alt="Wayne Crystal Vase">
-      <img src="wayne3.jpg" alt="Wayne Crystal Vase">
-      <img src="wayne4.jpg" alt="Wayne Crystal Vase">
-      <img src="wayne5.jpg" alt="Wayne Crystal Vase">
-      <img src="wayne6.jpg" alt="Wayne Crystal Vase">
+      <img src="amber_decanter1.jpeg" alt="Amber Decanter">
+      <img src="amber_decanter2.jpeg" alt="Amber Decanter">
+      <img src="amber_decanter3.jpeg" alt="Amber Decanter">
+      <img src="amber_decanter4.jpeg" alt="Amber Decanter">
+      <img src="amber_decanter5.jpeg" alt="Amber Decanter">
+      <img src="amber_decanter6.jpeg" alt="Amber Decanter">
     </div>
     <p class="description">
-      Exquisite crystal vase by Wayne, featuring sharp-cut facets and a refined, luminous surface.  
-      A centerpiece for collectors who value unique craftsmanship.
+      The centrepiece of Husted's work for Stelvia was the <em>"Antiqua"</em> line, 
+      featuring bold textures and distinctive embossed patterns. This collection stood out with 
+      medieval-inspired imagery, bold contrasting shapes, and symmetrical lines. 
+      The amber glass emits a warm glow, making it a captivating addition to any décor.
     </p>
-    <p class="details">Height: 32 cm | Width: 19 cm</p>
+    <p class="description"><strong>Material:</strong> Pressed Glass | <strong>Pattern:</strong> "Bird of Peace" | <strong>Collection:</strong> "Antiqua"</p>
+    <p class="description"><strong>Designer:</strong> Wayne Husted | <strong>Origin:</strong> Italy | <strong>Date:</strong> 1960s</p>
+    <p class="description"><strong>Dimensions:</strong> Height: 27.5 cm | Width: 14 cm | Depth: 5 cm</p>
     <p class="price">Price: €280</p>
-    <a href="#" class="add-to-cart">Add to Cart</a>
+    <button class="add-to-cart">Add to Cart</button>
   </div>
 
-  <!-- Item 2 -->
+  <!-- Amber Vase -->
   <div class="item">
     <h2>Amber Vase (24k Gold Plated)</h2>
     <div class="gallery">
-      <img src="amber1.jpg" alt="Amber Vase">
-      <img src="amber2.jpg" alt="Amber Vase">
-      <img src="amber3.jpg" alt="Amber Vase">
-      <img src="amber4.jpg" alt="Amber Vase">
-      <img src="amber5.jpg" alt="Amber Vase">
-      <img src="amber6.jpg" alt="Amber Vase">
+      <img src="polished_amber_vase1.jpeg" alt="Amber Vase">
+      <img src="polished_amber_vase2.jpeg" alt="Amber Vase">
+      <img src="polished_amber_vase3.jpeg" alt="Amber Vase">
+      <img src="polished_amber_vase4.jpeg" alt="Amber Vase">
+      <img src="polished_amber_vase5.jpeg" alt="Amber Vase">
+      <img src="polished_amber_vase6.jpeg" alt="Amber Vase">
     </div>
     <p class="description">
-      Stunning amber-colored crystal vase, plated with <b>24 carat gold</b>.  
-      A rare and elegant piece that combines timeless beauty with intricate detailing,  
+      Stunning amber-colored crystal vase, <strong>plated with 24 carat gold</strong>. 
+      This rare and elegant piece combines timeless beauty with intricate detailing, 
       making it a must-have for collectors.
     </p>
-    <p class="details">Height: 30 cm | Width: 20 cm</p>
+    <p class="description"><strong>Dimensions:</strong> Height: 15 cm | Width: 9 cm</p>
     <p class="price">Price: €120</p>
-    <a href="#" class="add-to-cart">Add to Cart</a>
+    <button class="add-to-cart">Add to Cart</button>
   </div>
 
-  <!-- Item 3 -->
+  <!-- Muurala Glass Candleholder -->
   <div class="item">
     <h2>Muurala Glass Candleholder</h2>
     <div class="gallery">
-      <img src="muurala1.jpg" alt="Muurala Candleholder">
-      <img src="muurala2.jpg" alt="Muurala Candleholder">
-      <img src="muurala3.jpg" alt="Muurala Candleholder">
-      <img src="muurala4.jpg" alt="Muurala Candleholder">
-      <img src="muurala5.jpg" alt="Muurala Candleholder">
-      <img src="muurala6.jpg" alt="Muurala Candleholder">
+      <img src="polished_7C9089CC-7907-4702-AD21-4B220875A896.jpeg" alt="Muurala Candleholder">
+      <img src="polished_E55EDFF4-A7F0-4329-947E-6A40F52A0BC1.jpeg" alt="Muurala Candleholder">
+      <img src="polished_63D7D1C2-8E6A-45B0-B6D6-A9520DF7F1E3.jpeg" alt="Muurala Candleholder">
+      <img src="polished_48991C70-85A6-4F94-9ED1-392B61B3251A.jpeg" alt="Muurala Candleholder">
     </div>
     <p class="description">
-      Elegant Scandinavian glass candleholder by Muurala, crafted in Finland.  
-      Its organic form reflects light beautifully, creating a warm and inviting glow.
+      An iconic example of Finnish design, the Muurala candleholder blends elegance with 
+      functionality. Its organic shape reflects timeless Nordic craftsmanship, making it a 
+      versatile addition to any home.
     </p>
-    <p class="details">Height: 12 cm | Width: 18 cm</p>
     <p class="price">Price: €95</p>
-    <a href="#" class="add-to-cart">Add to Cart</a>
+    <button class="add-to-cart">Add to Cart</button>
   </div>
 
 </body>
