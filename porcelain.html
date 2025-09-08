@@ -4,13 +4,113 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Porcelain & Ceramics - Aphrodite Antiques</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Great Vibes', cursive;
+      background-color: #fdf8f5;
+      color: #2c2c2c;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    a.back-home {
+      display: block;
+      margin: 20px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #000;
+    }
+
+    .product {
+      margin: 40px auto;
+      max-width: 1000px;
+      text-align: center;
+    }
+
+    .product h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    /* Product Gallery - 3 images per row */
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+      justify-items: center;
+    }
+
+    .product-gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .description {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    .details {
+      font-style: italic;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #f0e8e4;
+    }
+
+    footer img.logo {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+    }
+
+    .payment-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .payment-icons img {
+      height: 30px;
+      width: auto;
+    }
+  </style>
 </head>
 <body>
 
   <a href="index.html" class="back-home">← Back to Home</a>
 
-  <!-- Royal Porcelain Vase -->
   <div class="product">
     <h2>Royal Porcelain Vase</h2>
     <div class="product-gallery">
@@ -22,7 +122,7 @@
       <img src="polished_ceramic_vase6.jpeg" alt="Royal Porcelain Vase 6">
     </div>
     <p class="description">
-      A beautiful royal porcelain vase, showcasing the timeless elegance of classic European craftsmanship.
+      A beautiful royal porcelain vase, showcasing the timeless elegance of classic European craftsmanship. 
       Hand-finished with delicate detail, this vase is ideal for adding sophistication to any interior.
     </p>
     <p class="details">Height: 17 cm | Width: 11 cm</p>
@@ -30,7 +130,6 @@
     <button>Add to Cart</button>
   </div>
 
-  <!-- Chinese Porcelain Vase -->
   <div class="product">
     <h2>Chinese Porcelain Vase</h2>
     <div class="product-gallery">
@@ -42,7 +141,7 @@
       <img src="polished_chinese_vase6.jpeg" alt="Chinese Vase 6">
     </div>
     <p class="description">
-      Antique Chinese porcelain vase with hand-painted motifs.
+      Antique Chinese porcelain vase with hand-painted motifs. 
       This elegant piece carries centuries of artistic tradition. Please note, two small chips are present, adding to its story.
     </p>
     <p class="details">Height: 27 cm | Width: 14 cm</p>
@@ -50,7 +149,6 @@
     <button>Add to Cart</button>
   </div>
 
-  <!-- Japanese Sake Set -->
   <div class="product">
     <h2>Japanese Sake Set</h2>
     <div class="product-gallery">
@@ -63,8 +161,8 @@
       <img src="polished_F1266B60-C177-4486-91DF-C6A9ACB945D1.jpeg" alt="Sake Set 7">
     </div>
     <p class="description">
-      Exquisite Japanese sake set, crafted with refined ceramic techniques.
-      A perfect blend of tradition and function, this set embodies hospitality and elegance.
+      Exquisite Japanese sake set, crafted with refined ceramic techniques. 
+      A perfect blend of tradition and function, this set embodies hospitality and elegance. 
       In excellent condition.
     </p>
     <p class="details">Height (bottle): 25 cm</p>
@@ -72,7 +170,6 @@
     <button>Add to Cart</button>
   </div>
 
-  <!-- Porcelain Pottery -->
   <div class="product">
     <h2>Porcelain Pottery</h2>
     <div class="product-gallery">
@@ -82,8 +179,8 @@
       <img src="polished_CB224CBB-AEB9-431A-A441-CDFE19866364.jpeg" alt="Pottery 4">
     </div>
     <p class="description">
-      Decorative porcelain pottery, combining rustic character with refined ceramic design.
-      Ideal as a centerpiece or collectible piece.
+      Decorative porcelain pottery, combining rustic character with refined ceramic design. 
+      Ideal as a centerpiece or collectible piece. 
       Unique glaze finish enhances its visual appeal.
     </p>
     <p class="details">Height: 24 cm | Width: 18 cm</p>
