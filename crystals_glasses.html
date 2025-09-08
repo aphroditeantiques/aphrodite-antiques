@@ -6,128 +6,118 @@
   <title>Crystals & Glasses - Aphrodite Antiques</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Price Styling */
-    .price {
-      font-size: 1.8em;
-      font-weight: bold;
-      margin: 15px 0;
-      font-family: 'Great Vibes', cursive;
-      color: #000;
+    /* Product Gallery Fix for 2x3 grid */
+    .product-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+      gap: 15px;
+      margin: 20px auto;
+      max-width: 1000px;
+    }
+    .product-gallery img {
+      width: 100%;
+      height: 220px; /* fixed equal height */
+      object-fit: cover; /* crops nicely without stretching */
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .product-gallery img:hover {
+      transform: scale(1.05);
     }
 
-    /* Add to Cart Button */
-    .product button {
+    /* Back to Home button unified */
+    .back-home {
       display: inline-block;
-      padding: 8px 16px;
-      background-color: black;
+      background: black;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 0.9em;
-      margin-top: 10px;
       font-family: 'Great Vibes', cursive;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 25px 0;
+      transition: background 0.3s ease;
     }
-    .product button:hover {
-      background-color: #5a2a2a;
+    .back-home:hover {
+      background: #5a2a2a;
     }
   </style>
 </head>
 <body>
 
-  <h1>Crystals & Glasses</h1>
+  <a href="index.html" class="back-home">← Back to Home</a>
 
   <!-- Amber Vase -->
   <div class="product">
-    <a href="index.html" class="back-home">← Back to Home</a>
     <h2>Amber Vase (24k Gold Plated)</h2>
-
     <div class="product-gallery">
-      <img src="polished_amber_vase1.jpeg" alt="Amber Vase 24k Gold Plated">
-      <img src="polished_amber_vase2.jpeg" alt="Amber Vase 24k Gold Plated">
-      <img src="polished_amber_vase3.jpeg" alt="Amber Vase 24k Gold Plated">
-      <img src="polished_amber_vase4.jpeg" alt="Amber Vase 24k Gold Plated">
-      <img src="polished_amber_vase5.jpeg" alt="Amber Vase 24k Gold Plated">
-      <img src="polished_amber_vase6.jpeg" alt="Amber Vase 24k Gold Plated">
+      <img src="polished_amber_vase1.jpeg" alt="Amber Vase 1">
+      <img src="polished_amber_vase2.jpeg" alt="Amber Vase 2">
+      <img src="polished_amber_vase3.jpeg" alt="Amber Vase 3">
+      <img src="polished_amber_vase4.jpeg" alt="Amber Vase 4">
+      <img src="polished_amber_vase5.jpeg" alt="Amber Vase 5">
+      <img src="polished_amber_vase6.jpeg" alt="Amber Vase 6">
     </div>
-
-    <p class="price">€150.00</p>
     <p class="description">
-      A rare and exquisite amber vase, plated with 24 carats of gold. This piece combines 
-      luxurious craftsmanship with timeless elegance. Perfect for collectors or as a 
-      statement decor element.
+      Stunning amber-colored crystal vase, plated with <b>24 carat gold</b>. 
+      A rare and elegant piece that combines timeless beauty with intricate detailing, 
+      making it a must-have for collectors.
     </p>
+    <p class="details">Height: 30 cm | Width: 20 cm</p>
+    <p class="price">Price: €150</p>
     <button>Add to Cart</button>
   </div>
 
-  <!-- Wayne Husted Decanter -->
+  <!-- Wayne Crystal Vase -->
   <div class="product">
-    <h2>Wayne Husted Antiqua Amber Decanter</h2>
-
+    <h2>Wayne Crystal Vase</h2>
     <div class="product-gallery">
-      <img src="amber_decanter1.jpeg" alt="Wayne Husted Amber Decanter">
-      <img src="amber_decanter2.jpeg" alt="Wayne Husted Amber Decanter">
-      <img src="amber_decanter3.jpeg" alt="Wayne Husted Amber Decanter">
-      <img src="amber_decanter4.jpeg" alt="Wayne Husted Amber Decanter">
-      <img src="amber_decanter5.jpeg" alt="Wayne Husted Amber Decanter">
-      <img src="amber_decanter6.jpeg" alt="Wayne Husted Amber Decanter">
+      <img src="amber_decanter1.jpeg" alt="Wayne Vase 1">
+      <img src="amber_decanter2.jpeg" alt="Wayne Vase 2">
+      <img src="amber_decanter3.jpeg" alt="Wayne Vase 3">
+      <img src="amber_decanter4.jpeg" alt="Wayne Vase 4">
+      <img src="amber_decanter5.jpeg" alt="Wayne Vase 5">
+      <img src="amber_decanter6.jpeg" alt="Wayne Vase 6">
     </div>
-
-    <p class="price">€280.00</p>
     <p class="description">
-      The centrepiece of Wayne Husted's work for Stelvia was the <em>"Antiqua"</em> line, 
-      featuring bold textures and distinctive embossed patterns. This decanter, with its 
-      <strong>"Bird of Peace"</strong> motif, connects American design, Italian craftsmanship, 
-      and mid-20th-century artistry.  
-      <br><br>
-      <strong>Material:</strong> Pressed Glass <br>
-      <strong>Pattern:</strong> Bird of Peace <br>
-      <strong>Collection:</strong> Antiqua (1960s) <br>
-      <strong>Dimensions:</strong> Height 27.5 cm × Width 14 cm × Depth 5 cm <br>
-      <strong>Condition:</strong> Perfect vintage condition
+      Exquisite crystal vase by Wayne, featuring sharp-cut facets and a refined, luminous surface. 
+      A centerpiece for collectors who value unique craftsmanship.
     </p>
+    <p class="details">Height: 32 cm | Width: 19 cm</p>
+    <p class="price">Price: €280</p>
     <button>Add to Cart</button>
   </div>
 
-  <!-- Muurla Candleholder -->
+  <!-- Muurala Candleholder -->
   <div class="product">
-    <h2>Muurla Finland Glass Candleholder</h2>
-
+    <h2>Muurala Glass Candleholder</h2>
     <div class="product-gallery">
-      <img src="polished_48991C70-85A6-4F94-9ED1-392B61B3251A.jpeg" alt="Muurla Finland Candleholder">
-      <img src="polished_63D7D1C2-8E6A-45B0-B6D6-A9520DF7F1E3.jpeg" alt="Muurla Finland Candleholder">
-      <img src="polished_7C9089CC-7907-4702-AD21-4B220875A896.jpeg" alt="Muurla Finland Candleholder">
-      <img src="polished_E55EDFF4-A7F0-4329-947E-6A40F52A0BC1.jpeg" alt="Muurla Finland Candleholder">
+      <img src="polished_48991C70-85A6-4F94-9ED1-392B61B3251A.jpeg" alt="Muurala Candleholder 1">
+      <img src="polished_63D7D1C2-8E6A-45B0-B6D6-A9520DF7F1E3.jpeg" alt="Muurala Candleholder 2">
+      <img src="polished_7C9089CC-7907-4702-AD21-4B220875A896.jpeg" alt="Muurala Candleholder 3">
+      <img src="polished_E55EDFF4-A7F0-4329-947E-6A40F52A0BC1.jpeg" alt="Muurala Candleholder 4">
     </div>
-
-    <p class="price">€95.00</p>
     <p class="description">
-      A striking <strong>Muurla Finland</strong> glass candleholder, crafted with textured glass 
-      that beautifully refracts candlelight. Measuring approx. 30 × 25 cm, it brings timeless 
-      Nordic elegance to any space.  
-      <br><br>
-      <strong>Material:</strong> Glass <br>
-      <strong>Dimensions:</strong> 30 cm × 25 cm <br>
-      <strong>Condition:</strong> Excellent vintage condition
+      Scandinavian glass artistry at its finest. 
+      This Muurala candleholder is a rare collectible, designed with organic flowing lines that catch and reflect light beautifully.
     </p>
+    <p class="details">Dimensions: 30 x 25 cm</p>
+    <p class="price">Price: €95</p>
     <button>Add to Cart</button>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="footer-logo">
-    <p>Contact Us</p>
-    <p>Email: <a href="mailto:webshop@aphroditeantiques.com">webshop@aphroditeantiques.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/aphroditeantique">@aphroditeantique</a></p>
-    <p>Pinterest: <a href="#">Aphrodite Antiques</a></p>
-    <p>Etsy: <a href="#">Aphrodite Antiques</a></p>
-    <p>TikTok: <a href="https://tiktok.com/@aphrodite___antiques">@aphrodite___antiques</a></p>
+    <img src="IMG_6649.jpeg" alt="Aphrodite Antiques Logo" class="logo">
     <div class="payment-icons">
-      <img src="applepay.png" alt="Apple Pay">
-      <img src="visa.png" alt="Visa">
-      <img src="mastercard.png" alt="Mastercard">
-      <img src="paypal.png" alt="PayPal">
+      <img src="applepay.png.png" alt="Apple Pay">
+      <img src="visa.png.png" alt="Visa">
+      <img src="mastercard.png.png" alt="Mastercard">
+      <img src="paypal.png.png" alt="PayPal">
     </div>
+    <p>Email: webshop@aphroditeantiques.com</p>
+    <p>Instagram: @aphrodite.antiques</p>
+    <p>TikTok: @aphroditeantiques</p>
+    <p>Etsy: etsy.com/shop/AphroditeAntiques</p>
     <p>© 2025 Aphrodite Antiques. All rights reserved.</p>
   </footer>
 
